@@ -1,0 +1,59 @@
+
+< ======= Estrutura do projecto ======== >
+
+Observação: Primeiro, é necessário criar uma estrutura com um diretório principal, e, em seguida, criar subdiretórios.
+
+projeto_N2-vuejs/
+
+|-- public/
+|   |-- index.html_____________________ # Página de principal (o acesso, dar site ao Público)
+|
+|-- src/_______________________________ # src (source) é geralmente onde local onde guardar o código-fonte principal
+|   |-- assets/_________________________# Este directório é destinado a guardar o código-fonte principal (recursos estáticos). _
+|   |   |-- logo_UMa_pt.png             #   _Esses recursos podem incluir imagens, vídeos, arquivos de estilo (como CSS), scripts _
+|   |   |-- imagens-fundo.jpg           #   _JavaScript, fontes, ícones, entre outros.
+|   |   |-- projeto1.jpg
+|   |   |-- foto_JohnSmith.jpg
+|   |   |-- UIDeli.jpg
+|   |   |-- KotoStudio.jpg
+|   |   |-- SwitchBlack.jpg
+|   |   |-- ReMarket.jpg
+|   |   |-- AnotherOne.jpg
+|   |   |-- BlederRenders.jpg
+|   |
+|   |-- components/_____________________# Componentes Vue é reutilizáveis 
+|   |   |-- Cabecalho.vue
+|   |   |-- Rodape.vue
+|   |   |-- SecaoProjecto.vue___________# Listagem, Detalhes, funcionalidade específicos, Resistro (biografia, habilidades, estatísticas, ou qualquer outra informação relevante)
+|   |   |-- PaginaErro.vue______________# Escolher uma página onde não existe
+|   |   |-- ListaProjetos.vue
+|   |   |-- DetalhesProjeto.vue
+|   |   |-- SecaoComentarios.vue
+|   |   |-- ListaAvatares.vue___________# Lista de perfil 
+|   |
+|   |-- views/_________________________# Este diretório é 'especificos de páginas' "Tela-site - Vistas"
+|   |   |-- Inicio.vue
+|   |   |-- PaginaProjeto.vue
+|   |   |-- PaginaErro.vue
+|   |   |-- PaginaComentario.vue
+|   |   |-- PaginaAvatar.vue
+|   |
+|   |-- App.vue_______________________# Esta aplicação ""app.vue", onde contem o layout Principal
+|   |-- main.js_______________________# É um ponto de entrada principal, onde adiciona os plugins e configurações iniciais (Config)
+|
+|-- .gitignore
+|-- package.json______________________# Git recomenda outros programador(desenvolvedores) p/ instalalem as dependências - Como 'npm istall' ou 'yarn install'
+|-- README.md_________________________# Para os leitores entenderem e contribuírem o meu projecto. Normalmente tem Título e Descrição, estado do projecto _
+|-- ...                               #  _ Pré-requisitos, instalação, o uso, estrutura do projecto, contribuição, licença, exemplos de mostração, contacto, hist. de Mudanças
+
++-------------------------------------+
+| Disciplina: Design. Hipermédia      |
+| Docente Marco Olim (UMa.pt)         |
++-------------------------------------+
+| Autor: Ramiro Marques               |
+| Nº Aluno: 2006921                   | 
+| Ano: 2023/24                        |
+| Data criação: 08/12/2023            |
++-------------------------------------+
+| Titulo: Estrutura do projecto (Nº2) |
++-------------------------------------+
