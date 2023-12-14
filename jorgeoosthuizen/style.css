@@ -1,0 +1,102 @@
+button{
+    border:none;
+}
+.container{
+    display: flex;
+    background-color: aquamarine;
+    flex-direction: row;
+}
+
+.profileimage{
+    display: flex; 
+}
+
+
+.navegacao{
+    display: flex;
+    align-items:center;
+    justify-content:right;
+}
+
+.profile{
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+}
+
+.menu {
+    background-color: transparent;
+    width:fit-content;
+    height:60px;
+    border-radius: 28px;
+    border: 1px lightslategray solid;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.botaosobre {
+    width: 100px;
+    height: auto;
+	background-color:lightcoral;
+	border-radius:28px;
+	display:inline-block;
+	cursor:pointer;
+	color:#000000;
+	font-family:Arial;
+	font-size:17px;
+	text-decoration:none;
+	  
+}
+
+.botaosobre:hover {
+	background-color:transparent;
+}
+
+.botaosobre:active {
+	position:relative;
+	top:1px;
+}
+.active{
+    border:1px lightslategray solid;
+}
+.botaotrabalhos {
+	background-color:lightcyan;
+	border-radius:28px;
+	display:inline-block;
+	cursor:pointer;
+	color:#000000;
+	font-family:Arial;
+	font-size:17px;
+	padding:16px 31px;
+	text-decoration:none;
+	
+   
+}
+.botaotrabalhos:hover {
+	background-color:transparent;
+}
+.botaotrabalhos:active {
+	position:relative;
+	top:1px;
+}
+.botaosolucoes {
+	background-color:lightgreen;
+	border-radius:28px;
+	display:inline-block;
+	cursor:pointer;
+	color:#000000;
+	font-family:Arial;
+	font-size:17px;
+	padding:16px 31px;
+	text-decoration:none;
+	
+   
+}
+.botaosolucoes:hover {
+	background-color:transparent;
+}
+.botaosolucoes:active {
+	position:relative;
+	top:1px;
+}

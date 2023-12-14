@@ -4,17 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio JorgeOosthuizen</title>
-    <link rel="stylesheet" href="projeto2.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-    <img src="" alt="">
-    Sobre  
-    Trabalhos
-    Soluções
+        <header>
+            <div class="container">
+                <div class="profileimage">
+                    <img class="profile" src="https://edtimes.in/wp-content/uploads/2014/03/eyes_tool_wallpaper-1280x720.jpg" alt="">
+                </div>
+                <div class="navegacao">
+                <nav>
+                <div class="menu">
+                <button class="botaosobre active">Sobre</button>
+                <button class="botaotrabalhos active">Trabalhos</button>
+                <button class="botaosolucoes active">Soluções</button>
+                
+            </div>
+            </nav>
+        </div>
+        </header>
+    
 
-    </header>
-    <h1></h1>
+
 
     <script src="https://unpkg.com/vue@3.2.31/dist/vue.global.js"></script>
     <script>
@@ -27,7 +38,7 @@
                 }
             }
         }).mount('#app')
-
+        
     </script>
 </body>
 </html>
