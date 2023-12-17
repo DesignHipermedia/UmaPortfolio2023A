@@ -1,32 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<title>Projecto HTML</title>
-<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Design Hipermédia</title>
-<link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-<div class="img">
-<img src="data:image/jpeg;base64,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">
-<p>© Polite Cat</p>
-<nav role="navigation">  
+  <head>
+    <meta charset="UTF-8" />
+    <title>Projecto HTML</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Design Hipermédia</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="Slider_img">
+      <img
+        src="https://media.istockphoto.com/id/1306526412/pt/foto/men-working-in-laptop-at-office.jpg?s=2048x2048&w=is&k=20&c=YzGn1LXk1xO-6ScJbspyg_9xGfDB8QVaGdRIJdpnKE4="
+      />
+      <p>© Carper</p>
+      <div class="BotoesDireita">
+        <a href="#" class="myButton">About</a>
+        <a href="#" class="myButton">Work</a>
+        <a href="#" class="myButton">Solutions</a>
+      </div>
+    </div>
 
+    <div class="">
+      <h3>
+        I'm Carlos Pereira, and I turn ideas into digital experiences that
+        people love.
+      </h3>
+    </div>
 
-<a href="#" class="myButton">grey</a>
-<button class="btn">Start a Project!</button>
-</div>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et.
+    </p>
 
-  </div>
-  <div id="containerAnimation" class="container-bottom-to-up" >  
-<h1 class="top-to-bottom">I'm Polite Cat, and I turn ideas into digital experiences that people love.
-</h1>  
-</div>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.</p>
+    <div>
+      <button class="btn">Start a Project!</button>
+    </div>
 
+    <div class="container1">
+      <h1>
+        Welcome, make yourself at home. I am a multidisciplinary web designer,
+        designing and building beautiful digital products, for companies around
+        the world. I believe that design should be both functional and
+        aesthetically pleasing, and I am dedicated to delivering exceptional
+        user experiences through thoughtful design and meticulous attention to
+        detail.
+      </h1>
+    </div>
 
-    <h1>Tua prima</h1>
-</body>
+    <button class="btn">Download Resume</button>
+
+    <div id="app">
+      <button @click="toggleMode">Light/Night Mode</button>
+    </div>
+
+    <div class="BotoesDireita2">
+      <h1>The work I do</h1>
+      <a href="#" class="myButton">All</a>
+      <a href="#" class="myButton">Design</a>
+      <a href="#" class="myButton">Development</a>
+    </div>
+
+    <div class="containerImagens">
+      <div class="fotos">
+        <img
+          src="https://cdn.britannica.com/84/203584-050-57D326E5/speed-internet-technology-background.jpg"
+          alt="Image 1"
+        />
+      </div>
+
+      <div class="textos">
+        <p>
+          UIDeli.com<br />
+          Design + Development 2023<br />
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et.
+        </p>
+      </div>
+    </div>
+
+    <div class="containerImagens">
+      <div class="fotos">
+        <img
+          src="https://cdn.pixabay.com/photo/2021/08/04/13/06/software-developer-6521720_1280.jpg"
+          alt="Image 1"
+        />
+      </div>
+      <div class="textos">
+        <p>
+          Koto Studio<br />
+          Development 2023<br />
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et.
+        </p>
+      </div>
+    </div>
+
+    <div class="containerImagens">
+      <div class="fotos">
+        <img
+          src="https://media.istockphoto.com/id/1226864194/pt/foto/programming-code-abstract-technology-background-of-software-developer-and-computer-script-3d.jpg?s=2048x2048&w=is&k=20&c=82p4keJ_esyKYoC9ixRiDNWZm6xUskbXS9NCD4KkOPc="
+          alt="Image 1"
+        />
+      </div>
+      <div class="textos">
+        <p>
+          Switch Black
+          <br />
+          Development 2023<br />
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et.
+        </p>
+      </div>
+    </div>
+
+    <div class="containerImagens">
+      <div class="fotos">
+        <img
+          src="https://cdn.pixabay.com/photo/2015/05/01/08/47/art-747921_1280.jpg"
+          
+        />
+      </div>
+      <div class="textos">
+        <p>
+          ReMarket<br />
+          Development 2023<br />
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et.
+        </p>
+      </div>
+    </div>
+
+    <div class="containerImagens">
+      <div class="fotos">
+        <img
+          src="https://cdn.pixabay.com/photo/2013/12/22/15/30/motherboard-232515_1280.jpg"
+        />
+      </div>
+      <div class="textos">
+        <p>
+          Another One
+          <br />
+          Development 2023<br />
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et.
+        </p>
+      </div>
+    </div>
+
+    <div class="containerImagens">
+      <div class="fotos">
+        <img
+          src="https://cdn.pixabay.com/photo/2015/08/07/00/41/lg-878843_1280.jpg"
+        />
+      </div>
+      <div class="textos">
+        <p>
+          Bleder Renders
+          <br />
+          Development 2023<br />
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et.
+        </p>
+      </div>
+    </div>
+
+    <div class="containerImagens">
+      <div class="fotos">
+        <img
+          src="https://media.istockphoto.com/id/1364096793/pt/foto/cathedral-of-le%C3%B3n-also-known-as-cathedral-of-santa-mar%C3%ADa-de-regla-de-le%C3%B3n.jpg?s=2048x2048&w=is&k=20&c=VlI2Jk8H4U-UGZbPXX_HGCxSSaTV7jWScGsel4vLwdw="
+        />
+      </div>
+      <div class="textos">
+        <p>
+          Koto Studio<br />
+          Development 2023<br />
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et.
+        </p>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <script src="app.js"></script>
+  </body>
 </html>
