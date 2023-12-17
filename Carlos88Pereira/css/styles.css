@@ -1,4 +1,39 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Koulen&family=Lato&family=Nunito&family=Playfair+Display:ital@1&family=Prata&family=Raleway:ital,wght@1,100&family=Roboto&family=Roboto+Condensed&family=Teko&display=swap');
+body {
+  transition: background-color 0.3s ease;
+}
+.light-mode {
+  background-color: #fff;
+  color: #000;
+}
+.dark-mode {
+  background-color: #333;
+  color: #fff;
+}
+.mode-switch {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 50px;
+  height: 25px;
+  background-color: #ccc;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+#modeToggle {
+  display: none;
+}
+#modeToggle:checked + .mode-switch {
+  background-color: #000;
+}
+#modeToggle:checked ~ .light-mode {
+  background-color: #333;
+  color: #fff;
+}
+#modeToggle:checked ~ .dark-mode {
+  background-color: #fff;
+  color: #000;
+}
 
 .btn {
   font-family: Roboto, sans-serif;
@@ -28,56 +63,109 @@
   border: solid 5px #0066cc;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-.container-bottom-to-up {
-  overflow: hidden;
-  margin: 0px;
-}
-.top-to-bottom {
-  animation: 0.4s top-to-bottom forwards;
-  font-size: 24px;
-  font-weight: 600;
-  letter-spacing: -.005em;
-  font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-  color: rgba(0, 0, 0, 0.8);
-  text-align: left;
-}
-@keyframes top-to-bottom {
-  from {
-    transform: translateY(-48px);
-  }
 
-  to {
-    transform: translateY(0);
-  }
+
+.Slider_img img {
+  width: 150px;
+  height: 150px;
+  border-radius: 500px;
 }
 
-img {
+.Slider_img {
+  
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.BotoesDireita {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+.BotoesDireita2 {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+
+}
+
+
+
+.container1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-align: right;
+}
+
+.imgpolite{
   border-radius: 50%;
   width: 110px;
 }
 
-
 .myButton {
   box-shadow: 3px 4px 0px 0px #899599;
-  background-color: #ededed;
+  background-color: #cfcbcb;
   border-radius: 15px;
-  border: 1px solid #d6bcd6;
+  border: 1px solid #000000;
   display: inline-block;
   cursor: pointer;
-  color: #3a8a9e;
+  color: #2a535e;
   font-family: Arial;
   font-size: 17px;
   padding: 7px 25px;
   text-decoration: none;
   text-shadow: 0px 1px 0px #e1e2ed;
 }
-
 .myButton:hover {
   background-color: #bab1ba;
 }
-
 .myButton:active {
   position: relative;
   top: 1px;
+}
+
+
+
+.containerImagens { 
+  height: 1000px;
+  width: 1000px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  
+
+}
+.containerImagens {
+
+
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  text-align: right;
+  flex-direction: column;
+  margin-bottom: 10px; 
+}
+
+
+
+.containerImagens .fotos img {
+  border-width: 3cm;
+  width: 500px; 
+  height: 500px; 
+  align-items: left;
+  border-radius: 8px; 
+
+}
+
+
+.containerImagens .textos p {
+  font-size: 16px; 
+  line-height: 1.5; 
+  color: #333; 
+
 }
