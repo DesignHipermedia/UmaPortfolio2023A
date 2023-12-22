@@ -12,42 +12,49 @@
                 <div class="profileimage">
                     <img class="profile" src="https://edtimes.in/wp-content/uploads/2014/03/eyes_tool_wallpaper-1280x720.jpg" alt="">
                 
-                <div class="copyright">
-                <h3>© Jorge Oosthuizen</h3>
-                </div></div>
+                    <div class="copyright">
+                        <h3>© Jorge Oosthuizen</h3>
+                        </div>
+                    </div>
                 <div class="navegacao">
                 <nav>
                 <div class="menu">
-                <button class="botaosobre active">Sobre</button>
-                <button class="botaotrabalhos active">Trabalhos</button>
-                <button class="botaosolucoes active">Soluções</button>
-                </div>
+                    <button class="botaosobre" :class="{ 'active': isActiveTab('sobre') }" @click="setActiveTab('sobre')">Sobre</button>
+                    <button class="botaotrabalhos" :class="{ 'active': isActiveTab('trabalhos') }" @click="setActiveTab('trabalhos')">Trabalhos</button>
+                    <button class="botaosolucoes" :class="{ 'active': isActiveTab('solucoes') }" @click="setActiveTab('solucoes')">Soluções</button>
+                
+            </div>
             </nav>
         </div>
-        </div>
         </header>
-      <section class="primeiroparagrafo"> 
-        <div class="titulo">
-             <h1>I'm DH, and I turn ideas into digital<br>experiences that people love.
-            </h1>
-        </div>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-            sed do eiusmod tempor incididunt ut labore et.
-        </section>
+        <section class="primeiroparagrafo"> 
+            <div class="titulo">
+                 <h1>I'm DH, and I turn ideas into digital<br>experiences that people love.
+                </h1>
+            </div>
+                <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br>
+                sed do eiusmod tempor incididunt ut labore et.</h2>
+            </section>
 
 
 
     <script src="https://unpkg.com/vue@3.2.31/dist/vue.global.js"></script>
     <script>
-
-        Vue.createApp({
-            data() {
-                return{
-
-                    
-                }
+Vue.createApp({
+        data() {
+            return {
+                activeTab: 'sobre' 
+            };
+        },
+        methods: {
+            setActiveTab(tab) {
+                this.activeTab = tab;
+            },
+            isActiveTab(tab) {
+                return this.activeTab === tab;
             }
-        }).mount('#app')
+        }
+    }).mount('body');
         
     </script>
 </body>

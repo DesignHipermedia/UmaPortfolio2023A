@@ -1,127 +1,171 @@
-button{
-    border:none;
-}
-.container{
-	height: max-content;
-    display: flex;
-    background-color: transparent;
-	justify-content: space-between;
+body{
 	padding: 50px;
-	margin: 10px;
 }
 
-.profileimage{
-    display: flex; 
-	align-items: center;
-	gap: 20px;
+.container {
+  display: flex;
+  background-color: transparent;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 50px;
 }
 
-.copyright{
-	display: flex;
-	align-items: center;
+.profileimage {
+  display: flex;
+  gap:50px;
 }
 
-h1{
-	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-	font-size: 60px;
+.navegacao {
+  display: flex;
+  align-items: center;
+  justify-content: right;
 }
 
-
-h3{
-	font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-	font-size: large;
-}
-
-.primeiroparagrafo{
-	padding:50px;
-}
-
-.navegacao{
-	display: flex;
-    align-items:center;
-	justify-self: flex-start;
-
-}
-
-.profile{
-    width: 200px;
-    height: 200px;
-    border-radius: 100px;
+.profile {
+  width: 300px;
+  height: 300px;
+  border-radius: 200px;
 }
 
 .menu {
-    background-color: transparent;
-    width:fit-content;
-    height:60px;
-    border-radius: 28px;
-    border: 1px lightslategray solid;
-    display: flex;
-    flex-direction: row;
-
+  background-color: transparent;
+  width: fit-content;
+  display: flex;
+  flex-direction: row;
+  border-radius: 10px;
 }
 
-.botaosobre {
-    width: 100px;
-    height: auto;
-	background-color:lightcoral;
-	border-radius:28px;
-	display:inline-block;
-	cursor:pointer;
-	color:#000000;
-	font-family:Arial;
-	font-size:17px;
-	text-decoration:none;
-	  
+.botaosobre,
+.botaotrabalhos,
+.botaosolucoes {
+  width: 150px;
+  height: 100px;
+  background-color: transparent;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  text-decoration: none;
+  box-shadow: inset 0 0 0 0 #5f1de5;
+  transition: ease-out 0.3s;
+  outline: none;
+  position: relative;
+  overflow: hidden;
 }
 
 .botaosobre:hover {
-	background-color:transparent;
+  color: white;
+  cursor: pointer;
 }
 
-.botaosobre:active {
-	position:relative;
-	top:1px;
+.botaosobre:before {
+  transition: 0.5s all ease;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  opacity: 0;
+  content: "";
+  background-color: #523dd7;
 }
-.active{
-    border:1px lightslategray solid;
+
+.botaosobre:hover:before {
+  transition: 0.5s all ease;
+  border-radius: 10px;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  z-index: -1;
 }
-.botaotrabalhos {
-	background-color:lightcyan;
-	border-radius:28px;
-	display:inline-block;
-	cursor:pointer;
-	color:#000000;
-	font-family:Arial;
-	font-size:17px;
-	padding:16px 31px;
-	text-decoration:none;
-	
-   
-}
+
 .botaotrabalhos:hover {
-	background-color:transparent;
+  color: white;
+  cursor: pointer;
 }
-.botaotrabalhos:active {
-	position:relative;
-	top:1px;
+
+.botaotrabalhos:before {
+  transition: 0.5s all ease;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  opacity: 0;
+  content: "";
+  background-color: #523dd7;
 }
-.botaosolucoes {
-	background-color:lightgreen;
-	border-radius:28px;
-	display:inline-block;
-	cursor:pointer;
-	color:#000000;
-	font-family:Arial;
-	font-size:17px;
-	padding:16px 31px;
-	text-decoration:none;
-	
-   
+
+.botaotrabalhos:hover:before {
+  transition: 0.5s all ease;
+  border-radius: 10px;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  z-index: -1;
 }
+
 .botaosolucoes:hover {
-	background-color:transparent;
+  color: white;
+  cursor: pointer;
 }
-.botaosolucoes:active {
-	position:relative;
-	top:1px;
+
+.botaosolucoes:before {
+  transition: 0.5s all ease;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  opacity: 0;
+  content: "";
+  background-color: #523dd7;
+}
+
+.botaosolucoes:hover:before {
+  transition: 0.5s all ease;
+  border-radius: 10px;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  z-index: -1;
+}
+
+.botaosobre.active,
+.botaotrabalhos.active,
+.botaosolucoes.active {
+  background-color: #523dd7;
+  color: white;
+}
+
+.copyright {
+  display: flex;
+  align-items: center;
+}
+
+h1 {
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 60px;
+}
+
+h2 {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 30px;
+	font-weight: lighter;
+  }
+
+h3 {
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: lighter;
+}
+
+.primeiroparagrafo {
+  padding-left: 20px;
 }
