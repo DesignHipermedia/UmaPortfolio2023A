@@ -11,6 +11,20 @@ body{
   padding: 50px;
 }
 
+.container2{
+    display: flex;
+    justify-content: flex-end;
+    padding: 50px;
+}
+
+
+.curriculo{
+    display: flex;
+    gap:20px;
+    justify-content: flex-start;
+    align-items: center;
+}
+
 .profileimage {
   display: flex;
   gap:50px;
@@ -144,6 +158,7 @@ body{
 .botaosolucoes.active {
   background-color: #523dd7;
   color: white;
+  
 }
 
 .modo-escuro .botaosobre.active,
@@ -176,8 +191,24 @@ h3 {
   font-weight: lighter;
 }
 
+a{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  color:black
+}
+
+.modo-escuro a{
+  color: white;
+}
+
 .primeiroparagrafo {
   padding-left: 20px;
+}
+
+.segundoparagrafo{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    font-weight: lighter;
 }
 
 .butoesprojecto{
@@ -214,6 +245,26 @@ h3 {
   cursor: pointer;
 }
 
+.setabaixo {
+  width: 60px;
+  height: 60px;
+  border-radius: 1000px;
+  background-color:#523dd7;
+  border: none;
+  cursor: pointer;
+}
+
+.modo-escuro .setabaixo{
+  width: 60px;
+  height: 60px;
+  border-radius: 1000px;
+  background-color:#d237f1;
+  border: none;
+  cursor: pointer;
+
+}
+
+
 .modo-escuro .setacima{
   width: 100px;
   height: 100px;
@@ -232,7 +283,7 @@ h3 {
 .dark {
     background-color: white;
     color: black;
-    border: 1px solid black;
+    border:transparent;
     border-radius: 1000px;
     width: 100px;
     height: 100px;
@@ -242,14 +293,20 @@ h3 {
     transition: ease-out 0.3s;
 }
 
+.dark{
+  border: 1px solid black;
+}
+
 .light.active,
 .dark.active {
     background-color: #523dd7;
+    border: transparent;
 }
 
 .modo-escuro .light.active,
 .modo-escuro .dark.active {
     background-color:#d237f1;
+    border: transparent;
 }
 
 .modo-escuro{
