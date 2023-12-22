@@ -89,7 +89,7 @@ body{
   font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
   text-decoration: none;
-  box-shadow: inset 0 0 0 0 #d237f1;
+  box-shadow: inset 0 0 0 0 #ba4ecf;
   transition: ease-out 0.3s;
   outline: none;
   position: relative;
@@ -128,7 +128,7 @@ body{
   bottom: 0;
   opacity: 0;
   content: "";
-  background-color: #d237f1;
+  background-color: #ba4ecf;
 }
 
 .botaosobre:hover:before,
@@ -164,7 +164,7 @@ body{
 .modo-escuro .botaosobre.active,
 .modo-escuro .botaotrabalhos.active,
 .modo-escuro .botaosolucoes.active {
-  background-color: #d237f1;
+  background-color: #ba4ecf;
   color: white;
 }
 
@@ -258,7 +258,7 @@ a{
   width: 60px;
   height: 60px;
   border-radius: 1000px;
-  background-color:#d237f1;
+  background-color:#ba4ecf;
   border: none;
   cursor: pointer;
 
@@ -269,7 +269,7 @@ a{
   width: 100px;
   height: 100px;
   border-radius: 1000px;
-  background-color:#d237f1;
+  background-color:#ba4ecf;
   border: none;
   cursor: pointer;
 }
@@ -305,11 +305,11 @@ a{
 
 .modo-escuro .light.active,
 .modo-escuro .dark.active {
-    background-color:#d237f1;
+    background-color:#ba4ecf;
     border: transparent;
 }
 
 .modo-escuro{
-  background-color: black;
+  background-color: rgb(14, 14, 14);
   color: white;
 }
