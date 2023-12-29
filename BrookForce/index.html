@@ -17,28 +17,28 @@
                 <button class="botao" data-tab="solutions">Solutions</button>
             </div>
         </div>
-        <div class="about">
+        <div class="about content">
             <p>I'm DH, and I turn ideas into digital experiences that people love.</p>
         </div>
-    </div>
-    <div class="work">
-        <h2>Work</h2>
-        <p>Download resume <a href="#">here</a>.</p>
-    </div>
-    <div class="solutions"> 
-        <h2>Solutions</h2>
-        <p>Welcome, make yourself at home. I am a multidisciplinary web designer, designing and building beautiful digital products, for companies around the world.</p>
+        <div class="work content">
+            <h2>Work</h2>
+            <p>Download resume <a href="#">here</a>.</p>
+        </div>
+        <div class="solutions content"> 
+            <h2>Solutions</h2>
+            <p>Welcome, make yourself at home. I am a multidisciplinary web designer, designing and building beautiful digital products, for companies around the world.</p>
+        </div>
     </div>
 
 <script>
     const buttons = document.querySelectorAll('.botao');
 
-buttons.forEach(button => {
-    button.addEventListener('click', function() {
-        buttons.forEach(btn => btn.classList.remove('active'));
-        this.classList.add('active');
+    buttons.forEach(button => {
+        button.addEventListener('click', function() {
+            buttons.forEach(btn => btn.classList.remove('active'));
+            this.classList.add('active');
+        });
     });
-});
 </script>
 </body>
 </html>
