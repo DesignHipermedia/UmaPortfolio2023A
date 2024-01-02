@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>404 Not Found</title>
+</head>
+<body>
+    <div class="background-container">
+        <h1>404</h1>
+        <p>Sorry, the page you are looking for might be in another universe.</p>
+        <p>Go back to <a href="https://miro.medium.com/v2/resize:fit:640/format:webp/1*WpB-1uJaKyvY3Kb3SOsQfg.jpeg">home</a>.</p>
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/moon2.png" alt="">
+        <div class="stars"></div>
+        <div class="twinkling"></div>
+        <div class="clouds"></div>
+    </div>
+</body>
+</html>
