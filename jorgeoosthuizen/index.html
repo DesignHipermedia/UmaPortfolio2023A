@@ -70,7 +70,29 @@
                 </button></div>
             </div>
             </div>
+            <div class="linha"></div>
+            <div class="container3">
+            <h1>The work I do</h1>
+            <div class="menu-trabalho">
+                <button class="botaoTudo" :class="{ 'active': isActiveTab('Tudo') }" @click="setActiveTab('Tudo')">Tudo</button>
+                <button class="botaoDesign" :class="{ 'active': isActiveTab('Design') }" @click="setActiveTab('Design')">Design</button>
+                <button class="botaoDesenvolvimento" :class="{ 'active': isActiveTab('Desenvolvimento') }" @click="setActiveTab('Desenvolvimento')">Desenvolvimento</button>
+            
+        </div>
+    </div>
+    <div class="container4">
+    <img class="uideli" src="" alt="">
+        <div class="paragrafo3">3UIDeli.com
+    <p>Design + Development 2023</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br>
+    sed do eiusmod tempor incididunt ut labore et.</p></div>
 </div>
+
+
+
+
+</div>
+
         
         
             <script src="https://unpkg.com/vue@3.2.31/dist/vue.global.js"></script>

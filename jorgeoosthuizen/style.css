@@ -17,6 +17,23 @@ body{
     padding: 50px;
 }
 
+.container3 {
+  display: flex;
+  background-color: transparent;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 50px;
+}
+
+.container4 {
+  display: flex;
+  background-color: transparent;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 50px;
+}
 
 .curriculo{
     display: flex;
@@ -312,4 +329,188 @@ a{
 .modo-escuro{
   background-color: rgb(14, 14, 14);
   color: white;
+}
+
+.linha{
+    width: 80%; 
+    margin: 60px auto; 
+    border: 1px solid #000; 
+}
+
+.modo-escuro .linha{
+    width: 80%; 
+    margin: 60px auto; 
+    border: 1px solid #ba4ecf;
+}
+
+.menu-trabalho {
+  background-color: transparent;
+  width: fit-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.botaoTudo,
+.botaoDesign {
+  width: 150px;
+  height: 100px;
+  background-color: transparent;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  text-decoration: none;
+  box-shadow: inset 0 0 0 0 #5f1de5;
+  transition: ease-out 0.3s;
+  outline: none;
+  position: relative;
+  overflow: hidden;
+}
+
+.botaoDesenvolvimento {
+  width: 200px;
+  height: 100px;
+  background-color: transparent;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  text-decoration: none;
+  box-shadow: inset 0 0 0 0 #5f1de5;
+  transition: ease-out 0.3s;
+  outline: none;
+  position: relative;
+  overflow: hidden;
+}
+
+.modo-escuro .botaoTudo,
+.modo-escuro .botaoDesign{
+  width: 150px;
+  height: 100px;
+  background-color: transparent;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  text-decoration: none;
+  box-shadow: inset 0 0 0 0 #ba4ecf;
+  transition: ease-out 0.3s;
+  outline: none;
+  position: relative;
+  overflow: hidden;
+}
+
+.modo-escuro .botaoDesenvolvimento {
+  width: 200px;
+  height: 100px;
+  background-color: transparent;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  text-decoration: none;
+  box-shadow: inset 0 0 0 0 #ba4ecf;
+  transition: ease-out 0.3s;
+  outline: none;
+  position: relative;
+  overflow: hidden;
+}
+
+.botaoTudo:hover,
+.botaoDesign:hover,
+.botaoDesenvolvimento:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.botaoTudo:before,
+.botaoDesign:before,
+.botaoDesenvolvimento:before{
+  transition: 0.5s all ease;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  opacity: 0;
+  content: "";
+  background-color: #523dd7;
+}
+
+.modo-escuro .botaoTudo:before,
+.modo-escuro .botaoDesign:before,
+.modo-escuro .botaoDesenvolvimento:before{
+  transition: 0.5s all ease;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  opacity: 0;
+  content: "";
+  background-color: #ba4ecf;
+}
+
+.botaoTudo:hover:before,
+.botaoDesign:hover:before,
+.botaoDesenvolvimento:hover:before {
+  transition: 0.5s all ease;
+  border-radius: 10px;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  z-index: -1;
+}
+
+.modo-escuro .botaoTudo:hover:before,
+.modo-escuro .botaoDesign:hover:before,
+.modo-escuro .botaoDesenvolvimento:hover:before {
+  transition: 0.5s all ease;
+  border-radius: 10px;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  z-index: -1;
+}
+
+.botaoTudo.active,
+.botaoDesign.active,
+.botaoDesenvolvimento.active {
+  background-color: #523dd7;
+  color: white;
+  
+}
+
+.modo-escuro .botaoTudo.active,
+.modo-escuro .botaoDesign.active,
+.modo-escuro .botaoDesenvolvimento.active {
+  background-color: #ba4ecf;
+  color: white;
+}
+
+.titulo2{
+  display: flex;
 }
