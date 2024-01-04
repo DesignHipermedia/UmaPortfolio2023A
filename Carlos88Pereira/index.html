@@ -1,13 +1,285 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Design Hipermédia</title>
 
-    <h1>asuhdajkshdkajhsdkjh</h1>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Projecto HTML</title>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Design Hipermédia</title>
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
+
 <body>
-    <h1>Projeto 2</h1>
+  <div class="Slider_img">
+    <img
+      src="https://media.istockphoto.com/id/1306526412/pt/foto/men-working-in-laptop-at-office.jpg?s=2048x2048&w=is&k=20&c=YzGn1LXk1xO-6ScJbspyg_9xGfDB8QVaGdRIJdpnKE4=" />
+    <strong>
+      <p>© Carper</p>
+    </strong>
+    <div class="BotoesDireita">
+      <a href="#" class="myButton">About</a>
+      <a href="#" class="myButton">Work</a>
+      <a href="#" class="myButton">Solutions</a>
+    </div>
+  </div>
+
+  <div class="cabecalho">
+    <h1>
+      I'm Carlos Pereira, and I turn ideas into digital experiences that
+      people love.
+      </h1>
+  </div>
+
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br />sed do eiusmod
+    tempor incididunt ut labore et.
+  </p>
+
+  <div class="startproject">
+    <button class="btn">Start a Project!</button>
+    <div id="app">
+      <button @click="toggleMode">Day/Night Mode</button>
+    </div>
+  </div>
+
+  <div class="container1">
+    <h2>
+      Welcome, make yourself at home. I am a multidisciplinary web designer,
+      designing and building beautiful digital products, for companies around
+      the world.<br /><br /> I believe that design should be both functional and
+      aesthetically pleasing, and I am dedicated to delivering exceptional
+      user experiences through thoughtful design and meticulous attention to
+      detail.
+    </h2>
+  </div>
+
+  <div class="resume">
+    <button class="btn">Download Resume</button>
+  </div>
+
+
+
+  <div class="BotoesDireita2">
+    <h1>The work I do</h1>
+    <div class="workbuttons">
+      <a href="#" class="myButton">All</a>
+      <a href="#" class="myButton">Design</a>
+      <a href="#" class="myButton">Development</a>
+    </div>
+  </div>
+
+
+
+  <div id="app2">
+    <div v-for="(item, index) in items" :key="index" class="containerImagens">
+      <div class="fotos">
+        <img
+          :src="item.image"
+          @mouseover="animateImage(index, 'bounceIn')"
+          @mouseout="animateImage(index, 'bounceOut')"
+        />
+        <a :href="item.link" class="arrow-button" target="_blank">→</a>
+      </div>
+      <div class="textos">
+        <p>
+          <strong>{{ item.title }}</strong><br />
+          {{ item.subtitle }}<br />
+          {{ item.description }}
+        </p>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="containerImagens">
+    <div class="fotos">
+      <img src="https://cdn.pixabay.com/photo/2021/08/04/13/06/software-developer-6521720_1280.jpg"  />
+      <a href="https://your-link2.com" class="arrow-button" target="_blank">→</a>
+    </div>
+    <div class="textos">
+      <p>
+        <strong>Koto Studio</strong><br />
+
+        Development 2023<br />
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+        eiusmod tempor incididunt ut labore et.
+      </p>
+    </div>
+  </div>
+
+  <div class="containerImagens">
+    <div class="fotos">
+      <img
+        src="https://media.istockphoto.com/id/1226864194/pt/foto/programming-code-abstract-technology-background-of-software-developer-and-computer-script-3d.jpg?s=2048x2048&w=is&k=20&c=82p4keJ_esyKYoC9ixRiDNWZm6xUskbXS9NCD4KkOPc="
+         />
+        <a href="https://your-link3.com" class="arrow-button" target="_blank">→</a>
+    </div>
+    <div class="textos">
+      <p>
+        <strong>Black</strong> <br />
+        Development 2023<br />
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+        eiusmod tempor incididunt ut labore et.
+      </p>
+    </div>
+  </div>
+
+  <div class="containerImagens">
+    <div class="fotos">
+      <img src="https://cdn.pixabay.com/photo/2015/05/01/08/47/art-747921_1280.jpg" />
+      <a href="https://your-link4.com" class="arrow-button" target="_blank">→</a>
+    </div>
+    <div class="textos">
+      <p>
+        <strong>ReMarket</strong> <br />
+        Development 2023<br />
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+        eiusmod tempor incididunt ut labore et.
+      </p>
+    </div>
+  </div>
+
+  <div class="containerImagens">
+    <div class="fotos">
+      <img src="https://cdn.pixabay.com/photo/2013/12/22/15/30/motherboard-232515_1280.jpg" />
+      <a href="https://your-link5.com" class="arrow-button" target="_blank">→</a>
+    </div>
+    <div class="textos">
+      <p>
+        <strong> Another One </strong>
+        <br />
+        Development 2023<br />
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+        eiusmod tempor incididunt ut labore et.
+      </p>
+    </div>
+  </div>
+
+  <div class="containerImagens">
+    <div class="fotos">
+      <img src="https://cdn.pixabay.com/photo/2015/08/07/00/41/lg-878843_1280.jpg" />
+      <a href="https://your-link6.com" class="arrow-button" target="_blank">→</a>
+    </div>
+    <div class="textos">
+      <p>
+        <strong>Bleder Renders </strong>
+        <br />
+        Development 2023<br />
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+        eiusmod tempor incididunt ut labore et.
+      </p>
+    </div>
+  </div>
+
+  <div class="containerImagens">
+    <div class="fotos">
+      <img
+        src="https://media.istockphoto.com/id/1364096793/pt/foto/cathedral-of-le%C3%B3n-also-known-as-cathedral-of-santa-mar%C3%ADa-de-regla-de-le%C3%B3n.jpg?s=2048x2048&w=is&k=20&c=VlI2Jk8H4U-UGZbPXX_HGCxSSaTV7jWScGsel4vLwdw=" />
+        <a href="https://your-link7.com" class="arrow-button" target="_blank">→</a>
+    </div>
+    <div class="textos">
+      <p>
+        <strong>Koto Studio </strong> <br />
+        Development 2023<br />
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+        eiusmod tempor incididunt ut labore et.
+      </p>
+    </div>
+  </div>
+
+
+  <div class="loadmore">
+    <button class="btn">Load More</button>
+  </div>
+
+
+
+
+  <div class="dark-orange-background">
+    <h1>I can I help you with
+    </h1>
+
+
+    <div class="services-container">
+      <div class="service">
+        <p>01</p>
+        <h2>Design</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.</p>
+        <H3>Websites</H3>
+        <h3>Mobile Apps</h3>
+        <h3>Web apps
+        </h3>
+        <h3>Design systems
+        </h3>
+        <h3>Branding</h3>
+      </div>
+
+      <div class="service">
+        <p>02</p>
+        <h2>Development</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.</p>
+        <h3>Websites</h3>
+        <h3>Mobile apps
+        </h3>
+        <h3>Web apps
+        </h3>
+      </div>
+
+      <div class="service">
+        <p>03</p>
+        <h2>Full Package</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.</p>
+
+        <h3>Design + Development
+        </h3>
+      </div>
+    </div>
+
+    <h1>Get the Full Package, Design + Development with requests &
+      revisions. No expensive hourly billing. Flat monthly rate. Pause anytime.</h1>
+
+    <div class="price-container">
+      <span class="big-number">$<span class="big">2999</span></span>
+      <span class="small-text"> /month</span>
+    </div>
+    <h3>
+      <br\>Ideal for websites, web aps, and brand design projects, custom code solutions, blogs and
+
+        app dashboard design.
+    </h3>
+
+
+    <div class="Sliderultimo">
+      <img
+        src="https://media.istockphoto.com/id/1306526412/pt/foto/men-working-in-laptop-at-office.jpg?s=2048x2048&w=is&k=20&c=YzGn1LXk1xO-6ScJbspyg_9xGfDB8QVaGdRIJdpnKE4=" />
+      <strong>
+        <button class="btn">START A PROJECT!</button>
+      </strong>
+    </div>
+    <p>Don't know if it fits you or not? <a href="numero" class="talk-link">Let's have a talk</a>.</p>
+
+    <div class="social-media-section">
+      <h2>SOCIAL MEDIA</h2>
+      <hr class="divider">
+      <div class="social-links">
+        <a href="https://twitter.com/" target="_blank">Twitter</a>
+        <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
+        <a href="https://github.com/" target="_blank">GitHub</a>
+        <a href="https://dribbble.com/" target="_blank">Dribbble</a>
+      </div>
+    </div>
+
+  </div>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+  <script src="app.js"></script>
 </body>
+
 </html>
