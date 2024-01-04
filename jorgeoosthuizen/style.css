@@ -1,4 +1,6 @@
 body{
+  height: 100vh;
+  margin: 0;
 	padding: 50px;
 }
 
@@ -26,14 +28,16 @@ body{
   padding: 50px;
 }
 
-.container4 {
+.containerprojetos {
   display: flex;
   background-color: transparent;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   flex-wrap: wrap;
-  padding: 50px;
+  margin-bottom: 150px;
 }
+
 
 .curriculo{
     display: flex;
@@ -208,6 +212,11 @@ h3 {
   font-weight: lighter;
 }
 
+h4{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 40px;
+}
+
 a{
   font-family: Arial, Helvetica, sans-serif;
   font-size: 30px;
@@ -333,7 +342,7 @@ a{
 
 .linha{
     width: 80%; 
-    margin: 60px auto; 
+    margin: 30px auto; 
     border: 1px solid #000; 
 }
 
@@ -514,3 +523,33 @@ a{
 .titulo2{
   display: flex;
 }
+
+.image{
+  width: 500px;
+  height:400px;
+}
+
+
+.mais{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.botaomais{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100px;
+    height:60px;
+    padding: 15px;
+    border-radius: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    background-color:white;
+    color: black;
+    border: 1px lightslategray solid;
+    cursor: pointer;
+}
+
+
