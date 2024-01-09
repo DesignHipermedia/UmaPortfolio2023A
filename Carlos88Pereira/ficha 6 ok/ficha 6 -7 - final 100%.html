@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <div class="card card1">
+            <h2> Team Builder </h2>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero consequuntur delectus quibusdam fugit cum? Sapiente magni, optio possimus suscipit commodi veniam, reiciendis maxime recusandae voluptatum voluptatibus fuga quis illum perspiciatis.
+         <img src="./images/icon-team-builder.svg" alt ="">
+        </div>
+
+        <div class="card card2">
+            <h2> Karma</h2>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus consequuntur, rem, ea totam possimus quis earum neque eaque laboriosam consequatur distinctio minus accusantium repellat soluta repudiandae cupiditate porro illum natus!
+            <img src="./images/icon-karma.svg" alt ="">
+        </div>
+
+        <div class="card card3">
+            <h2> Supervisor </h2>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus consequuntur, rem, ea totam possimus quis earum neque eaque laboriosam consequatur distinctio minus accusantium repellat soluta repudiandae cupiditate porro illum natus!
+            <img src="./images/icon-supervisor.svg" alt ="">
+        </div>
+
+        <div class="card card4">
+            <h2> Calculator </h2>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus consequuntur, rem, ea totam possimus quis earum neque eaque laboriosam consequatur distinctio minus accusantium repellat soluta repudiandae cupiditate porro illum natus!
+            <img src="./images/icon-calculator.svg" alt ="">
+        </div>
+
+    </main>
+        <style>
+         
+
+            main{
+                display: grid; 
+                justify-content: center; 
+                align-items: center; 
+                grid-template-areas: 
+                '.  c2  .'
+                'c1 c2 c3'
+                'c1 c4 c3'
+                '.  c4 .'
+            }
+                
+        @media (max-width:600px){
+            main{
+                grid-template-areas: 
+                'c1'
+                'c2'
+                'c3'
+                'c4'
+            }
+            }
+
+            .card1{border-top: solid 5px blue;
+                grid-area: c1;
+
+            }
+            .card2{border-top: solid 5px red;
+                grid-area: c2;
+
+
+            }
+            .card3{border-top: solid 5px orange;
+                grid-area: c3;
+
+
+            }
+            .card4{border-top: solid 5px cyan;
+                grid-area: c4;
+
+
+            }
+
+            .card{
+                width: 350px; 
+                height: 250px; 
+                padding: 50px; 
+                margin: 10px;
+                border-radius: 15px;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+                justify-content: space-between;
+                box-shadow: 5px 5px 5px 5px rgb(0,0,0, .5);
+                background-color: white;
+                text-align: justify;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      
+            }
+            body{background-color: grey;
+            }
+            h2{
+                align-items: flex-start; 
+                margin: 0;
+            }
+
+
+
+
+
+            </style>
+</body>
+</html>
