@@ -28,6 +28,18 @@ body{
   padding: 50px;
 }
 
+.container4 {
+  display: flex;
+  background-color: #11111E;
+  color: white;
+  font-family:Arial, Helvetica, sans-serif ;
+  flex-direction:column;
+  justify-content:space-between;
+  flex-wrap: wrap;
+  padding: 50px;
+  margin-top: 20px;
+}
+
 .containerprojetos {
   display: flex;
   background-color: transparent;
@@ -552,4 +564,82 @@ a{
     cursor: pointer;
 }
 
+.card{
+    display: flex;
+    flex-direction: column;
+    width:fit-content;
+  }
 
+.cards{
+  display: flex;
+  flex-direction: row;
+  margin-top: 30px;
+}
+
+.num{
+  color: gray;
+  opacity: 60%;
+}
+
+.linhacard{
+  width: 90%; 
+  margin: 30px auto; 
+  margin-left: 0;
+  border: 1px solid gray; 
+  opacity: 60%;
+}
+
+.comecar2{
+  width: 200px;
+  height: 80px;
+  border-radius: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  background-color:white;
+  color: black;
+  border: none;
+  cursor: pointer;
+}
+
+.setacima2{
+  width: 80px;
+  height: 80px;
+  border-radius: 1000px;
+  background-color:#523dd7;
+  border: none;
+  cursor: pointer;
+}
+
+.botoesfooter{
+  display: flex;
+  margin-top: 30px;
+}
+
+.profilemini{
+  width: 100px;
+  height: 100px;
+  border-radius: 1000px;
+  margin-right: 20px;
+}
+
+.linhasocialmedia{
+  width: 100%; 
+  margin: 20px auto; 
+  margin-left: 0;
+  border: 1px solid gray; 
+  opacity: 60%;
+}
+
+.socialmedia{
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.call{
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  gap: 10px;
+}
