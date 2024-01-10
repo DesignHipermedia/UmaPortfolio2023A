@@ -1,7 +1,7 @@
 body{
-  height: 100vh;
+  width:100%;
   margin: 0;
-	
+	font-family: Arial, Helvetica, sans-serif;
 }
 
 .container {
@@ -16,6 +16,7 @@ body{
 .container2{
     display: flex;
     justify-content: flex-end;
+    flex-wrap: wrap;
     padding: 50px;
 }
 
@@ -47,7 +48,7 @@ body{
   justify-content:space-between;
   align-items: center;
   flex-wrap: wrap;
-  margin: 150px;
+  margin: 50px;
 }
 
 
@@ -61,6 +62,10 @@ body{
 .profileimage {
   display: flex;
   gap:50px;
+}
+
+.image{
+  margin:20px;
 }
 
 .navegacao {
@@ -240,7 +245,7 @@ a{
 }
 
 .primeiroparagrafo {
-  padding-left: 20px;
+  margin:50px;
 }
 
 .segundoparagrafo{
@@ -252,8 +257,8 @@ a{
 .paragrafo5{
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
   font-family: Arial, Helvetica, sans-serif;
+  margin:0;
 }
 
 .butoesprojecto{
@@ -280,6 +285,11 @@ a{
     color: white;
     border: none;
     cursor: pointer;
+}
+
+.modo-escuro .comecar{
+  background-color: white;
+  color:black;
 }
 
 .setacima{
@@ -569,10 +579,14 @@ a{
     border-radius: 50px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
-    background-color:white;
-    color: black;
-    border: 1px lightslategray solid;
+    background-color:#5f1de5;
+    color: white;
+    border: none;
     cursor: pointer;
+}
+
+.modo-escuro .botaomais{
+  background-color: #ba4ecf;
 }
 
 .card{
@@ -584,6 +598,7 @@ a{
 .cards{
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   margin-top: 30px;
 }
 
@@ -622,6 +637,11 @@ a{
   border: none;
   cursor: pointer;
 }
+
+.modo-escuro .setacima2{
+  background-color: #ba4ecf;
+}
+
 
 .botoesfooter{
   display: flex;
