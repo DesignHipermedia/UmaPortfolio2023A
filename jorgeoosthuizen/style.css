@@ -44,10 +44,10 @@ body{
   display: flex;
   background-color: transparent;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content:space-between;
   align-items: center;
   flex-wrap: wrap;
-  margin-bottom: 150px;
+  margin: 150px;
 }
 
 
@@ -249,6 +249,13 @@ a{
     font-weight: lighter;
 }
 
+.paragrafo5{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 .butoesprojecto{
   display: flex;
   justify-content:space-between;
@@ -267,6 +274,7 @@ a{
     height: 100px;
     border-radius: 50px;
     font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
     font-size: 20px;
     background-color:#11111E;
     color: white;
@@ -537,6 +545,8 @@ a{
 }
 
 .image{
+  display: flex;
+  justify-content: flex-start;
   width: 500px;
   height:400px;
 }
@@ -546,6 +556,7 @@ a{
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 50px;
 }
 
 .botaomais{
@@ -579,6 +590,7 @@ a{
 .num{
   color: gray;
   opacity: 60%;
+  font-weight: bolder;
 }
 
 .linhacard{
@@ -590,11 +602,12 @@ a{
 }
 
 .comecar2{
-  width: 200px;
+  width: 300px;
   height: 80px;
   border-radius: 50px;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 15px;
+  font-weight: bolder;
+  font-size: 20px;
   background-color:white;
   color: black;
   border: none;
@@ -635,6 +648,7 @@ a{
   flex-direction: column;
   margin-top: 100px;
   font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
 }
 
 .call{
@@ -642,4 +656,8 @@ a{
   align-items: center;
   margin-top: 20px;
   gap: 10px;
+}
+
+.linksfooter{
+  margin-top: 20px;
 }
