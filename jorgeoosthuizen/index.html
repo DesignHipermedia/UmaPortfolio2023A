@@ -20,7 +20,7 @@
                 <nav>
                 <div class="menu">
                     <button class="botaosobre" :class="{ 'active': isActiveTab('sobre') }" @click="setActiveTab('sobre')">Sobre</button>
-                    <button class="botaotrabalhos" :class="{ 'active': isActiveTab('trabalhos') }" @click="setActiveTab('trabalhos')">Trabalhos</button>
+                    <button class="botaotrabalhos" :class="{ 'active': isActiveTab('trabalhos') }" @click="setActiveTab('trabalhos'); handleClick()">Trabalhos</button>
                     <button class="botaosolucoes" :class="{ 'active': isActiveTab('solucoes') }" @click="setActiveTab('solucoes')">Soluções</button>
                 
             </div>
@@ -72,7 +72,7 @@
             </div>
             </div>
             <div class="linha"></div>
-            <div class="container3">
+            <div class="container3" ref="targetRef">
             <h1>The work I do</h1>
             <div class="menu-trabalho">
                 <button class="botaoTudo" :class="{ 'active': isActiveTab('Tudo') }" @click="setActiveTab('Tudo')">Tudo</button>
@@ -224,37 +224,40 @@ app dashboard design.</h3></div>
             <script src="https://kit.fontawesome.com/c2818a0d76.js" crossorigin="anonymous"></script>
             <script>
                 Vue.createApp({
-                    data() {
-                        return {
-                            activeTab: 'sobre',
-                            activeMode: 'light', 
-                        };
-                    },
-                    methods: {
-                        setActiveTab(tab) {
-                            this.activeTab = tab;
-                        },
-                        isActiveTab(tab) {
-                            return this.activeTab === tab;
-                        },
-                        setActiveMode(mode) {
-                            this.activeMode = mode;
-                        },
-                        isActiveMode(mode) {
-                            return this.activeMode === mode;
-                        }
-                    }
-                    
-                }).mount('body');
-
-                function modoEscuro() {
-                var element = document.body;
-                element.classList.add("modo-escuro");
+            data() {
+                return {
+                    activeTab: 'sobre',
+                    activeMode: 'light', 
+                };
+            },
+            methods: {
+                setActiveTab(tab) {
+                    this.activeTab = tab;
+                },
+                isActiveTab(tab) {
+                    return this.activeTab === tab;
+                },
+                setActiveMode(mode) {
+                    this.activeMode = mode;
+                },
+                isActiveMode(mode) {
+                    return this.activeMode === mode;
+                },
+                handleClick() {
+                    this.$refs.targetRef.scrollIntoView({ behavior: 'smooth' });
                 }
-                function modoNormal() {
-                var element = document.body;
-                element.classList.remove("modo-escuro");
-}
+            },
+        }).mount('body');
+
+        function modoEscuro() {
+            var element = document.body;
+            element.classList.add("modo-escuro");
+        }
+
+        function modoNormal() {
+            var element = document.body;
+            element.classList.remove("modo-escuro");
+        }
             </script>
 </body>
 </html>
