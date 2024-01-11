@@ -6,7 +6,14 @@
     <title>Design Hipermédestteia</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://unpkg.com/open-props"/>
-    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js">
+        import { ref } from "vue";
+        function notify() {
+          alert('You Have been subscribed to the newsletter.')
+        }
+      </script>
 </head>
 <body>
     <header>
@@ -15,10 +22,10 @@
                 <img class="logo" src="https://avatars.githubusercontent.com/u/56469588?u=2c756c18c2b65a5b2de9ee29fc614e0d717cb90a&v=4" alt="logo">
                 <p class="textologo">© Tiago Pedra</p>
             </div>
-            <div>
-                <button href="../Erro.html" class="botao">About</button>
-                <button href="../Erro.html" class="botao">Work</button>
-                <button href="../Erro.html" class="botao">Solutions</button>
+            <div class="buttongroup">
+                <button href="../Erro.html" class="botaoabt"><div class="textologonav">About</div></button>
+                <button href="../Erro.html" class="botaowork"><div class="textologonav">Work</div></button>
+                <button href="../Erro.html" class="botaosolu"><div class="textologonav">Solutions</div></button>
             </div>
         </div>
     </header>
@@ -30,8 +37,8 @@
     </div>
     <div>
         <div class="startproject">
-            <button href="../Erro.html" class="start" >Start a project</button>
-            <button href="../Erro.html" class="botao1"><svg style="width:16px" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="w-6 h-6">
+            <button href="../Erro.html" class="btn-11" ><div class="textobtn-11">Start a project</div></button>
+            <button href="../Erro.html" class="botaost"><svg style="width:16px" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="w-6 h-6">
                 <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
               </svg>
               </button>
@@ -59,14 +66,15 @@
             attention to detail.
             Download resume
             The work</div>
-        <div class="download">
-            <div class=""><a class="welcomdn" href="../Erro.html">Download resume</a></div>
-        <button href="../Erro.html" style="margin-left: 5px; display:flex;align-items:center;" class="botao2"><svg style="width:100%px" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="w-6 h-6">
-            <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
-        </svg>
-        </button>
+        
     </div>
-    </div>
+    <div class="download">
+        <div class=""><a class="welcomdn" href="../Erro.html">Download resume</a></div>
+    <button href="../Erro.html" style="margin-left: 5px; display:flex;align-items:center;" class="botao2"><svg style="width:100%px" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="w-6 h-6">
+        <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+    </svg>
+    </button>
+</div>
     
             <div class="h1work">The work i do 
                 <div class="botoes4">
@@ -85,7 +93,7 @@
         <div class="text" style="margin-left: 40px;">
             <div class="workh1">UIDeli.com</div>
             <div class="workp">Design + Development 2023</div>
-            <div class="workp" style="margin-top: 20px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            <div class="workp2" style="margin-top: 20px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                 sed do eiusmod tempor incididunt ut labore et.</div>
         </div>
     </div>
@@ -99,7 +107,7 @@
         <div class="text" style="margin-left: 40px;">
             <div class="workh1">Koto Studio</div>
             <div class="workp">Development 2023</div>
-            <div class="workp" style="margin-top: 20px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            <div class="workp2" style="margin-top: 20px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                 sed do eiusmod tempor incididunt ut labore et.</div>
         </div>
     </div>
@@ -113,7 +121,7 @@
         <div class="text" style="margin-left: 40px;">
             <div class="workh1">Switch Black</div>
             <div class="workp">Design 2023</div>
-            <div class="workp" style="margin-top: 20px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            <div class="workp2" style="margin-top: 20px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                 sed do eiusmod tempor incididunt ut labore et.</div>
         </div>
     </div>
@@ -127,7 +135,7 @@
         <div class="text" style="margin-left: 40px;">
             <div class="workh1">Remarket</div>
             <div class="workp">Development 2023</div>
-            <div class="workp" style="margin-top: 20px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            <div class="workp2" style="margin-top: 20px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                 sed do eiusmod tempor incididunt ut labore et.</div>
         </div>
     </div>
@@ -141,7 +149,7 @@
         <div class="text" style="margin-left: 40px;">
             <div class="workh1">Another One</div>
             <div class="workp">Development 2023</div>
-            <div class="workp" style="margin-top: 20px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            <div class="workp2" style="margin-top: 20px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                 sed do eiusmod tempor incididunt ut labore et.</div>
         </div>
     </div>
@@ -155,7 +163,7 @@
         <div class="text" style="margin-left: 40px;">
             <div class="workh1">Blender Renders</div>
             <div class="workp">Design + Development 2023</div>
-            <div class="workp" style="margin-top: 20px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            <div class="workp2" style="margin-top: 20px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                 sed do eiusmod tempor incididunt ut labore et.</div>
         </div>
     </div>
@@ -169,12 +177,12 @@
     
     
     <div class="footer">
-        <h1 class="texto">I can I help you with</h1>
+        <h1 class="textoft3">I can I help you with</h1>
         <div class="cartoes">
-            <div class="card">
+            <div class="cardft">
                 <p class="topicos">01</p>
                 <div class="titulocardft">Design</div> 
-                <p class="textoft">orem ipsum dolor sit amet, consectetur
+                <p class="textoft">Lorem ipsum dolor sit amet, consectetur
                     adipiscing elit, sed do eiusmod tempor
                     incididunt ut labore et.</p> 
                 <div class="pol">Websites</div>
@@ -183,20 +191,20 @@
                 <div class="pol">Design systems</div>
                 <div class="pol">Branding</div>
             </div>
-            <div class="card">
+            <div class="cardft">
                 <p class="topicos">02</p>
                 <div class="titulocardft">Development</div>
-                <p class="textoft">orem ipsum dolor sit amet, consectetur
+                <p class="textoft">Lorem ipsum dolor sit amet, consectetur
                     adipiscing elit, sed do eiusmod tempor
                     incididunt ut labore et.</p> 
                     <div class="pol">Websites</div>
                     <div class="pol">Mobile apps</div>
                     <div class="pol">Web apps</div> 
             </div>
-            <div class="card">
+            <div class="cardft">
                 <p class="topicos">03</p>
-                <div>Full Package</div>
-                <p class="textoft">orem ipsum dolor sit amet, consectetur
+                <div class="titulocardft">Full Package</div>
+                <p class="textoft">Lorem ipsum dolor sit amet, consectetur
                     adipiscing elit, sed do eiusmod tempor
                     incididunt ut labore et.</p> 
                 <div class="pol">Design + Development</div>
@@ -206,24 +214,24 @@
             revisions. No expensive hourly billing. Flat monthly rate.
             Pause anytime.</div>
         <div>
-            <span style="margin-left: 70px;font-size: 25px;">2999</span>&nbsp;<span style="margin-left: 3px;font-size: 10px;">/month</span>
+            <span class="priceee">2999</span>&nbsp;<span style="margin-left: 3px;font-size: 10px;">/month</span>
         </div>
         <div class="textoft2">Ideal for websites, web aps, and brand design projects, custom code solutions, blogs and app dashboard design.</div>
 
         <div class="startfootercont">
             <img class="logofooter" src="https://avatars.githubusercontent.com/u/56469588?u=2c756c18c2b65a5b2de9ee29fc614e0d717cb90a&v=4" alt="logo">   
             <div class="botoesft">
-                <button class="startfooter" href="../Erro.html">ola</button>
-                <button href="../Erro.html" style="margin-left: 5px; display:flex;align-items:center;" class="botao1"><svg style="width:16px" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="w-6 h-6">
+                <button class="startfooter" href="../Erro.html"><div class="stft">Start a project</div></button>
+                <button href="../Erro.html" style="margin-left: 5px; display:flex;align-items:center;" class="botao1"><svg style="width:16px" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="w-6 h-6 ola">
                     <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
                 </svg>
                 </button>
             </div>
         </div>
         <div class="textoft2">Don’t know if fits you or not? <a href="#" style="color: #fff; margin-top: 15px;">Let’s have a call</a> </div>
-        <div class="sm">SOCIAL MEDIA</div>
+        <div class="sm"><div>SOCIAL MEDIA</div></div>
         <div class="ftlinkcont">
-            <a class="ftlink"  href="../Erro.html">Twiter</a>
+            <a class="ftlink sub" href=""  @click.prevent="notify">Twitter</a>
             <a  class="ftlink" href="../Erro.html">Linkedin</a>
             <a  class="ftlink" href="../Erro.html">github</a>
             <a  class="ftlink" href="../Erro.html">Dribbble</a>
@@ -232,6 +240,6 @@
 
 
     </div>
- 
+      
 </body>
 </html>
