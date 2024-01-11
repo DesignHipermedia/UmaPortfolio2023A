@@ -62,6 +62,7 @@ body{
 .profileimage {
   display: flex;
   gap:50px;
+  position: relative;
 }
 
 .image{
@@ -592,7 +593,7 @@ a{
 .card{
     display: flex;
     flex-direction: column;
-    width:fit-content;
+    padding:70px 50px ;
   }
 
 .cards{
@@ -609,7 +610,7 @@ a{
 }
 
 .linhacard{
-  width: 90%; 
+  width: 100%; 
   margin: 30px auto; 
   margin-left: 0;
   border: 1px solid gray; 
@@ -680,4 +681,183 @@ a{
 
 .linksfooter{
   margin-top: 20px;
+}
+
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+
+.button-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.button-container a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #5f1de5;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.image-container:hover .button-container {
+  opacity: 1;
+}
+
+@media screen and (max-width:992px) {
+
+ 
+  .containerprojetos{
+    padding:0px;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .profile{
+    width: 150px;
+    height: 150px;
+    border-radius: 200px;
+  }
+
+  .menu{
+      width:320px;
+      gap:10px;
+      margin-top:50px;
+  }
+
+.botaosobre,
+.botaotrabalhos,
+.botaosolucoes{
+      height: 80px;
+}
+
+.butoesprojeto{
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-end;
+}
+
+.projeto{
+  width:400px;
+}
+
+.comecar{
+  width:200px;
+  height:100px;
+  border-radius: 50px;
+  font-size: 15px;
+}
+
+
+.alternarmodo{
+  display:none;
+}
+
+
+h1 {
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 30px;
+}
+
+h2 {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	font-weight: lighter;
+  }
+
+h3 {
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: lighter;
+}
+
+h4{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+a{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  color:black
+}
+
+.segundoparagrafo{
+  font-size: 25px;
+}
+
+.menu-trabalho{
+  width: 328px;
+  gap:10px;
+  margin-top: 10px;
+}
+
+.botaoTudo,
+.botaoDesign{
+    width:150px;
+    height: 80px;
+}
+
+.botaoDesenvolvimento{
+  width: 250px;
+  height: 80px;
+  font-size: 15px;
+}
+
+.image{
+  width:328px;
+  height: 300px;
+  justify-content: center;
+}
+
+.card{
+  width:300px;
+  padding: 0px;
+  margin: 0px;
+}
+
+.p3{
+  display: none;
+}
+
+.terceiroparagrafo{
+  width: 328px;
+}
+
+.botoesfooter{
+  width: 328px;
+}
+
+.profilemini{
+  width: 40px;
+  height: 40px;
+}
+
+.comecar2{
+  width: 200px;
+  height: 40px;
+  font-size: 15px;
+}
+
+.setacima2{
+  width: 40px;
+  height: 40px;
+}
+.call{
+  flex-wrap: wrap;
+}
+
+.linksfooter{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
 }

@@ -20,7 +20,7 @@
                 <nav>
                 <div class="menu">
                     <button class="botaosobre" :class="{ 'active': isActiveTab('sobre') }" @click="setActiveTab('sobre')">Sobre</button>
-                    <button class="botaotrabalhos" :class="{ 'active': isActiveTab('trabalhos') }" @click="setActiveTab('trabalhos')">Trabalhos</button>
+                    <button class="botaotrabalhos" :class="{ 'active': isActiveTab('trabalhos') }" @click="setActiveTab('trabalhos'); handleClick()">Trabalhos</button>
                     <button class="botaosolucoes" :class="{ 'active': isActiveTab('solucoes') }" @click="setActiveTab('solucoes')">Soluções</button>
                 
             </div>
@@ -72,7 +72,7 @@
             </div>
             </div>
             <div class="linha"></div>
-            <div class="container3">
+            <div class="container3" ref="targetRef">
             <h1>The work I do</h1>
             <div class="menu-trabalho">
                 <button class="botaoTudo" :class="{ 'active': isActiveTab('Tudo') }" @click="setActiveTab('Tudo')">Tudo</button>
@@ -82,7 +82,12 @@
         </div>
     </div>
     <div class="containerprojetos">
-    <img class="image" src="https://images.unsplash.com/photo-1530435460869-d13625c69bbf?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="uideli">
+        <div class="image-container">
+            <img class="image" src="https://images.unsplash.com/photo-1530435460869-d13625c69bbf?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="uideli">
+            <div class="button-container">
+              <a href="uideli.html">Ver mais </a>
+            </div>
+          </div>
         <div class="paragrafo5"> 
             <h4>3UIDeli.com</h4>
         Design + Development 2023
@@ -146,7 +151,7 @@
     <div class="num">01</div>
     <div class="linhacard"></div>
     <h4>Design</h4>
-    <h3>Lorem ipsum dolor sit amet, consectetur
+    <h3>Lorem ipsum dolor sit amet, consectetur<br>
     adipiscing elit, sed do eiusmod tempor<br>
     incididunt ut labore et.</h3>
 <h2><p>Websites</p>
@@ -159,7 +164,7 @@
     <div class="num">02</div>
     <div class="linhacard"></div>
     <h4>Development</h4>
-    <h3>Lorem ipsum dolor sit amet, consectetur
+    <h3>Lorem ipsum dolor sit amet, consectetur<br>
         adipiscing elit, sed do eiusmod tempor<br>
         incididunt ut labore et.</h3>
 <h2><p>Websites</p>
@@ -170,7 +175,7 @@
  <div class="num">03</div>
 <div class="linhacard"></div>
 <h4>Full Package</h4>
-<h3>Lorem ipsum dolor sit amet, consectetur
+<h3>Lorem ipsum dolor sit amet, consectetur<br>
     adipiscing elit, sed do eiusmod tempor<br>
     incididunt ut labore et.</h3>
 <h2><p>Design + Development</p></h2>
@@ -219,37 +224,40 @@ app dashboard design.</h3></div>
             <script src="https://kit.fontawesome.com/c2818a0d76.js" crossorigin="anonymous"></script>
             <script>
                 Vue.createApp({
-                    data() {
-                        return {
-                            activeTab: 'sobre',
-                            activeMode: 'light', 
-                        };
-                    },
-                    methods: {
-                        setActiveTab(tab) {
-                            this.activeTab = tab;
-                        },
-                        isActiveTab(tab) {
-                            return this.activeTab === tab;
-                        },
-                        setActiveMode(mode) {
-                            this.activeMode = mode;
-                        },
-                        isActiveMode(mode) {
-                            return this.activeMode === mode;
-                        }
-                    }
-                    
-                }).mount('body');
-
-                function modoEscuro() {
-                var element = document.body;
-                element.classList.add("modo-escuro");
+            data() {
+                return {
+                    activeTab: 'sobre',
+                    activeMode: 'light', 
+                };
+            },
+            methods: {
+                setActiveTab(tab) {
+                    this.activeTab = tab;
+                },
+                isActiveTab(tab) {
+                    return this.activeTab === tab;
+                },
+                setActiveMode(mode) {
+                    this.activeMode = mode;
+                },
+                isActiveMode(mode) {
+                    return this.activeMode === mode;
+                },
+                handleClick() {
+                    this.$refs.targetRef.scrollIntoView({ behavior: 'smooth' });
                 }
-                function modoNormal() {
-                var element = document.body;
-                element.classList.remove("modo-escuro");
-}
+            },
+        }).mount('body');
+
+        function modoEscuro() {
+            var element = document.body;
+            element.classList.add("modo-escuro");
+        }
+
+        function modoNormal() {
+            var element = document.body;
+            element.classList.remove("modo-escuro");
+        }
             </script>
 </body>
 </html>

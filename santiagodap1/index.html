@@ -48,7 +48,7 @@
           <button class="botoes2" id="b-1">
             Start a project
           </button>
-          <button class="botoes2 circulares" id="b-2">
+          <button class="botoes2 circulares botao-centrado" id="b-2">
             <div>
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                 <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
@@ -57,14 +57,14 @@
           </button>
         </div>
         <div class="botton-der">
-          <button class="botoes2 circulares" id="b-3">
+          <button onclick="dark()" :class="{ 'active': isActiveMode('dark') }" @click="setActiveMode('dark')" type="button" class="botoes2 circulares botao-centrado dark" id="b-3">
             <div>
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z" />
               </svg> 
             </div>        
           </button>
-          <button class="botoes2 circulares" id="b-4">
+          <button onclick="light()" :class="{ 'active': isActiveMode('light') }" @click="setActiveMode('light')" type="button" class="botoes2 circulares botao-centrado light" id="b-4">
             <div>
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z" />
@@ -92,8 +92,8 @@
             <a class="resume" href="ruta/del/archivo/archivo.txt" download="nombre_archivo.txt">
               Download resume
             </a>
-            <!-- recordar poner nombre del archivo e ruta -->
-            <button class="botoes2 circulares" id="b-resume">
+            
+            <button class="botoes2 circulares botao-centrado" id="b-resume">
               <div>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                   <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
@@ -127,8 +127,9 @@
 
         <div class="seu-trabalho">
           <div class="imagem-trabalho">
-            <img src="https://images.unsplash.com/photo-1601425276965-bdb69f1f3977?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8bm8lMjBjb3B5cmlnaHR8ZW58MHx8MHx8fDA%3D" alt="">
-
+            <a href="">
+              <img src="https://images.unsplash.com/photo-1601425276965-bdb69f1f3977?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8bm8lMjBjb3B5cmlnaHR8ZW58MHx8MHx8fDA%3D" alt="">
+            </a>
           </div>
         
           <div class="trabalho">
@@ -141,8 +142,9 @@
 
         <div class="seu-trabalho">
           <div class="imagem-trabalho">
-            <img src="https://images.unsplash.com/photo-1601425276965-bdb69f1f3977?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8bm8lMjBjb3B5cmlnaHR8ZW58MHx8MHx8fDA%3D" alt="">
-
+            <a href="">
+              <img src="https://images.unsplash.com/photo-1601425276965-bdb69f1f3977?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8bm8lMjBjb3B5cmlnaHR8ZW58MHx8MHx8fDA%3D" alt="">
+            </a>
           </div>
         
           <div class="trabalho">
@@ -155,8 +157,9 @@
 
         <div class="seu-trabalho">
           <div class="imagem-trabalho">
-            <img src="https://images.unsplash.com/photo-1601425276965-bdb69f1f3977?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8bm8lMjBjb3B5cmlnaHR8ZW58MHx8MHx8fDA%3D" alt="">
-
+            <a href=""> 
+              <img src="https://images.unsplash.com/photo-1601425276965-bdb69f1f3977?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8bm8lMjBjb3B5cmlnaHR8ZW58MHx8MHx8fDA%3D" alt="">
+            </a>
           </div>
         
           <div class="trabalho">
@@ -169,8 +172,9 @@
 
         <div class="seu-trabalho">
           <div class="imagem-trabalho">
-            <img src="https://images.unsplash.com/photo-1601425276965-bdb69f1f3977?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8bm8lMjBjb3B5cmlnaHR8ZW58MHx8MHx8fDA%3D" alt="">
-
+            <a href="">
+              <img src="https://images.unsplash.com/photo-1601425276965-bdb69f1f3977?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8bm8lMjBjb3B5cmlnaHR8ZW58MHx8MHx8fDA%3D" alt="">
+            </a>
           </div>
         
           <div class="trabalho">
@@ -183,8 +187,9 @@
 
         <div class="seu-trabalho">
           <div class="imagem-trabalho">
-            <img src="https://images.unsplash.com/photo-1601425276965-bdb69f1f3977?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8bm8lMjBjb3B5cmlnaHR8ZW58MHx8MHx8fDA%3D" alt="">
-
+            <a href="">
+              <img src="https://images.unsplash.com/photo-1601425276965-bdb69f1f3977?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8bm8lMjBjb3B5cmlnaHR8ZW58MHx8MHx8fDA%3D" alt="">
+            </a>
           </div>
         
           <div class="trabalho">
@@ -197,8 +202,9 @@
 
         <div class="seu-trabalho">
           <div class="imagem-trabalho">
-            <img src="https://images.unsplash.com/photo-1601425276965-bdb69f1f3977?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8bm8lMjBjb3B5cmlnaHR8ZW58MHx8MHx8fDA%3D" alt="">
-
+            <a href="">
+              <img src="https://images.unsplash.com/photo-1601425276965-bdb69f1f3977?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8bm8lMjBjb3B5cmlnaHR8ZW58MHx8MHx8fDA%3D" alt="">
+            </a>
           </div>
         
           <div class="trabalho">
@@ -237,11 +243,9 @@
             adipiscing elit, sed do eiusmod tempor <br>
             incididunt ut labore et.</p>
           
-          <p class="texto2-footer">Websites <br>
-            Mobile apps <br> 
-            Web apps <br>
-            Design systems <br>
-            Branding </p>
+          <div class="texto2-footer"><p>Websites</p><p>Mobile apps</p><p>Web apps</p><p>Design systems</p><p>Branding</p>
+           
+          </div>
             
         </div>
 
@@ -255,10 +259,7 @@
             adipiscing elit, sed do eiusmod tempor <br>
             incididunt ut labore et.</p>
           
-          <p class="texto2-footer">Websites <br>
-            Mobile apps <br>
-            Web apps 
-            
+          <div class="texto2-footer"><p>Websites</p><p>Mobile apps</p><p>Web apps</p></div>
         </div>
 
         <div class="container-footer">
@@ -271,20 +272,91 @@
             adipiscing elit, sed do eiusmod tempor <br>
             incididunt ut labore et.</p>
           
-          <p class="texto2-footer">Websites <br>
-            Mobile apps <br>
-            Web apps <br>
-            Design systems <br>
-            Branding </p>
+          <div class="texto2-footer"><p>Websites</p><p>Mobile apps</p><p>Web apps</p></div>
             
         </div>
 
 
       </div>
 
+      <p class="texto2-footer margin-top">Get the Full Package, Design + Development with requests & <br>
+        revisions. No expensive hourly billing. Flat monthly rate. <br>
+        Pause anytime. <br>
+        </p>
+      <div class="dinheiro">
+        <p class="qt">$2999</p>
+        <p class="month">/month</p>
+      </div>
+      
+      <p id="texto-depois-dinheiro">Ideal for websites, web aps, and brand design projects, custom code solutions, blogs and <br>
+        app dashboard design.</p>
+
+      
+      <div class="container-footer2">
+        <img class="imagem-rounded img-small" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGdABozucSKzPA9_PzFlN17sq0VmUIZjO4rUJFWKgV5PIlI8fW" alt="">
+      
+        <button class="botao-footer">
+          Start a project
+        </button>
+        
+        <button class="botao-footer2 botao-centrado" >
+          <div>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+            </svg>
+          </div>
+        </button>
+      </div>
+
+      <div class="container-footer3">
+        <p id="antes-subrayado">Don t know if fits you or not? </p>
+        <p id="subrayado">  Let s have a call</p>
+      </div>
+      
+
+      <p class="n-footer margin-top">SOCIAL MEDIA</p>
+      <div class="linha-footer"></div>
+
+      <div class="container-footer4">
+        <p class="margin-right">Twitter</p>
+        <p class="margin-right">Linkedin</p>
+        <p class="margin-right">Github</p>
+        <p class="margin-right">Dribbble</p>
+      </div>
     </div>
+
+    
     
   </footer>
+  <script src="https://unpkg.com/vue@3.2.31/dist/vue.global.js"></script>
+  <script>
+    Vue.createApp({
+        data() {
+            return {
+                activeMode: 'light', 
+            };
+        },
+        methods: {
+            setActiveMode(mode) {
+                this.activeMode = mode;
+            },
+            isActiveMode(mode) {
+                return this.activeMode === mode;
+            }
+        }
+        
+    }).mount('body');
+
+    function dark() {
+    var element = document.body;
+    element.classList.add("darkmode");
+    }
+    function light() {
+    var element = document.body;
+    element.classList.remove("darkmode");
+}
+</script>
+  
 
 </body>
 

@@ -175,6 +175,25 @@
 .imagem-trabalho{
   height: auto;
   width: 600px;
+  position: relative;
+  display: inline-block;
+}
+.imagem-trabalho a::before {
+  content: 'View';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(70, 0, 128); 
+  color: white;
+  border-radius: 50%;
+  padding: 40px; 
+  opacity: 0;
+  z-index: 2;
+  transition: opacity 0.3s ease-in-out;
+}
+.imagem-trabalho a:hover::before {
+  opacity: 1;
 }
 .titulo-trabalho{
   font-weight: 600;
@@ -191,10 +210,11 @@
 }
 footer{
   background-color: #1c1c24;
-  
+  padding-top: 2px;
+  padding-bottom: 2px;
 }
 .footer{
-  margin-top: 300px;
+  margin: 120px;
 }
 .titulo-footer{
   margin-top: 300px;
@@ -210,10 +230,10 @@ footer{
 .container-footer{
   display: flex;
   flex-direction: column;
-  
+  width: 390px;
 }
 .linha-footer{
-  width: 390px;
+  width: 90%;
   border: solid gray 1px;
   
 }
@@ -233,6 +253,114 @@ footer{
 }
 .texto2-footer{
   color: white;
-  font-size: 30px;
+  font-size: 27px;
+ 
+}
+.texto2-footer p{
   margin-top: 20px;
+}
+.margin-top{
+  margin-top: 90px;
+}
+.dinheiro{
+  display: flex; 
+  margin-top: 50px;
+}
+.qt{
+  font-size: 69px;
+  color: white;
+}
+.month{
+  font-size: 16px;
+  color: rgb(190, 190, 190);
+  margin-left: 30px;
+  margin-top: 65px;
+}
+#texto-depois-dinheiro{
+  margin-top: 50px;
+  color: white;
+  font-size: 16px;
+}
+.container-footer2{
+  display: flex;
+  align-items: center;
+  height: 80px;
+  margin-top: 50px;
+  width: 30%;
+  justify-content: space-between;
+}
+.img-small{
+  height: 70px;
+  width: 70px;
+}
+.botao-footer{
+  height: 100%;
+  background-color: white;
+  border-radius: 100px;
+  width: 50%;
+  font-weight: 600;
+}
+.botao-footer2{
+  background-color:  #4c3cd4;
+  color: white;
+  height: 80px;
+  width: 80px;
+  border-radius: 100px; 
+}
+.botao-centrado{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container-footer3{
+  display: flex;
+  margin-top: 30px;
+  font-size: 21px;
+  color: white;
+}
+#subrayado{
+  text-decoration: underline;
+  margin-left: 14px;
+
+}
+#antes-subrayado{
+  font-weight: 100;
+}
+.container-footer4{
+  display: flex;
+  margin-top: 40px;
+  color: white;
+  
+}
+.margin-right{
+  margin-right: 15px;
+}
+.darkmode .body{
+  background-color: black;
+}
+
+.darkmode p{
+  color: white;
+}
+.darkmode h1{
+  color: white;
+}
+.darkmode .options-nav{
+  color: white;
+}
+.darkmode .t-header{
+  color: white;
+}
+.darkmode .light{
+  background-color: yellow;
+}
+.darkmode a{
+  color: white;
+}
+.darkmode .linha-entre-about-work{
+  color: white;
+}
+.darkmode .botoes-blanco{
+  background-color: rgb(56, 0, 187);
+  color: white;
 }
