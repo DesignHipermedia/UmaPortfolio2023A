@@ -1,7 +1,7 @@
 body{
-  height: 100vh;
+  width:100%;
   margin: 0;
-	padding: 50px;
+	font-family: Arial, Helvetica, sans-serif;
 }
 
 .container {
@@ -16,6 +16,7 @@ body{
 .container2{
     display: flex;
     justify-content: flex-end;
+    flex-wrap: wrap;
     padding: 50px;
 }
 
@@ -28,14 +29,26 @@ body{
   padding: 50px;
 }
 
+.container4 {
+  display: flex;
+  background-color: #11111E;
+  color: white;
+  font-family:Arial, Helvetica, sans-serif ;
+  flex-direction:column;
+  justify-content:space-between;
+  flex-wrap: wrap;
+  padding: 50px;
+  margin-top: 20px;
+}
+
 .containerprojetos {
   display: flex;
   background-color: transparent;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content:space-between;
   align-items: center;
   flex-wrap: wrap;
-  margin-bottom: 150px;
+  margin: 50px;
 }
 
 
@@ -49,6 +62,11 @@ body{
 .profileimage {
   display: flex;
   gap:50px;
+  position: relative;
+}
+
+.image{
+  margin:20px;
 }
 
 .navegacao {
@@ -228,13 +246,20 @@ a{
 }
 
 .primeiroparagrafo {
-  padding-left: 20px;
+  margin:50px;
 }
 
 .segundoparagrafo{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 50px;
     font-weight: lighter;
+}
+
+.paragrafo5{
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, Helvetica, sans-serif;
+  margin:0;
 }
 
 .butoesprojecto{
@@ -255,11 +280,17 @@ a{
     height: 100px;
     border-radius: 50px;
     font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
     font-size: 20px;
     background-color:#11111E;
     color: white;
     border: none;
     cursor: pointer;
+}
+
+.modo-escuro .comecar{
+  background-color: white;
+  color:black;
 }
 
 .setacima{
@@ -525,6 +556,8 @@ a{
 }
 
 .image{
+  display: flex;
+  justify-content: flex-start;
   width: 500px;
   height:400px;
 }
@@ -534,6 +567,7 @@ a{
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 50px;
 }
 
 .botaomais{
@@ -546,10 +580,284 @@ a{
     border-radius: 50px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
-    background-color:white;
-    color: black;
-    border: 1px lightslategray solid;
+    background-color:#5f1de5;
+    color: white;
+    border: none;
     cursor: pointer;
 }
 
+.modo-escuro .botaomais{
+  background-color: #ba4ecf;
+}
 
+.card{
+    display: flex;
+    flex-direction: column;
+    padding:70px 50px ;
+  }
+
+.cards{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.num{
+  color: gray;
+  opacity: 60%;
+  font-weight: bolder;
+}
+
+.linhacard{
+  width: 100%; 
+  margin: 30px auto; 
+  margin-left: 0;
+  border: 1px solid gray; 
+  opacity: 60%;
+}
+
+.comecar2{
+  width: 300px;
+  height: 80px;
+  border-radius: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  font-size: 20px;
+  background-color:white;
+  color: black;
+  border: none;
+  cursor: pointer;
+}
+
+.setacima2{
+  width: 80px;
+  height: 80px;
+  border-radius: 1000px;
+  background-color:#523dd7;
+  border: none;
+  cursor: pointer;
+}
+
+.modo-escuro .setacima2{
+  background-color: #ba4ecf;
+}
+
+
+.botoesfooter{
+  display: flex;
+  margin-top: 30px;
+}
+
+.profilemini{
+  width: 100px;
+  height: 100px;
+  border-radius: 1000px;
+  margin-right: 20px;
+}
+
+.linhasocialmedia{
+  width: 100%; 
+  margin: 20px auto; 
+  margin-left: 0;
+  border: 1px solid gray; 
+  opacity: 60%;
+}
+
+.socialmedia{
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+.call{
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+.linksfooter{
+  margin-top: 20px;
+}
+
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+
+.button-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.button-container a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #5f1de5;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.image-container:hover .button-container {
+  opacity: 1;
+}
+
+@media screen and (max-width:992px) {
+
+ 
+  .containerprojetos{
+    padding:0px;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .profile{
+    width: 150px;
+    height: 150px;
+    border-radius: 200px;
+  }
+
+  .menu{
+      width:320px;
+      gap:10px;
+      margin-top:50px;
+  }
+
+.botaosobre,
+.botaotrabalhos,
+.botaosolucoes{
+      height: 80px;
+}
+
+.butoesprojeto{
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-end;
+}
+
+.projeto{
+  width:400px;
+}
+
+.comecar{
+  width:200px;
+  height:100px;
+  border-radius: 50px;
+  font-size: 15px;
+}
+
+
+.alternarmodo{
+  display:none;
+}
+
+
+h1 {
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 30px;
+}
+
+h2 {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	font-weight: lighter;
+  }
+
+h3 {
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: lighter;
+}
+
+h4{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+a{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  color:black
+}
+
+.segundoparagrafo{
+  font-size: 25px;
+}
+
+.menu-trabalho{
+  width: 328px;
+  gap:10px;
+  margin-top: 10px;
+}
+
+.botaoTudo,
+.botaoDesign{
+    width:150px;
+    height: 80px;
+}
+
+.botaoDesenvolvimento{
+  width: 250px;
+  height: 80px;
+  font-size: 15px;
+}
+
+.image{
+  width:328px;
+  height: 300px;
+  justify-content: center;
+}
+
+.card{
+  width:300px;
+  padding: 0px;
+  margin: 0px;
+}
+
+.p3{
+  display: none;
+}
+
+.terceiroparagrafo{
+  width: 328px;
+}
+
+.botoesfooter{
+  width: 328px;
+}
+
+.profilemini{
+  width: 40px;
+  height: 40px;
+}
+
+.comecar2{
+  width: 200px;
+  height: 40px;
+  font-size: 15px;
+}
+
+.setacima2{
+  width: 40px;
+  height: 40px;
+}
+.call{
+  flex-wrap: wrap;
+}
+
+.linksfooter{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+}
