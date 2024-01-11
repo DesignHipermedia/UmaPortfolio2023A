@@ -25,8 +25,24 @@ body{
 }
 
 .barra{
-    height: 100px;
+    height: 150px;
     background-color: #5f1de5;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.voltar{
+    width: 100px;
+    height: 100px;
+    border-radius: 500px;
+    background-color: #523dd7;
+    color: white;
+    margin: 50px;
+    border:1px solid;
+    cursor:pointer;
+    font-size: 20px;
+    font-weight: bolder;
 }
 
 .image{
@@ -92,3 +108,4 @@ body{
     width: 20%;
     justify-content: flex-start;
 }
+
