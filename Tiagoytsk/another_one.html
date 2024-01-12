@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="another_one.css">
+    <title>Another One</title>
+</head>
+<body>
+    <div class="top"><a class="botao" href="../index.html"><div style="padding: 5px;">X</div></a></div>
+    <div class="h1">
+        Another one
+    </div>
+    <div class="h2">Helping Another One give their users the best online experience</div>
+    <div class="imagem">
+        <img class="img1" src="https://www.searchenginejournal.com/wp-content/uploads/2021/07/seo-friendly-shopify-theme-6100b10c31f29-sej.jpg" alt="">
+
+    </div>
+    <div class="desc">
+        <div class="container1">
+            <a>Visit Website</a>
+            <button class="redirect"><svg xmlns="http://www.w3.org/2000/svg" fill="#ffffff" viewBox="0 0 24 24" width="20px" height="2f0px" he stroke-width="1.5" stroke="#fff" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+              </svg>
+              </button>
+        </div>
+        <div class="container2">
+            <div class="h3">About Another One</div>
+            <div class="p1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                culpa qui officia deserunt mollit anim id est laborum</div>
+            <div class="h3">The Project</div>
+            <div class="p1">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                voluptate velit esse cillum dolore eu fugiat nulla pariatur.</div>
+            <div class="h3">Testimonials</div>
+            <div id="app" class="app">
+                <!-- {{lista}}
+                {{imagens[0]}}
+                {{lista[0].body}} -->
+                
+                
+                <div v-for="(item,index) in imagens">                        
+                        <img :src="item.avatar_url" width="70" style="border-radius:50%" alt="">
+         
+         <div>{{item.login}}</div>
+         <div>{{lista[index]?.body}}</div>
+                    </div>
+                <div>
+                    <!-- {{imagens[146039244].id}}  -->
+                    <!-- {{imagens[index]?.avatar_url.fetch[0]}} -->
+                </div>
+
+               
+            </div>
+        </div>
+        
+    </div>
+    <script src="https://unpkg.com/vue@3"></script>
+
+    <script>
+        Vue.createApp({
+            data(){
+                return {
+                    lista:[1,2,3],
+                    imagens:[]
+                }
+            },
+            mounted (){
+                fetch('https://jsonplaceholder.typicode.com/posts')
+
+        .then(data=>data.json())
+        .then(final=> this.lista = final)
+                fetch('https://api.github.com/repos/DesignHipermedia/UmaPortfolio2023A/contributors')
+                .then(data=>data.json())
+                .then(final=> this.imagens = final)
+            }
+        }).mount('#app')
+    </script>
+    <script setup>
+        import {ref} from 'vue'
+        const lista = ref([])
+        fetch('https://jsonplaceholder.typicode.com/posts')
+        .then(data=>data.json())
+        .then(final=> lista.value = final)
+    </script>
+</body>
+</html>
