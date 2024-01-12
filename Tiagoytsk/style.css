@@ -535,8 +535,12 @@ padding: 40px 70px 20px;
 
 .containimgw{
   position:relative;
-  width: 100%;
-  height: 100%;
+  width: auto;
+  height: auto;
+}
+.sectionimg{
+  width: auto;
+  height: auto;
 }
 .overlay{
   position: absolute;
@@ -765,8 +769,8 @@ sub{
   background-color: #1c0a5e;
   border-radius: 50px;
   border: none;
+  justify-content: center;
   align-content: center;
-
 }
 .h1work{
   padding: 20px 20px 20px 20px;
@@ -852,4 +856,11 @@ sub{
   border-radius: 50px;
   
 
+}
+.app{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
 }
