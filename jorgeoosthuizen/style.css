@@ -811,6 +811,12 @@ a{
   font-size: 15px;
 }
 
+.modo-escuro .botaoDesenvolvimento{
+  width: 200px;
+  height: 80px;
+  font-size: 15px;
+}
+
 .image{
   width:328px;
   height: 300px;
