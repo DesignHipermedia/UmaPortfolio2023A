@@ -60,6 +60,59 @@ dolore eu fugiat nulla pariatur.</h1></p>
 
 </div>
 </div>
+
+<div class="container3">
+  <div id="app" class="app">
+  <!-- {{lista}}
+  {{imagens[0]}}
+  {{lista[0].body}} -->
+  
+  
+      <div v-for="(item,index) in imagens">
+          
+          <img :src="item.avatar_url" width="70" style="border-radius:50%" alt="">
+
+  <div>{{item.login}}</div>
+  <div>{{lista[index]?.body}}</div>
+        </div>
+    <div>
+        <!-- {{imagens[146039244].login}} -->
+    </div>
+  </div>
+</div>
+
 </div>
 </body>
+<script src="https://unpkg.com/vue@3"></script>
+
+    <script>
+        Vue.createApp({
+            data(){
+                return {
+                    lista:[1,2,3],
+                    imagens:[]
+                }
+            },
+            mounted (){
+                fetch('https://jsonplaceholder.typicode.com/posts')
+
+        .then(data=>data.json())
+        .then(final=> this.lista = final)
+                fetch('https://api.github.com/repos/DesignHipermedia/UmaPortfolio2023A/contributors')
+                .then(data=>data.json())
+                .then(final=> this.imagens = final)
+            }
+        }).mount('#app')
+
+        
+    </script>
+    <script setup>
+        import {ref} from 'vue'
+        const lista = ref([])
+        fetch('https://jsonplaceholder.typicode.com/posts')
+        .then(data=>data.json())
+        .then(final=> lista.value = final)
+    </script>
+
+    
 </html>

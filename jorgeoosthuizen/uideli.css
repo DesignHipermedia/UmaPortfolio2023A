@@ -24,6 +24,11 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.container3{
+  width: 70%;
+  margin-top: 50px;
+}
+
 .barra{
     height: 150px;
     background-color: #523dd7;
@@ -123,6 +128,24 @@ body{
   justify-content: flex-end; 
 }
 
+.app{
+  display: flex;
+  flex-direction:column;
+  justify-content: flex-start;
+  font-size: 15px;
+}
+
+.app:has(div){
+  gap: 30px;
+}
+
+.container3{
+  width: 50%;
+  display:flex;
+  align-self: flex-end;
+}
+
+
 
 
 @media screen and (max-width: 992px) {
@@ -161,5 +184,18 @@ body{
   .botoes {
     width: 100%;
     justify-content: center;
+  }
+
+  .app{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    font-size: 15px;
+  }
+
+  .container3{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
   }
 }
