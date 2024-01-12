@@ -31,6 +31,12 @@ body.scrolled .navbar {
     background-color: transparent;
     border: none;
 }
+.login{
+  margin-right: 20px;
+}
+.login1{
+  margin-left: 20px;
+}
 .loginimg {
     width: 25px;
     height: auto;
@@ -158,7 +164,7 @@ body.scrolled .navbar {
     top: 0;
     left: 0;
     width: 100%;
-    height: 98%;
+    height: 100%;
     border-radius: 35px;
     background: rgba(0, 0, 0, 0);
     transition: background 0.5s ease;
