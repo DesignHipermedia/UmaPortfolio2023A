@@ -129,10 +129,12 @@ body{
 }
 
 .app{
+  width: 400px;
   display: flex;
-  flex-direction:column;
+  flex-wrap: wrap;
+  flex-direction:row;
   justify-content: flex-start;
-  font-size: 15px;
+  font-size: 20px;
 }
 
 .app:has(div){
@@ -140,9 +142,39 @@ body{
 }
 
 .container3{
-  width: 50%;
+  width: 100%;
   display:flex;
   align-self: flex-end;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.profiles{
+  width: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.comment{
+  width: 600px;
+  gap:20px;
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.titulocomment{
+  font-weight: bold;
+}
+
+.testi{
+  width: 89%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
 }
 
 
@@ -197,5 +229,21 @@ body{
     width: 100%;
     justify-content: center;
     align-items: center;
+  }
+
+  .comment{
+    width: 300px;
+    gap:20px;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .profiles{
+    width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
   }
 }

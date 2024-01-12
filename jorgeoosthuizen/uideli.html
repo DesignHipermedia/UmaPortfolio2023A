@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>UIDeli</title>
     <link rel="stylesheet" href="uideli.css">
 </head>
 <header> 
@@ -60,7 +60,7 @@ dolore eu fugiat nulla pariatur.</h1></p>
 
 </div>
 </div>
-
+<div class="testi"><h2>Testimonials</h2></div>
 <div class="container3">
   <div id="app" class="app">
   <!-- {{lista}}
@@ -68,15 +68,17 @@ dolore eu fugiat nulla pariatur.</h1></p>
   {{lista[0].body}} -->
   
   
-      <div v-for="(item,index) in imagens">
+      <div v-for="(item,index) in imagens" class="comment">
           
           <img :src="item.avatar_url" width="70" style="border-radius:50%" alt="">
 
-  <div>{{item.login}}</div>
+  <div class="titulocomment">{{item.login}}</div>
   <div>{{lista[index]?.body}}</div>
         </div>
-    <div>
-        <!-- {{imagens[146039244].login}} -->
+    <div class="profiles">
+        <div v-for="(item,index) in imagens">
+          
+            <img :src="item.avatar_url" width="70" style="border-radius:50%" alt=""> <!-- {{imagens[146039244].login}} -->
     </div>
   </div>
 </div>
