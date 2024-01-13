@@ -3,6 +3,29 @@
             box-sizing: border-box;
   }
   
+  .navbar {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1%;
+    background-color: rgba(0, 0, 0, 0.811);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10%;
+    z-index: 1000;
+    overflow: hidden;
+}
+body.scrolled .navbar {
+    background-color: rgba(0, 0, 0, 0.811);
+}
+.navbar img.logouni {
+    display: block;
+    margin: 0 auto;
+    width: 15%; /* Adjust the width as needed */
+}
   body {
     padding: 0;
     margin: 0;
@@ -42,9 +65,9 @@
     position: absolute;
     left: 50%;
     -webkit-transform: translateX(-50%);
-        -ms-transform: translateX(-50%);
-            transform: translateX(-50%);
-    background: url('../img/bg.jpg') no-repeat;
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    background: url(https://media.istockphoto.com/id/1442452138/pt/foto/space-stars-nebula-universe-background.jpg?s=612x612&w=0&k=20&c=Ics2IU65Fl0PgvuReWMeKG_K4tm2QuLfcsTXDhY35Z0=) no-repeat;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-size: cover;
@@ -69,20 +92,62 @@
     margin-bottom: 20px;
     margin-top: 0px;
   }
-  
+  .top{
+    
+  }
+  .botao{
+    width: 50px;
+    height: 50px;
+    
+    font-family: 'Montserrat', sans-serif;
+    font-size: auto;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: #5200d5;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 30px;
+    border-radius: 100%;
+    color: #fff;
+    font-weight: 700;
+    -webkit-box-shadow: 0px 4px 15px -5px rgba(0, 0, 0, 0.811);
+            box-shadow: 0px 4px 15px -5px rgba(0, 0, 0, 0.811);
+  }
+  .botao:hover  {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    width: auto;
+    width: 50px;
+    height: 50px;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.811);
+    display: inline-block;
+    padding: 15px 30px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    color: #000000;
+    font-weight: 700;
+    -webkit-box-shadow: 0px 4px 15px -5px #fefefe;
+            box-shadow: 0px 4px 15px -5px #ffffff;
+  }
   .notfound a {
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     text-decoration: none;
     text-transform: uppercase;
-    background: #0046d5;
+    background: rgba(0, 0, 0, 0.811);
     display: inline-block;
     padding: 15px 30px;
     border-radius: 40px;
     color: #fff;
     font-weight: 700;
-    -webkit-box-shadow: 0px 4px 15px -5px #0046d5;
-            box-shadow: 0px 4px 15px -5px #0046d5;
+    -webkit-box-shadow: 0px 4px 15px -5px rgba(0, 0, 0, 0.811);
+            box-shadow: 0px 4px 15px -5px rgba(0, 0, 0, 0.811);
   }
   .notfound:hover a {
     font-family: 'Montserrat', sans-serif;
@@ -90,7 +155,7 @@
     text-decoration: none;
     text-transform: uppercase;
     background: #ffffff;
-    border: 1px solid #0046d5;
+    border: 1px solid rgba(0, 0, 0, 0.811);
     display: inline-block;
     padding: 15px 30px;
     border-radius: 40px;

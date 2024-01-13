@@ -20,8 +20,8 @@
                 <nav>
                 <div class="menu">
                     <button class="botaosobre" :class="{ 'active': isActiveTab('sobre') }" @click="setActiveTab('sobre')">Sobre</button>
-                    <button class="botaotrabalhos" :class="{ 'active': isActiveTab('trabalhos') }" @click="setActiveTab('trabalhos')">Trabalhos</button>
-                    <button class="botaosolucoes" :class="{ 'active': isActiveTab('solucoes') }" @click="setActiveTab('solucoes')">Soluções</button>
+                    <button class="botaotrabalhos" :class="{ 'active': isActiveTab('trabalhos') }" @click="setActiveTab('trabalhos'); handleClick1()">Trabalhos</button>
+                    <button class="botaosolucoes" :class="{ 'active': isActiveTab('solucoes') }" @click="setActiveTab('solucoes'); handleClick2()">Soluções</button>
                 
             </div>
             </nav>
@@ -37,9 +37,9 @@
                 sed do eiusmod tempor incididunt ut labore eta.</h2>
             </section>
             <div class="butoesprojecto">
-            <div class="projeto"> <button class="comecar">Começar um projeto </button>
-                <button class="setacima"><svg xmlns="http://www.w3.org/2000/svg" height="30" width="30" viewBox="0 0 320 512"><path fill="#ffffff" d="M318 177.5c3.8-8.8 2-19-4.6-26l-136-144C172.9 2.7 166.6 0 160 0s-12.9 2.7-17.4 7.5l-136 144c-6.6 7-8.4 17.2-4.6 26S14.4 192 24 192H96l0 288c0 17.7 14.3 32 32 32h64c17.7 0 32-14.3 32-32l0-288h72c9.6 0 18.2-5.7 22-14.5z"/></svg>
-            </button></div>
+            <div class="projeto"><a href="error.html"> <button class="comecar">Começar um projeto </button></a>
+                <a href="error.html"><button class="setacima"><svg xmlns="http://www.w3.org/2000/svg" height="30" width="30" viewBox="0 0 320 512"><path fill="#ffffff" d="M318 177.5c3.8-8.8 2-19-4.6-26l-136-144C172.9 2.7 166.6 0 160 0s-12.9 2.7-17.4 7.5l-136 144c-6.6 7-8.4 17.2-4.6 26S14.4 192 24 192H96l0 288c0 17.7 14.3 32 32 32h64c17.7 0 32-14.3 32-32l0-288h72c9.6 0 18.2-5.7 22-14.5z"/></svg>
+            </button></a></div>
             <div class="alternarmodo">
                 <button onclick="modoNormal()" class="light" :class="{ 'active': isActiveMode('light') }" @click="setActiveMode('light')" type="button">
                     <svg xmlns="http://www.w3.org/2000/svg" height="30" width="30" viewBox="0 0 512 512">
@@ -67,12 +67,12 @@
                 attention to detail.</p>
                 <div class="curriculo">
                 <a href="error.html"> Download currículo</a>
-                <button class="setabaixo"><svg xmlns="http://www.w3.org/2000/svg" height="30" width="30" viewBox="0 0 320 512"><path fill="#ffffff" d="M318 177.5c3.8-8.8 2-19-4.6-26l-136-144C172.9 2.7 166.6 0 160 0s-12.9 2.7-17.4 7.5l-136 144c-6.6 7-8.4 17.2-4.6 26S14.4 192 24 192H96l0 288c0 17.7 14.3 32 32 32h64c17.7 0 32-14.3 32-32l0-288h72c9.6 0 18.2-5.7 22-14.5z"/></svg>
-                </button></div>
+                <a href="error.html"><button class="setabaixo"><svg xmlns="http://www.w3.org/2000/svg" height="30" width="30" viewBox="0 0 320 512"><path fill="#ffffff" d="M318 177.5c3.8-8.8 2-19-4.6-26l-136-144C172.9 2.7 166.6 0 160 0s-12.9 2.7-17.4 7.5l-136 144c-6.6 7-8.4 17.2-4.6 26S14.4 192 24 192H96l0 288c0 17.7 14.3 32 32 32h64c17.7 0 32-14.3 32-32l0-288h72c9.6 0 18.2-5.7 22-14.5z"/></svg>
+                </button></a></div>
             </div>
             </div>
             <div class="linha"></div>
-            <div class="container3">
+            <div class="container3" ref="targetRef1">
             <h1>The work I do</h1>
             <div class="menu-trabalho">
                 <button class="botaoTudo" :class="{ 'active': isActiveTab('Tudo') }" @click="setActiveTab('Tudo')">Tudo</button>
@@ -143,7 +143,7 @@
 </div>
 <div class="mais"><button class="botaomais">Mais </button></div>
 
-<div class="container4">
+<div class="container4" ref="targetRef2">
 
 <h1>I can help you with</h1> 
 <div class="cards">
@@ -192,8 +192,9 @@ app dashboard design.</h3></div>
 
 <div class="botoesfooter">
     <img class="profilemini" src="https://edtimes.in/wp-content/uploads/2014/03/eyes_tool_wallpaper-1280x720.jpg" alt="">
-    <div class="projeto"> <button class="comecar2">Começar um projeto </button>
-    <button class="setacima2"><svg xmlns="http://www.w3.org/2000/svg" height="30" width="30" viewBox="0 0 320 512"><path fill="#ffffff" d="M318 177.5c3.8-8.8 2-19-4.6-26l-136-144C172.9 2.7 166.6 0 160 0s-12.9 2.7-17.4 7.5l-136 144c-6.6 7-8.4 17.2-4.6 26S14.4 192 24 192H96l0 288c0 17.7 14.3 32 32 32h64c17.7 0 32-14.3 32-32l0-288h72c9.6 0 18.2-5.7 22-14.5z"/></svg>
+    <div class="projeto"> <a href="error.html"><button class="comecar2">Começar um projeto </button></a>
+    <a href="error.html"><button class="setacima2"><svg xmlns="http://www.w3.org/2000/svg" height="30" width="30" viewBox="0 0 320 512"><path fill="#ffffff" d="M318 177.5c3.8-8.8 2-19-4.6-26l-136-144C172.9 2.7 166.6 0 160 0s-12.9 2.7-17.4 7.5l-136 144c-6.6 7-8.4 17.2-4.6 26S14.4 192 24 192H96l0 288c0 17.7 14.3 32 32 32h64c17.7 0 32-14.3 32-32l0-288h72c9.6 0 18.2-5.7 22-14.5z"/></svg>
+</a>
 </button>
 </div>
 </div>
@@ -224,37 +225,43 @@ app dashboard design.</h3></div>
             <script src="https://kit.fontawesome.com/c2818a0d76.js" crossorigin="anonymous"></script>
             <script>
                 Vue.createApp({
-                    data() {
-                        return {
-                            activeTab: 'sobre',
-                            activeMode: 'light', 
-                        };
-                    },
-                    methods: {
-                        setActiveTab(tab) {
-                            this.activeTab = tab;
-                        },
-                        isActiveTab(tab) {
-                            return this.activeTab === tab;
-                        },
-                        setActiveMode(mode) {
-                            this.activeMode = mode;
-                        },
-                        isActiveMode(mode) {
-                            return this.activeMode === mode;
-                        }
-                    }
-                    
-                }).mount('body');
-
-                function modoEscuro() {
-                var element = document.body;
-                element.classList.add("modo-escuro");
+            data() {
+                return {
+                    activeTab: 'sobre',
+                    activeMode: 'light', 
+                };
+            },
+            methods: {
+                setActiveTab(tab) {
+                    this.activeTab = tab;
+                },
+                isActiveTab(tab) {
+                    return this.activeTab === tab;
+                },
+                setActiveMode(mode) {
+                    this.activeMode = mode;
+                },
+                isActiveMode(mode) {
+                    return this.activeMode === mode;
+                },
+                handleClick1() {
+                    this.$refs.targetRef1.scrollIntoView({ behavior: 'smooth' });
+                },
+                handleClick2() {
+                    this.$refs.targetRef2.scrollIntoView({ behavior: 'smooth' });
                 }
-                function modoNormal() {
-                var element = document.body;
-                element.classList.remove("modo-escuro");
-}
+            },
+        }).mount('body');
+
+        function modoEscuro() {
+            var element = document.body;
+            element.classList.add("modo-escuro");
+        }
+
+        function modoNormal() {
+            var element = document.body;
+            element.classList.remove("modo-escuro");
+        }
             </script>
 </body>
 </html>
