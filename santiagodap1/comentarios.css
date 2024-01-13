@@ -1,0 +1,109 @@
+body{
+    margin: 0;
+}
+header{
+    background-color:  #4c3cd4;
+    height: 13vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.button-header{
+    border-radius: 100%;
+    font-size: 20px;
+    color: white;
+    padding: 20px;
+    background-color: #4c3cd4;
+    border: 1px solid grey;
+}
+a{
+    margin-right: 7%;
+}
+main{
+    margin-top: 70px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+#t-1{
+    font-size: x-large;
+    font-weight: 500;
+}
+h1{
+    font-size: 50px;
+    margin-block: 30px;
+    font-weight: 600;
+}
+.imagem{
+    width: 100%;
+    max-height: 400px;
+    height: auto;
+}
+.linha{
+    margin-top: 20px;
+    border: 1px solid grey;
+}
+.container{
+    display: flex;
+    margin-top: 7vh;
+    justify-content: space-between;
+}
+.container-sub{
+    display: flex;
+    align-items: center;
+    width: 30%;
+    height: 7vh;
+}
+.container-sub2{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+.botao{
+    border-radius: 100%;
+    font-size: 20px;
+    color: white;
+    padding: 10px;
+    margin-left: 7%;
+    background-color: #4c3cd4;
+    border: 1px solid grey;
+}
+.subrayado{
+    text-decoration: underline;
+    font-size: 20px;
+    font-weight: 600;
+}
+h2{
+    font-size: 40px;
+    font-weight: 600;
+}
+.p{
+    margin-block: 20px;
+}
+@media (max-width: 450px) {
+    .button-header{
+        padding: 15px;
+    }
+    a{
+        margin-right: 11%;
+    }
+    main{
+        margin-top: 30px;
+        margin-inline: 20px;
+    }
+    h1{
+        font-size: 30px;
+    }
+    h2{
+        font-size: 25px;
+    }
+    .container{
+        flex-direction: column;
+    }
+    .container-sub2{
+        margin-top: 40px;
+        width: 100%;
+    }
+    .container-sub{
+        width: 100%;
+    }
+}
