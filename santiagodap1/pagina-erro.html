@@ -6,6 +6,10 @@
     <title>Document</title>
     <style>
         body{
+            background-image: linear-gradient( 270.3deg,  rgba(84,212,228,1) 0.2%, rgba(68,36,164,1) 100% );
+            margin: 0;
+        }
+        .body{
             margin: 0;
             width: 100%;
             height: 100vh;
@@ -13,9 +17,9 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            background-image: linear-gradient( 270.3deg,  rgba(84,212,228,1) 0.2%, rgba(68,36,164,1) 100% );
+            
         }
-  
+        
         .div{
             display: flex;
             justify-content: center;
@@ -29,11 +33,20 @@
             margin-top: 10px;
             padding: 20px;
             border-radius: 100px;
+            border: none;
+            width: 100px;
+            
+        }
+        button:hover{
+            width: 190px;
+            border: 3px solid rgba(84,212,228,1);
+            transition: width 0.4s ease-in;
             
         }
         .container{
-            background-color: rgba(0, 0, 0, 0.171);
-            
+            background-image: linear-gradient( 270.3deg,  rgba(68,36,164,1) 23.2%, rgba(84,212,228,1) 100% );
+            position: relative;
+            z-index: 2;
             border-radius: 100px;
             display: flex;
             flex-direction: column;
@@ -45,20 +58,105 @@
             background-position: center; 
             
         }
+        p{
+            color: white;
+        }
+        .p{
+            position: absolute;
+            font-size: 90px;
+            animation: ops 8s linear infinite;
+        }
+        .ps{
+            position: relative;
+
+        }
+        #a{
+            top: -100px;
+        }
+        #ab{
+            top: 0px;
+        }
+
+        #b{
+            top: 100px;
+        }
+        #c{
+            top: 200px;
+        }
+        #d{
+            top: 300px;
+        }
+        #e{
+            top: 400px;
+        }
+        #f{
+            top: 500px;
+        }
+        #g{
+            position: absolute;
+            top: 600px;
+        }
+        @keyframes ops {
+            0% {
+                transform: translatex(1800px);
+            }
+            100% {
+                transform: translatex(-1000px);
+            }
+        }
+        
+        @media (max-width: 450px){
+            .container{
+                border-radius: 10px;
+                width: 80%;
+                height: 77vh;
+                background-image: linear-gradient( 270.3deg,  rgba(68,36,164,1) 23.2%, rgb(0, 0, 0) 100% );
+            }
+            button{
+                background-color: white;
+                color: black;
+            }
+            button:hover{
+                width: 200px;
+            }
+            body{
+                background-image: linear-gradient( 270.3deg,  rgb(0, 0, 0) 0.2%, rgba(68,36,164,1) 100% );
+            }
+            .p{
+                display: none;
+            }
+            .ps{
+                display: none;
+            }
+        }
         
     </style>
 </head>
 <body>
-
-    <div class="container">
-        <div class="div">
-            Erro 404 
-        </div>
-        <a href="index.html">
-            <button> HOME</button>
-        </a>
+    <div class="ps">
+        <p id="a" class="p">OOOPPPSSSSS</p>
+        <p id="ab" class="p">OOOPPPSSSSS</p>
+        <p id="b" class="p">OOOPPPSSSSS</p>
+        <p id="c" class="p">OOOPPPSSSSS</p>
+        <p id="d" class="p">OOOPPPSSSSS</p>
+        <p id="e" class="p">OOOPPPSSSSS</p>
+        <p id="f" class="p">OOOPPPSSSSS</p>
+        <p id="g" class="p">OOOPPPSSSSS</p>
     </div>
-    
+    <div class="body">
+
+        <div class="container">
+            <div class="div">
+                Erro 404 
+            </div>
+
+            <p>Algo correu mal...</p>
+            
+            <a href="index.html">
+                <button> HOME</button>
+            </a>
+        </div>
+    </div>
 
     
 
