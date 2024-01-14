@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SING UP</title>
+    <style>
+        body{
+            background-image: url('madeira.jpg');
+            background-size: cover;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .img-escura {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 103vh;
+            background-color: rgba(0, 0, 0, 0.88); 
+        }
+        .card{
+            position: absolute;
+            height: 68vh;
+            width: 50%;
+            background-color: #43766C;
+            opacity: .25;
+            border-radius: 7%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .card1{
+            position: absolute;
+            padding-bottom: 30px;
+            height: 65vh;
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1{
+            font-size: 90px;
+            
+        }
+        .container{
+            width: 70%;
+            margin-bottom: 4vh;
+            display: flex;
+            justify-content: space-around;
+        }
+        button{
+            height: 100%;
+            background-color: black;
+            color: white;
+            width: 100%;
+            border-radius: 19px;
+            border: none;
+        }
+        button:hover{
+            height: 120%;
+            width: 120%;
+            border: 3px solid #00C2FF ;
+            transition: height  0.6s ease;
+            transition: width  0.6s ease;
+        }
+
+        a{
+            height: 10%;
+            width: 30%;
+            border-radius: 19px;
+            border: none;
+
+        }
+        .linha {
+            width: 0;
+            height: 30%;
+            border-left: 20px solid transparent;
+            border-right: 20px solid transparent;
+            border-top: 40px solid #3498db; 
+            animation: linha 3s linear infinite;
+        }
+        @keyframes linha {
+            0% {
+                transform: translatey(0);
+            }
+            100% {
+                transform: translatey(100%);
+            }
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="img-escura"></div>
+
+    <div class="card">
+    </div>
+
+    <div class="card1">
+        <div>
+            <h1>ERRO 404</h1>
+            
+        </div>
+
+        <div class="linha"></div>
+        
+        <a href="index.html">
+            <button>
+                Voltar
+            </button>  
+        </a>
+    </div>
+    
+</body>
+</html>
