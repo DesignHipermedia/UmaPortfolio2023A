@@ -1,12 +1,11 @@
 .body{
-    margin: 50px;
+    padding: 50px;
     
 }
 .imagem-rounded{
   border-radius: 50%;
   height: 200px;
   width: 200px;
-  overflow: hidden;
 }
 .header {
   display: flex;
@@ -363,4 +362,19 @@ footer{
 .darkmode .botoes-blanco{
   background-color: rgb(56, 0, 187);
   color: white;
+}
+@media (max-width: 450px){
+  .body{
+    padding:30px;
+  }
+  .t-header{
+    font-size: 18px;
+  }
+  .options-nav{
+    display: none;
+  }
+  
+  .imagem-rounded{
+    padding: 40px;
+  }
 }
