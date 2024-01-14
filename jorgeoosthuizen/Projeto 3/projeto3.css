@@ -30,7 +30,7 @@ body {
 header {
 
    grid-area: cabecalho;
-   margin-bottom: 20px;
+   margin-bottom: 5px;
 
 }
 
@@ -105,13 +105,8 @@ h5{
   .procurar{
     display: flex;
     align-items: center;
+    margin-left:100px;
   }
-
-.container2{
-    display:flex;
-    flex-direction: column;
-}
-
 
 .cards{
     grid-area:secao;
@@ -125,8 +120,19 @@ h5{
     
 }
 
+.container3{
+  width:100%;
+  margin-top: 20px;
+}
+
+.noticia{
+  width:33%;
+  height: 400px;
+}
+
 .card{
     width: 40%;
+    cursor: pointer;
 }
 
 .icon{
@@ -166,6 +172,7 @@ h5{
 .navbar{
     display: flex;
     align-items: center;
+    justify-content: space-evenly;
 }
 
   .my_button{
@@ -180,14 +187,14 @@ h5{
     justify-content: center;
     position: relative;
     z-index: 0;
-    transition: 2s;
+    transition: 1s;
     background:#ffffff;
 }
   .my_button::before, .my_button::after{
     position: absolute;
     background: #ffffff;
     z-index: -1;
-    transition: 1s;
+    transition: 0.4s;
     content: ''
 }
   .my_button::before{
@@ -220,6 +227,7 @@ h5{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     width: 100px;
     height: 50px;
+    padding:2px;
     border: 2px solid #000000;
     font-size: 20px;
     cursor: pointer;
@@ -228,14 +236,14 @@ h5{
     justify-content: center;
     position: relative;
     z-index: 0;
-    transition: 2s;
+    transition: 1s;
     background:#ffffff;
 }
   .my_button2::before, .my_button2::after{
     position: absolute;
     background: #ffffff;
     z-index: -1;
-    transition: 1s;
+    transition: 0.4s;
     content: ''
 }
   .my_button2::before{
@@ -274,14 +282,14 @@ h5{
     justify-content: center;
     position: relative;
     z-index: 0;
-    transition: 2s;
+    transition: 1s;
     background:#ffffff;
 }
   .my_button3::before, .my_button3::after{
     position: absolute;
     background: #ffffff;
     z-index: -1;
-    transition: 1s;
+    transition: 0.5s;
     content: ''
 }
   .my_button3::before{
@@ -310,6 +318,50 @@ h5{
 }
   
 
+
+.my_button4{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  width: 150px;
+  height: 50px;
+  border: 2px solid #000000;
+  font-size: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 0;
+  transition: 1s;
+  background:#ffffff;
+}
+.my_button4::before, .my_button4::after{
+  position: absolute;
+  background: #ffffff;
+  z-index: -1;
+  transition: 0.4s;
+  content: ''
+}
+.my_button4::before{
+  height: 50px;
+  width: 130px;
+  background: #ffffff;
+}
+.my_button4::after{
+  width: 150px;
+  height: 30px;
+  background: #ffffff;
+
+}
+.my_button4:hover::before{
+  width: 0px;
+  background: #ffffff
+}
+.my_button4:hover::after{
+  height: 0px;
+  background: #ffffff
+}
+
+
 .search-hover {
     border: 1px solid #ccc;
     outline: none;
@@ -319,7 +371,7 @@ h5{
     width: 50px;
     height: 50px;
     padding: 25px;
-    transition: all 0.5s;
+    transition: all 0.2s;
   }
   .search-hover:hover {
     width: 300px;
@@ -332,9 +384,15 @@ h5{
     cursor:pointer;
   }
 
-  .search-hover{
-    width: 130px;
-  }
+.logo{
+  width: 450px;
+  height: 200px;
+  margin-left: 20px;
+}
+
+.logoin{
+  gap:150px;
+}
 
 
 
@@ -388,7 +446,9 @@ h5{
     text-align: center; 
 }
 
-.img-thumbnail{
+.logo{
+  width: 200px;
+  height: 200px;
     margin-left:6%;
 }
 
