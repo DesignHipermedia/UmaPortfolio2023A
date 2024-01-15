@@ -368,14 +368,14 @@ h5{
     background-size: 22px;
     background-position: 13px;
     border-radius: 10px;
-    width: 50px;
+    width: 30px;
     height: 50px;
     padding: 25px;
     transition: all 0.2s;
   }
   .search-hover:hover {
-    width: 300px;
-    padding-left: 50px;
+    width:150px;
+    
   }
 
   .pesquisa{
@@ -391,7 +391,7 @@ h5{
 }
 
 .logoin{
-  gap:150px;
+  gap:100px;
 }
 
 
