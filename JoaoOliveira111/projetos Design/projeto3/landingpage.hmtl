@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uma Reciclagem</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: #017143;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header a {
+            color: #fff;
+            text-decoration: none;
+            margin: 10px 0;
+            font-weight: bold;
+        }
+
+        header img {
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+
+        header button {
+            background-color: #017143;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            margin-top: 10px;
+        }
+
+        header button:hover {
+            background-color: #fff;
+            color: #017143;
+        }
+
+        section, #features, #call-to-action {
+            padding: 20px;
+            text-align: center;
+        }
+
+        #features {
+            background-color: #f4f4f4;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .img {
+            width: 100px;
+            height: 100px;
+            border: 2px solid black;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+
+        /* Media Query para telas menores, como dispositivos móveis */
+        @media screen and (max-width: 600px) {
+            header {
+                padding: 10px;
+            }
+
+            header a {
+                margin: 5px 0;
+            }
+
+            header button {
+                margin-top: 5px;
+            }
+
+            .img {
+                width: 80px;
+                height: 80px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img class="img" src="reci.png" alt="Logotipo Uma Reciclagem">
+        <h1>Uma <span style="color:black">Reciclagem</span></h1>
+        <p>Renove o Mundo, Recicle o Futuro: Juntos por um Planeta Sustentável.</p>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="">Sobre Nós</a>
+            <a href="login.html">Login</a>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Ajude a Preservar o Meio Ambiente</h2>
+        <p>Descubra como Uma Reciclagem torna a reciclagem fácil e eficiente. Junte-se a nós na missão de criar um futuro mais sustentável!</p>
+    </section>
+
+    <section id="features">
+        <h2>Nossos Recursos</h2>
+        <p>Explore os recursos incríveis que Uma Reciclagem oferece:</p>
+        <ul>
+            <li>Preserve o presente, recicle para o futuro.</li>
+            <li>Reciclagem: Um pequeno gesto, grandes benefícios.</li>
+            <li>Transforme seu lixo em oportunidade. Recicle!</li>
+        </ul>
+    </section>
+
+    <section id="call-to-action">
+        <h2>Junte-se a Nós na Reciclagem!</h2>
+        <p>Inscreva-se agora e faça a diferença. Juntos, podemos criar um ambiente mais limpo e saudável para todos.</p>
+        <form action="#" method="post">
+            <label for="email">Digite seu e-mail:</label>
+            <input type="email" id="email" name="email" required>
+            <input type="submit" value="Inscrever-se">
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 UmaReciclagem.</p>
+    </footer>
+
+</body>
+</html>
