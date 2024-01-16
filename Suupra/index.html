@@ -3,14 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-HzQeU+lcMr8TlNEn8CCXxmqD0l/Ux5agEE5V3QFxjMZZN2/E8mbVmnGqXNqpLbBlAAK2l/6OGgvS/BTjkj4qLg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <title>Design Hipermédia</title>
     <style>
         body {
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
+            transition: background-color 0.5s ease;
         }
 
+        .btn:hover {
+            box-shadow: 0 0 10px rgba(2, 188, 255, 0.5);
+        }
+
+        .dark-mode {
+            background-color: #111;
+            color: #fff;
+        }
+
+        .btn-ex {
+            width: 50px; /* Substitua pelo valor desejado */
+            height: 50px; /* Substitua pelo valor desejado */
+            background-color: #000000;
+            color: #fff;
+        }
         .footer {
             background-color: rgba(38,30,30,255);
             color: #fff;
@@ -123,87 +139,295 @@
             font-size: 15px;
         }
 
+
     </style>
 </head>
 <body>
-    <h1>Projeto 2</h1>
-        
-    <div class="content">
-        
+
+<header>
+    <div class="container">
+        <div class="d-lg-flex align-items-center">
+            <img class="p-4 rounded-circle" style="width: 200px; height: 200px;" src="https://images.pexels.com/photos/3741382/pexels-photo-3741382.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Profile Image">
+
+            <nav class="d-lg-none">
+                <a>© DH Smith</a>
+            </nav>
+
+            <nav class="d-none d-lg-block">
+                <a>© DH Smith</a>
+            </nav>
+            
+            <div class="btn-group" role="group" aria-label="Botões" style="margin-left: auto; ">
+                <button type="button" class="btn rounded-pill"><i class="fas fa-info-circle"></i> About</button>
+                <button type="button" class="btn rounded-pill"><i class="fas fa-briefcase"></i> Work</button>
+                <button type="button" class="btn rounded-pill"><i class="fas fa-cogs"></i> Solutions</button>
+
+                <div class="p-2">
+                    <button type="button" class="btn btn-ex rounded-pill" onclick="toggleDarkMode()">
+                        <i class="fas fa-moon"></i>
+                        <svg xmlns="http://www.w3.org/2000/svg"  fill="currentColor" class="bi bi-moon" viewBox="0 0 16 16">
+                            <path d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278M4.858 1.311A7.27 7.27 0 0 0 1.025 7.71c0 4.02 3.279 7.276 7.319 7.276a7.32 7.32 0 0 0 5.205-2.162q-.506.063-1.029.063c-4.61 0-8.343-3.714-8.343-8.29 0-1.167.242-2.278.681-3.286"/>
+                        </svg>
+                    </button>
+                    <button type="button" class="btn btn-ex rounded-pill" onclick="toggleLightMode()">
+                        <i class="fas fa-moon"></i>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-brightness-high" viewBox="0 0 16 16">
+                            <path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6m0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708"/>
+                          </svg>
+                    </button>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</header>
+
+<main>
+    <div class="container">
+        <div class="d-lg-flex align-items-center fs-2" style="font-weight: bold;">
+            <p>
+                I'm DH, and I turn ideas into digital 
+                experiences that people love.
+            </p>
+        </div>
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur sint esse enim nemo explicabo!
+        </div>
+        <div style="padding-top: 2%;">
+            <button class="btn rounded-pill" style="background-color: rgb(0, 0, 0); color: #fff;">
+                Start a Project
+            </button>
+            <button type="button" class="btn rounded-pill " style="background-color: rgb(56, 47, 157); color: #fff; width: 5%; height: 5%; ">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0z"/>
+                  </svg>
+            </button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="d-lg-flex-box " style="text-align: justify; padding-left: 50%;">
+            <p class="fs-5" style=" font-weight: bold;">
+                Welcome, make yourself at home. I am a 
+                multidisciplinar y web designer, designing and 
+                building beautiful digital products, for 
+                companies around the world.  
+                
+            </p>
+            <p class="fs-5" style=" font-weight: bold;">
+                I believe that design should be both functional 
+                and aesthetically pleasing, and I am dedicated 
+                to delivering exceptional user experiences 
+                through thought ful design and meticulous 
+                at tention to detail.
+            </p>
+
+            <u>
+                Download resume  
+                <button type="button" class="btn rounded-pill " style="background-color: rgb(56, 47, 157); color: #fff; width: 5%; height: 5%; ">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0z"/>
+                      </svg>
+                </button>
+            </u>
+        </div>
+    </div>
+    
+    <div style="padding-top: 20%;">
+        <hr style="height: 2px; background-color: #ccc; border: none;">
     </div>
 
-    <footer class="footer">
-        <p style="padding-left: 30px;">I Can I Help You With</p>
-        <div class="container-wrapper">
-            <div class="container">
-                <a>01</a>
-                <div class="numeracao"></div>
-                <p>Design</p>
-                <div class="discri">Lorem ipsum dolor sit amet, consectetur 
-                    adipiscing elit, sed do eiusmod tempor 
-                    incididunt ut labore et.</div>
-                <p style="font-size: 20px;">WebSites</p>
-                <p style="font-size: 20px;">Mobile Apps</p>
-                <p style="font-size: 20px;">Web Apps</p>
-                <p style="font-size: 20px;">Design System</p>
-                <p style="font-size: 20px;">Branding</p>
+    <div class="container">
+        <div class="d-lg-flex-box align-items-center  fs-2" style="font-weight: bold;">
+            <p>
+                The Work i Do
+            </p>
+            <div class="btn-group" role="group" aria-label="Botões">
+                <button style="background-color: #000000; color: #fff;" type="button" class="btn rounded-pill"><i class="fas fa-info-circle"></i> All</button>
+                <button type="button" class="btn rounded-pill"><i class="fas fa-briefcase"></i> Design</button>
+                <button type="button" class="btn rounded-pill"><i class="fas fa-cogs"></i> Development</button>
             </div>
-            <div class="container">
-                <a>02</a>
-                <div class="numeracao"></div>
-                <p>Development</p>
-                <div class="discri">Lorem ipsum dolor sit amet, consectetur 
-                    adipiscing elit, sed do eiusmod tempor 
-                    incididunt ut labore et.</div>
-                <p style="font-size: 20px;">WebSites</p>
-                <p style="font-size: 20px;">Mobile Apps</p>
-                <p style="font-size: 20px;">Web Apps</p>
-            </div>
-            <div class="container">
-                <a>03</a>
-                <div class="numeracao"></div>
-                <p>Full Package</p>
-                <div class="discri">Lorem ipsum dolor sit amet, consectetur 
-                    adipiscing elit, sed do eiusmod tempor 
-                    incididunt ut labore et.</div>
-                <p style="font-size: 20px;">Design + Development</p>
-            </div>
-        </div>
-        <div class="discri2">
-            Get the  Full  Package,  Design  + Development with requests & <br> 
-            revisions.   No expensive hourl y billing.  Flat monthl y rate. <br>
-            Pause anytime.
-        </div>
-        <div class="preco">
-            <p>$2999<x>/month</x></p>
-        </div>
-        <div class="discri3">
-            I deal  f or  websites,  web aps, and brand design pro jects, custom code solutions, blogs an d 
-            app das h board design
-        </div>
-        <div style="padding-top: 35px;padding-left: 30px; display: flex;align-items: center;">
-            <img  class="imagem" src="https://images.pexels.com/photos/3741382/pexels-photo-3741382.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
-            <div style="margin-left: 25px;"> 
-                <button class="conteudo3"> Start a project </button>
-                <button class="conteudo4"> / </button>
-            </div >
-        </div>
-        <div class="call">
-            Don’t  know if   fits  you or not ?
-            <u style="padding-left: 5px;            cursor: pointer;">Let ’s have a call</u>
-        </div>
-        <div class="social">
-            <div class="linha">
-                Social Media
-            </div>
-        </div>
-        <div class="medias">
-            <p>Twitter</p>
-            <p style="margin-left: 25px;" >Linkdin</p>
-            <p style="margin-left: 25px;">GitHub</p>
-            <p style="margin-left: 25px;">Dribbble</p>
             
         </div>
-    </footer>
+
+    <div class="container mt-5">
+        <!-- Row 1 -->
+        <div class="row">
+            <!-- Card 1 -->
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <img src="https://images.pexels.com/photos/3741382/pexels-photo-3741382.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top" alt="Imagem 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Titulo</h5>
+                        <p class="card-text">Descrição.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Row 2 -->
+        <div class="row">
+            <!-- Card 2 -->
+            <div class="col-md-6 offset-md-6"> <!-- Utiliza a classe offset-md-6 para criar uma escadinha -->
+                <div class="card mb-4">
+                    <img src="https://images.pexels.com/photos/3741382/pexels-photo-3741382.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top" alt="Imagem 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Titulo</h5>
+                        <p class="card-text">Descrição.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Row 3 -->
+        <div class="row">
+            <!-- Card 3 -->
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <img src="https://images.pexels.com/photos/3741382/pexels-photo-3741382.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top" alt="Imagem 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Titulo</h5>
+                        <p class="card-text">Descrição.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Row 4 -->
+        <div class="row">
+            <!-- Card 4 -->
+            <div class="col-md-6 offset-md-6">
+                <div class="card mb-4">
+                    <img src="https://images.pexels.com/photos/3741382/pexels-photo-3741382.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top" alt="Imagem 4">
+                    <div class="card-body">
+                        <h5 class="card-title">Titulo</h5>
+                        <p class="card-text">Descrição.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Row 5 -->
+        <div class="row">
+            <!-- Card 5 -->
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <img src="https://images.pexels.com/photos/3741382/pexels-photo-3741382.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top" alt="Imagem 5">
+                    <div class="card-body">
+                        <h5 class="card-title">Titulo</h5>
+                        <p class="card-text">Descrição.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Row 6 -->
+        <div class="row">
+            <!-- Card 6 -->
+            <div class="col-md-6 offset-md-6" s>
+                <div class="card mb-4">
+                    <img src="https://images.pexels.com/photos/3741382/pexels-photo-3741382.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top" alt="Imagem 6">
+                    <div class="card-body">
+                        <h5 class="card-title">Titulo</h5>
+                        <p class="card-text">Descrição.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="d-lg-flex align-items-center justify-content-center" style="height: 100vh;">
+            <button class="btn rounded-pill" style="background-color: rgb(255, 255, 255); color: #000000; border: 1px solid #000000;">
+                Load More
+            </button>
+        </div>
+    </div>
+    
+</main>
+
+<footer class="footer">
+    <p style="padding-left: 30px;">I Can I Help You With</p>
+    <div class="container-wrapper">
+        <div class="container">
+            <a>01</a>
+            <div class="numeracao"></div>
+            <p>Design</p>
+            <div class="discri">Lorem ipsum dolor sit amet, consectetur 
+                adipiscing elit, sed do eiusmod tempor 
+                incididunt ut labore et.</div>
+            <p style="font-size: 20px;">WebSites</p>
+            <p style="font-size: 20px;">Mobile Apps</p>
+            <p style="font-size: 20px;">Web Apps</p>
+            <p style="font-size: 20px;">Design System</p>
+            <p style="font-size: 20px;">Branding</p>
+        </div>
+        <div class="container">
+            <a>02</a>
+            <div class="numeracao"></div>
+            <p>Development</p>
+            <div class="discri">Lorem ipsum dolor sit amet, consectetur 
+                adipiscing elit, sed do eiusmod tempor 
+                incididunt ut labore et.</div>
+            <p style="font-size: 20px;">WebSites</p>
+            <p style="font-size: 20px;">Mobile Apps</p>
+            <p style="font-size: 20px;">Web Apps</p>
+        </div>
+        <div class="container">
+            <a>03</a>
+            <div class="numeracao"></div>
+            <p>Full Package</p>
+            <div class="discri">Lorem ipsum dolor sit amet, consectetur 
+                adipiscing elit, sed do eiusmod tempor 
+                incididunt ut labore et.</div>
+            <p style="font-size: 20px;">Design + Development</p>
+        </div>
+    </div>
+    <div class="discri2">
+        Get the  Full  Package,  Design  + Development with requests & <br> 
+        revisions.   No expensive hourl y billing.  Flat monthl y rate. <br>
+        Pause anytime.
+    </div>
+    <div class="preco">
+        <p>$2999<x>/month</x></p>
+    </div>
+    <div class="discri3">
+        I deal  f or  websites,  web aps, and brand design pro jects, custom code solutions, blogs an d 
+        app das h board design
+    </div>
+    <div style="padding-top: 35px;padding-left: 30px; display: flex;align-items: center;">
+        <img  class="imagem" src="https://images.pexels.com/photos/3741382/pexels-photo-3741382.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+        <div style="margin-left: 25px;"> 
+            <button class="conteudo3"> Start a project </button>
+            <button class="conteudo4"> / </button>
+        </div >
+    </div>
+    <div class="call">
+        Don’t  know if   fits  you or not ?
+        <u style="padding-left: 5px;            cursor: pointer;">Let ’s have a call</u>
+    </div>
+    <div class="social">
+        <div class="linha">
+            Social Media
+        </div>
+    </div>
+    <div class="medias">
+        <p>Twitter</p>
+        <p style="margin-left: 25px;" >Linkdin</p>
+        <p style="margin-left: 25px;">GitHub</p>
+        <p style="margin-left: 25px;">Dribbble</p>
+        
+    </div>
+</footer>
+
+<script>
+    function toggleDarkMode() {
+        document.body.classList.add('dark-mode');
+    }
+
+    function toggleLightMode() {
+        document.body.classList.remove('dark-mode');
+    }
+</script>
+
 </body>
 </html>
