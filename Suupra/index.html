@@ -4,8 +4,206 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Design Hipermédia</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .footer {
+            background-color: rgba(38,30,30,255);
+            color: #fff;
+
+            bottom: 0;
+            width: 100%;
+            padding-top: 30px;
+        }
+
+        .footer p {
+            font-size: 30px;
+        }
+        .footer a {
+            font-size: 15px;
+            color: #535050;
+        }
+        .footer z {
+            color: #535050;
+        }
+        .container-wrapper {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .container {
+            width: 100%;
+            margin-right: 80px;
+            padding-left: 30px;
+        }
+        .numeracao{
+            border-bottom: #535050 solid 1px;
+            width: 100%;
+            padding-bottom: 10px;
+        }
+        .discri{
+            padding-bottom: 10px;
+            width: 60%;
+            font-size: 15px;
+            color: rgba(255, 255, 255, 0.7);
+        }
+        .discri2{
+            font-size: 30px;
+            text-align: left;
+            padding-top: 50px;
+            padding-left: 30px;
+        }
+        .preco{
+            padding-top: 50px;
+            padding-left: 30px;
+        }
+        .preco p {
+            font-size: 40px;
+        }
+        .preco x {
+            padding-left: 10px;
+            font-size: 15px;
+        }
+        .discri3 {
+            padding-top: 5px;
+            padding-left: 30px;
+            color: rgba(255, 255, 255, 0.7);
+        }
+        .imagem {
+            width: 80px;
+            height: 80px;
+            border-radius: 100%;
+        }
+        .conteudo3 {
+            background-color: rgb(255, 255, 255);
+            font-size: 15px;
+            cursor: pointer;
+            border-radius: 90px;
+            padding: 15px 20px;
+        }
+        .conteudo4 {
+            color: white;
+            background-color: rgb(47, 20, 225);
+            font-size: 15px;
+            cursor: pointer;
+            border-radius: 100%;
+            padding: 15px 25px;
+
+        }
+        .call {
+            display: flex;
+            padding-top: 50px;
+            padding-left: 30px;
+
+        }
+        .social {
+            padding-top: 60px;
+            padding-left: 20px;
+            padding-right: 70px;
+        }
+        .linha  {
+            font-size: 20px;
+            color: #535050;
+            border-bottom: #535050 solid 1px;
+            width: 100%;
+            padding-bottom: 10px;
+            padding-right: 10px;
+        }
+        .medias {
+            display: flex;
+            padding-left: 20px;
+            cursor: pointer;
+
+        }
+        .medias p {
+            font-size: 15px;
+        }
+
+    </style>
 </head>
 <body>
     <h1>Projeto 2</h1>
+        
+    <div class="content">
+        
+    </div>
+
+    <footer class="footer">
+        <p style="padding-left: 30px;">I Can I Help You With</p>
+        <div class="container-wrapper">
+            <div class="container">
+                <a>01</a>
+                <div class="numeracao"></div>
+                <p>Design</p>
+                <div class="discri">Lorem ipsum dolor sit amet, consectetur 
+                    adipiscing elit, sed do eiusmod tempor 
+                    incididunt ut labore et.</div>
+                <p style="font-size: 20px;">WebSites</p>
+                <p style="font-size: 20px;">Mobile Apps</p>
+                <p style="font-size: 20px;">Web Apps</p>
+                <p style="font-size: 20px;">Design System</p>
+                <p style="font-size: 20px;">Branding</p>
+            </div>
+            <div class="container">
+                <a>02</a>
+                <div class="numeracao"></div>
+                <p>Development</p>
+                <div class="discri">Lorem ipsum dolor sit amet, consectetur 
+                    adipiscing elit, sed do eiusmod tempor 
+                    incididunt ut labore et.</div>
+                <p style="font-size: 20px;">WebSites</p>
+                <p style="font-size: 20px;">Mobile Apps</p>
+                <p style="font-size: 20px;">Web Apps</p>
+            </div>
+            <div class="container">
+                <a>03</a>
+                <div class="numeracao"></div>
+                <p>Full Package</p>
+                <div class="discri">Lorem ipsum dolor sit amet, consectetur 
+                    adipiscing elit, sed do eiusmod tempor 
+                    incididunt ut labore et.</div>
+                <p style="font-size: 20px;">Design + Development</p>
+            </div>
+        </div>
+        <div class="discri2">
+            Get the  Full  Package,  Design  + Development with requests & <br> 
+            revisions.   No expensive hourl y billing.  Flat monthl y rate. <br>
+            Pause anytime.
+        </div>
+        <div class="preco">
+            <p>$2999<x>/month</x></p>
+        </div>
+        <div class="discri3">
+            I deal  f or  websites,  web aps, and brand design pro jects, custom code solutions, blogs an d 
+            app das h board design
+        </div>
+        <div style="padding-top: 35px;padding-left: 30px; display: flex;align-items: center;">
+            <img  class="imagem" src="https://images.pexels.com/photos/3741382/pexels-photo-3741382.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+            <div style="margin-left: 25px;"> 
+                <button class="conteudo3"> Start a project </button>
+                <button class="conteudo4"> / </button>
+            </div >
+        </div>
+        <div class="call">
+            Don’t  know if   fits  you or not ?
+            <u style="padding-left: 5px;            cursor: pointer;">Let ’s have a call</u>
+        </div>
+        <div class="social">
+            <div class="linha">
+                Social Media
+            </div>
+        </div>
+        <div class="medias">
+            <p>Twitter</p>
+            <p style="margin-left: 25px;" >Linkdin</p>
+            <p style="margin-left: 25px;">GitHub</p>
+            <p style="margin-left: 25px;">Dribbble</p>
+            
+        </div>
+    </footer>
 </body>
 </html>
