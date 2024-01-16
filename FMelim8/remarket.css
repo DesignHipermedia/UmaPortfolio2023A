@@ -1,0 +1,162 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: ce;
+}
+.containerMaior{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container1 {
+    background-color: #222; 
+    padding: 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.close-button {
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+}
+.container2 {
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-left:15% ;
+    padding-right: 0;
+}
+
+.medium-text {
+    font-size: 14px;
+    text-align: left;
+    margin-bottom:40px;
+    margin-top: 20px;
+}
+
+.big-text {
+    font-size: 28px;
+    font-weight: 700;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 70%;
+    text-align: left;
+    color: rgb(22, 18, 26);
+}
+.big-text1 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 70%;
+    text-align: left;
+    color: rgb(22, 18, 26);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.image {
+    width: 80%;
+    height: auto;
+    
+}
+.line {
+    height: 1px;
+    width: 80%;
+    background-color: #707070; /* Blue color */
+    margin: 20px 0;
+}
+.container3 {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    width: 80%;
+}
+.container4 {
+    display: flex;
+    align-items: start;
+    width: 20%;
+}
+.visit-link {
+    text-decoration: none;
+    text-wrap: nowrap;
+    color: #3498db;
+    margin-right: 10px;
+    transform: translateY(60%);
+}
+
+.blue-button {
+    background-color: #4107ac;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+}
+.container5 {
+    padding: 20px;
+    width: 60%;
+}
+svg{
+    width: 20px;
+    transform: translateX(-9px);
+}
+.comment{
+    background-color: rgb(255, 255, 255);
+    margin: 10px;
+    padding: 10px;
+    width:40%;
+    box-shadow: #bebebe 1px 1px 1px 1px;
+}
+.profiles{
+    background-color: transparent;
+    height: 5%;
+    width: 40%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.titulocomment{
+    background-color: transparent;
+    font-size: 12px;
+    text-decoration: underline;
+    font-weight: 700;
+    transform: translatey(30%);
+    margin-right: 5px;
+}
+.containerComm{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.descricao{
+    padding: 5px;
+    text-align: justify;
+    background-color: transparent;
+}
+.cardProfile{
+    background-color: green;
+    padding: 3px;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+.container-profiles{
+    margin-top: 10px;
+    display: flex;
+    justify-content: end;
+    margin-right: 2%;
+    background-color: transparent;
+}
