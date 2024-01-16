@@ -135,6 +135,8 @@ h5{
     cursor: pointer;
 }
 
+
+
 .icon{
     width: 60px;
     height: 60px;
@@ -467,16 +469,23 @@ h5{
 
 .navbar-nav{
     margin-top:250px;
-    margin-left: 150px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+nav{
+  width:100%;
 }
 
 
-.navbar{
-  margin-bottom: 100px;
-
+.mybutton{
+  width:100px;
 }
 
-
+.mybutton2{
+  width:100px;
+}
 
 .modal-body .mb-3 {
     flex-direction: column;
@@ -494,8 +503,6 @@ h5{
 .modal-footer a {
     font-size: 16px;
 }
-
-
 
 
 .container3{
@@ -519,10 +526,20 @@ h5{
   margin-left: 50px;
 }
 
-
+.container2{
+  width:100%;
+  display: flex;
+  flex-direction: column;
 
 
 }
 
+.procurar{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
 
 
+}
