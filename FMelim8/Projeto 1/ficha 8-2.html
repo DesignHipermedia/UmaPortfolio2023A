@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/vue@3"></script>
+    <div id="app">
+        Lista de Tarefas
+        <input type="text" placeholder="Insira uma nova tarefa" v-model="novaTarefa" @keyup.enter="insereTarefa">
+        <button @click="toggleEdit">Editar</button>
+        <ul v-if="!edit">
+            <li v-for="item in tarefas"
+            :class="{realizada: item.realizada, prioritario: item.prioritario}"
+            @click="realizaTarefa(item)">
+                {{item.nome}}
+            </li>
+        </ul>
+        <ul v-if="edit">
+            <li v-for="item in tarefas" :class="{realizada: item.realizada, prioritario: item.prioritario}">
+                <input type="text" v-model="item.nome">
+                <input type="checkbox" v-model="item.realizada">
+                <input type="checkbox" v-model="item.prioritario">
+            </li>
+        </ul>
+    </div>
+    <script>
+        const app = Vue.createApp({
+            data() {
+                return {
+                    texto: "",
+                    edit: false,
+                    novaTarefa: "",
+                    tarefas: [{
+                        nome: "Exercício de HTML",
+                        prioritario: false, 
+                        realizada: true
+                    },{
+                        nome: "Exercício de CSS",
+                        prioritario: false, 
+                        realizada: false
+                    },{
+                        nome: "Exercício de JavaScript",
+                        prioritario: false, 
+                        realizada: false
+                    },{
+                        nome: "Exercício de VueJS",
+                        prioritario: true, 
+                        realizada: false
+                    },{
+                        nome: "Juntar tudo no Projeto 1",
+                        prioritario: false, 
+                        realizada: false
+                    }]
+                };
+            },
+            methods: {
+                toggleEdit: function() {
+                    this.edit = !this.edit;
+                },
+                realizaTarefa: function(item) {
+                    item.realizada = !item.realizada;
+                },
+                insereTarefa: function() {
+                    if (!!this.novaTarefa) {
+                        this.tarefas.push({
+                            nome: this.novaTarefa,
+                            prioritario: false,
+                            realizada: false
+                        });
+                        this.novaTarefa = "";
+                    }
+                }
+            }
+        });
+
+        app.mount('#app');
+    </script>
+    <style>
+        .realizada {
+            text-decoration: line-through;
+            color: gray;
+        }
+        .prioritario {
+            color: red;
+        }
+    </style>
+</body>
+</html>

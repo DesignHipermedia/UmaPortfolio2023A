@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <label for="claro">Claro</label>
+        <input checked type="radio" name="tema" id="claro">
+        &ensp;
+        <label for="escuro">Escuro</label>
+        <input type="radio" name="tema" id="escuro">
+    </form>
+    <div class="container-grid">
+        <div class="card card1">
+            <h2>Team Builder</h2>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis minima quisquam itaque! Quos, eaque aliquam.
+            <img src="house.svg" width="40"  alt="">
+        </div>
+        <div class="card card2">
+            <h2>Karma</h2>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis minima quisquam itaque! Quos, eaque aliquam.
+            <img src="lamp.svg" width="40"  alt="">
+        </div>
+        <div class="card card3">
+            <h2>Supervisor</h2>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis minima quisquam itaque! Quos, eaque aliquam.
+            <img src="lupa.svg" width="40"  alt="">
+        </div>
+        <div class="card card4">
+            <h2>Calculator</h2>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis minima quisquam itaque! Quos, eaque aliquam.
+            <img src="computer.svg" width="40"  alt="">
+        </div>
+    </div>
+    <style>
+        :root{
+            --cor-letras: black;
+        }
+        :root:has(#escuro:checked){
+            --cor-letras: ;
+        }
+        :root:has(#claro:checked){
+            --cor-letras: wheat;
+        }
+        .container-grid{
+            display: grid;
+            gap: 10px;
+            justify-content: center;
+            align-items: center;
+            grid-template-areas: 
+            ". c2 . "
+            "c1 c2 c3"
+            "c1 c4 c3"
+            ". c4 ."
+            ;
+        }
+        @media(max-width:600px){
+            .container-grid{
+            display: grid;
+            gap: 10px;
+            grid-template-areas: 
+            "c1"
+            "c2"
+            "c3"
+            "c4"
+            ;
+        } 
+        }
+        .card{
+            color: var(--cor-letras);
+            width: 350px;
+            height: 250px;
+            padding: 50px;
+            margin: 10px;
+
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            justify-content: space-between;
+
+            border-radius: 15px;
+            box-shadow: 5px 5px 5px 5px rgba(0,0,0, 0.5);
+            background-color: white;
+            text-align: justify;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body{
+            background-color: gray;
+        }
+        h2{
+            align-self: flex-start;
+            margin: 0;
+        }
+        .card1{
+            grid-area: c1;
+            border-top: solid 5px blue;
+        }
+        .card2{
+            grid-area: c2;
+            border-top: solid 5px red;
+        }
+        .card3{
+            grid-area: c3;
+            border-top: solid 5px orange;
+        }
+        .card4{
+            grid-area: c4;
+            border-top: solid 5px cyan;
+        }
+    </style>
+</body>
+</html>
