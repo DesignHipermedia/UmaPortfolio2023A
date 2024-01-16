@@ -1,8 +1,9 @@
 body {
-    margin: 0;
-    padding: 0;
-    transition: grey 0.3s ease;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  transition: color 0.3s ease;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .navbar {
     box-sizing: border-box;
@@ -17,7 +18,7 @@ body {
     width: 100%;
     height: 10%;
     z-index: 1000;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 body.scrolled .navbar {
     background-color: black;
@@ -308,7 +309,7 @@ body.scrolled .navbar {
     font-size: 12px;
     border: 0.1px solid black ;
     transition: all 600ms;
-    overflow: hidden;
+    /* overflow: hidden; */
     line-height: 2.5;
     
   }
@@ -411,3 +412,134 @@ body.scrolled .navbar {
     border-bottom:1px solid rgba(0, 0, 0, 0.5);
     transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
   }
+  @media only screen and (max-width: 992px) {
+    .botao3{
+      display: none;
+    }
+
+    html{
+      display: flex;
+      align-items: center;
+      width: 80%;
+    }
+    body{
+      width: 125%;
+    }
+    .ftlink{
+      display: none;
+    }
+    .cardft{
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+      width: fit-content;
+      padding: 10px 0px;
+      background-color: transparent;
+      
+      
+    }
+     .sectionb{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+     } 
+     .sectiony{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+     } 
+     .sectionv{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+     } 
+     .sectionver{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+     }  
+     .workp2, .workp{
+      display: none;
+     }
+     .button {
+      position: absolute;
+      width: 100%;
+      left:0;
+      top: 50px;
+      text-align: center;
+      opacity: 0;
+      transition: opacity .5s ease;
+    }
+    .workh1{
+      margin-left: 50px;
+
+    }
+    .h1work{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      align-content: center;
+      justify-items: center;
+    }
+    .botoes4{
+      display: none;
+    }
+    .h1work{
+      margin-top: 70px;
+      margin-left: 43.375px;
+      border-top: 2px solid #4e4d4d45;
+      width: 81%;
+      box-sizing: none;
+      justify-content: space-between;
+      display: flex;
+      align-items: center;
+      font-size: 30px;
+      
+    
+      padding-top: 15px;
+    }
+    .input-search{
+      height: auto;
+      width: 97.5%;
+      border-style: none;
+      padding: 10px;
+      font-size: 18px;
+      letter-spacing: 2px;
+      outline: none;
+      border: 1px solid ;
+      border-radius: 25px;
+      transition: all .5s ease-in-out;
+      background-color: rgb(255, 255, 255);
+      padding-right: 40px;
+      color:#000000;
+    }
+    .footer{
+      display: flex;
+      padding: 0px 70px 0px;
+      color: #fff;
+      align-items: flex-start;
+      background-color: #2d3242;
+      flex-direction: row;
+      
+  
+    }
+    /* .cartoesft{
+    
+      width: 100%;
+      gap: 70px;
+      display: flex;
+      align-items: space-between;
+      justify-content: center;
+      flex-direction: column;
+    } */
+    .cartoesft1{
+      display: none;
+    }
+    .title{
+      display: none;
+    }
+}

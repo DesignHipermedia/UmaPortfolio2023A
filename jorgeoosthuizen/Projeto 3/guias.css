@@ -131,7 +131,7 @@ h5{
 }
 
 .card{
-    width: 40%;
+    width: 60%;
     cursor: pointer;
 }
 
@@ -505,10 +505,11 @@ header{
 }
 
 .container2{
-  width:1300px;
+  width:1800px;
   gap:50px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  
   
 }
 

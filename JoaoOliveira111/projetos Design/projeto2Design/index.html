@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <style>
+        .flex-grid {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 50px;
+        }
+
+        .flex-grid .col {
+            width: 32%;
+        }
+
+        @media (max-width: 400px) {
+            .flex-grid {
+                display: block;
+
+                .col {
+                    width: 100%;
+                    margin: 0 0 10px 0;
+                }
+            }
+        }
+    </style>
+</head>
+<body>
+<div id="app" :class="{ 'dark_mode': ModoAtivo('dark') }">
+    <header>
+        <div class="container">
+            <div class="perfilimagem">
+                <img class="profile" src="foto1.png" alt="">
+                <div class="copyright">
+                    <h3>© DH</h3>
+                </div>
+            </div>
+            <div class="navegacao">
+                <nav>
+                    <div class="menu">
+                        <button class="botao">About
+                        </button>
+                        <button class="botao">
+                            Work
+                        </button>
+                        <button class="botao">Solutions
+                        </button>
+                        <div class="alternarmodo">
+                            <button class="light" :class="{ 'active': ModoAtivo('light') }"
+                                    @click="definirModo('light')" type="button">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-sun" viewBox="0 0 16 16">
+                                    <path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6m0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708"/>
+                                </svg>
+                            </button>
+                            <button class="dark" :class="{ 'active': ModoAtivo('dark') }" @click="definirModo('dark')"
+                                    type="button">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-moon" viewBox="0 0 16 16">
+                                    <path d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278M4.858 1.311A7.27 7.27 0 0 0 1.025 7.71c0 4.02 3.279 7.276 7.319 7.276a7.32 7.32 0 0 0 5.205-2.162q-.506.063-1.029.063c-4.61 0-8.343-3.714-8.343-8.29 0-1.167.242-2.278.681-3.286"/>
+                                </svg>
+                            </button>
+                        </div>
+
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <section class="primeiroparagrafo">
+        <div class="titulo">
+            <h1>I'm DH, and I tur ideas into digital<br>experiences that people love.
+            </h1>
+        </div>
+        <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br>sed do eiusmod tempor incididunt ut labore eta.
+        </h2>
+        <div class="projeto">
+            <button class="botaoinicio">Start a project</button>
+        </div>
+    </section>
+    <div class="container-2">
+        <div class="segundoparagrafo">
+            <p>Welcome, make yourself at home. I am a<br>multidisciplinary web designer, designing
+                and<br>building beautiful digital products, for<br>companies around the world.
+            </p>
+            <p>I believe that design should be both functional<br>and aesthetically pleasing, and I am dedicated<br>to
+                delivering exceptional user experiences<br>through thoughtful design and meticulous<br>attention to
+                detail.
+            </p>
+            <div class="curriculo">
+                <a href="pageerror.html"> Download Resume</a>
+                <button class="seta">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.6568 8.96219L16.2393 10.3731L12.9843 7.10285L12.9706 20.7079L10.9706 20.7059L10.9843 7.13806L7.75404 10.3532L6.34314 8.93572L12.0132 3.29211L17.6568 8.96219Z"
+                              fill="currentColor"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="linha"></div>
+    <div class="container-3">
+        <h1>The work I do</h1>
+        <div class="menu-trabalho">
+            <button class="botao">All</button>
+            <button class="botao">Design</button>
+            <button class="botao">Development</button>
+        </div>
+
+    </div>
+    <div class="flex-grid">
+        <div class="col">
+            <div class="container-projetos">
+                <div class="image-container">
+                    <img class="image" src="2.jpg" alt="switchblack">
+                    <button class="container-btn">
+                        Ver mais
+                    </button>
+                    <h2>Switch Black</h2>
+                    <h3>Design 2023</h3>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="container-projetos">
+                <div class="image-container">
+                    <img class="image" src="foto2.jpg" alt="switchblack">
+                    <button class="container-btn">
+                        Ver mais
+                    </button>
+                    <h2>Switch Black</h2>
+                    <h3>Design 2023</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="flex-grid">
+        <div class="col">
+            <div class="container-projetos">
+                <div class="image-container">
+                    <img class="image" src="foto3.png" alt="switchblack">
+                    <button class="container-btn">
+                        Ver mais
+                    </button>
+                    <h2>Switch Black</h2>
+                    <h3>Design 2023</h3>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="container-projetos">
+                <div class="image-container">
+                    <img class="image" src="foto4.png" alt="switchblack">
+                    <button class="container-btn">
+                        Ver mais
+                    </button>
+                    <h2>Switch Black</h2>
+                    <h3>Design 2023</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="flex-grid">
+        <div class="col">
+            <div class="container-projetos">
+                <div class="image-container">
+                    <img class="image" src="foto5.png" alt="switchblack">
+                    <button class="container-btn">
+                        Ver mais
+                    </button>
+                    <h2>Switch Black</h2>
+                    <h3>Design 2023</h3>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="container-projetos">
+                <div class="image-container">
+                    <img class="image" src="foto6.png" alt="switchblack">
+                    <button class="container-btn">
+                        Ver mais
+                    </button>
+                    <h2>Switch Black</h2>
+                    <h3>Design 2023</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="load-more">
+        <button class="botaoloadmore">Load more</button>
+    </div>
+    <div class="container4">
+        <h1>I can I help you with</h1>
+        <div class="cards">
+            <div class="card">
+                <div class="numero">01</div>
+                <div class="line"></div>
+                <h4>Design</h4>
+                <h3>Lorem ipsum dolor sit amet, consectetur<br>adipiscing elit, sed do eiusmod tempor<br>incididunt ut
+                    labore et.
+                </h3>
+                <h2>
+                    <p>Websites</p>
+                    <p>Mobile apps</p>
+                    <p>Web apps</p>
+                    <p>Design systems</p>
+                    <p>Branding</p>
+                </h2>
+            </div>
+            <div class="card">
+                <div class="numero">02</div>
+                <div class="line"></div>
+                <h4>Development</h4>
+                <h3>Lorem ipsum dolor sit amet, consectetur<br>adipiscing elit, sed do eiusmod tempor<br>incididunt ut
+                    labore et.
+                </h3>
+                <h2>
+                    <p>Websites</p>
+                    <p>Mobile apps</p>
+                    <p>Web apps</p>
+                </h2>
+            </div>
+            <div class="card">
+                <div class="numero">03</div>
+                <div class="line"></div>
+                <h4>Full Package</h4>
+                <h3>Lorem ipsum dolor sit amet, consectetur<br>adipiscing elit, sed do eiusmod tempor<br>incididunt ut
+                    labore et.
+                </h3>
+                <h2>
+                    <p>Design + Development</p>
+                </h2>
+            </div>
+        </div>
+        <div class="terceiroparagrafo">
+            <h4>Get the Full Package, Design + Development with requests &<br>revisions. No expensive hourly billing.
+                Flat
+                monthly rate.<br>Pause anytime.
+            </h4>
+            <span style="font-size: 60px;">$2999</span>&nbsp;<span style="font-size: 20px;">/month</span>
+            <h3>Ideal for websites, web aps, and brand design projects, custom code solutions, blogs and<br>app
+                dashboard
+                design.
+            </h3>
+        </div>
+        <div class="botoesfooter" style="margin-bottom: 30px">
+            <img class="perfilpequena" src="foto1.png" alt="">
+            <div class="projeto">
+                <button class="start2">Start a Project</button>
+                <button class="seta2">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                                d="M17.6568 8.96219L16.2393 10.3731L12.9843 7.10285L12.9706 20.7079L10.9706 20.7059L10.9843 7.13806L7.75404 10.3532L6.34314 8.93572L12.0132 3.29211L17.6568 8.96219Z"
+                                fill="currentColor"
+                        />
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div class="call">
+            <h3>Don't know if fits you or not? </h3>
+            <a href="page2.html" style="color: white; font-size:20px;">Let's have a call</a>
+        </div>
+        <div class="socialmedia">
+            <div class="numero">SOCIAL MEDIA</div>
+            <div class="linhasocialmedia"></div>
+            <span class="linksbaixo"><a href="pageerror.html">Twitter</a>&nbsp;
+            <a href="pageerror.html" >Linkedin</a>&nbsp;
+            <a href="pageerror.html" >Github</a>&nbsp;
+            <a href="pageerror.html" >Dribble</a></span>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    new Vue({
+        el: "#app",
+        data() {
+            return {
+                modoAtivo: 'light',
+            };
+        },
+        methods: {
+            modo() {
+                console.log("modo");
+                return this.modoAtivo;
+            },
+            definirModo(modo) {
+                this.modoAtivo = modo;
+            },
+            ModoAtivo(modo) {
+                return this.modoAtivo === modo;
+            },
+        },
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,144 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+header{
+    background-color:  #017143;
+    height:10px;
+    padding: 5vh;
+    display: flex;
+    align-items: center;
+}
+.part-nav{
+    margin-right: 100px;
+    flex-direction:row;
+    width: 40px;
+    display:flex;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    align-items: center;
+    text-align:left;
+}
+.center{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin-top: auto;
+    padding: 0 2%;
+    align-items: flex-start;
+}
+.menu{
+    display: flex;
+    width: 100%;
+    text-align:right;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+.img1{
+    display: flex;
+    height: 200px;
+    border-radius: 20px;
+}
+button{
+    background-color:#017143;
+    color:white;
+    border: none;
+    padding: 13px;
+    padding-inline: 30px;
+    border-radius: 29px;
+    font-size: 30px;
+    align-items: center;
+}
+.button:hover{
+    background-color: #017143;
+    border: 2px #017143;
+    transition: background-color 0.5s ease;
+}
+h1{
+    font-size: 40px;
+    align-items: center;
+    margin-left: 100px;
+    color:black;
+    font-family:'Times New Roman', Times, serif;
+}
+h2{
+    margin-left: 100px;
+    color:black;
+    font: 170px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+p{
+    margin-left: 100px;
+    color:black;
+    font-size: 17px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.section1{
+    display: flex;
+}
+.section2{
+    display: flex;
+    flex-direction: column;
+
+}
+.img{
+    width: auto;
+}
+.img2{
+    margin-left: 700px;
+    width:auto;
+    border-radius: 40px;
+    display:flexbox;
+    height:300px;
+    flex-direction: column;
+}
+.linha{
+    margin-top: 7px;
+    margin-bottom: 7px;
+    border: 2px solid balck;
+}
+
+footer{
+    display: flex;
+    padding-inline: 10px;
+    padding-block: 10px;
+    background-color:#017143;
+    justify-content: space-between;
+}
+.botoes{
+    display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color:#017143;
+   color:white;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+@media screen and (max-width: 600px) {
+    header {
+        padding: 10px;
+    }
+
+    header a {
+        margin: 5px 0;
+    }
+
+    button {
+        margin-top: 5px;
+    }
+
+    .section1 {
+        text-align: center;
+    }
+
+    .section1 img {
+        margin-top: 20px;
+    }
+
+    .linha {
+        margin: 10px 0;
+    }
+}
+

@@ -1,0 +1,87 @@
+.h1{
+    font-size: 48px;
+}
+.p1{
+    font-size: 28px;
+}
+.body{
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    color: white;
+}
+.startfootercont{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    padding: 15px 70px ;
+    width: 100%;
+  }
+  .startfooter{
+    text-align: center;
+    margin-left: 10%;
+    width: 10vw;
+    height: 3vh;
+    border-radius: 25vw;
+    background-color: #2b2a2a;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  .startfooter:hover{
+    background-color: #22142e;
+  }
+  .textoft3{
+    padding: 40px 70px;
+    font-size: 40px;
+    width: 100%;
+  }
+  .cartoes{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+  }
+  .cartoes{
+    padding: 0px 70px 0px;
+    width: 100%;
+    gap: 20px;
+    display: flex;
+    align-items: space-between;
+  }
+  .cardft{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    width: fit-content;
+    background-color: transparent;
+  }
+  .topicos{
+    padding-bottom: 5px;
+    border-bottom: 1px solid #fff;
+    width: 100%;
+    
+  }
+  .titulocardft{
+
+    font-size: 30px;
+    margin-bottom: 15px;
+  }
+  .textoft{
+    font-size: 17px;
+  }
+  .pol{
+    margin-top: 9px;
+    font-size: 20px;
+    
+  
+  }
+  .autor{
+    background-color: rgb(255, 208, 0);
+    width: auto;
+    margin-top: 20p;
+    height: 200px;
+    display: flex;
+    align-content: center;
+    border-radius: 35px;
+
+  }
