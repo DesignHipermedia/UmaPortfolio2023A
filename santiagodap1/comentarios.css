@@ -79,6 +79,41 @@ h2{
 .p{
     margin-block: 20px;
 }
+.comentarios{
+    margin-block: 20px;
+    width: 40%;
+    
+}
+h3{
+    font-weight: 600;
+}
+.conteainer-coments{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.imgs-coment{
+    width: 40px;
+    border-radius: 100%;
+    padding: 2px;
+}
+.container-imgs{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+.container-imgs2{
+    width: 39%;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+#h3{
+    font-weight: 700;
+}
+
 @media (max-width: 450px) {
     .button-header{
         padding: 15px;
@@ -105,5 +140,39 @@ h2{
     }
     .container-sub{
         width: 100%;
+    }
+    .conteainer-coments{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .imgs-coment{
+        width: 70px;
+        border-radius: 100%;
+        padding: 2px;
+    }
+    .container-imgs{
+        width: 100%;
+        display: flex;
+    }
+    .container-imgs2{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .comentarios{
+        margin-block: 20px;
+        width: 100%;
+        
+    }
+    #h3{
+        display: flex;
+        justify-content: center;
+    }
+    #img-centrada{
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
