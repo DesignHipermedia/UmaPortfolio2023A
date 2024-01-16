@@ -1,0 +1,136 @@
+body{
+    background-color: #2D3250;
+    margin: 0;
+    
+}
+header{
+    background-color: #202337;
+    height: 13vh;
+    padding-inline: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.pesquisa-part{
+    width: 50%;
+    height: 4vh;
+    display: flex;
+}
+#uma{
+    width: 20%;
+    height: 100%;
+}
+.pesquisa-logo{
+    display: flex;
+    width: 50px;
+    color: #F8FAE5;
+}
+.pesquisa-logo:hover{
+    color: #43766C;
+}
+.part-nav{
+    width: 39%;
+    display: flex;
+    justify-content: space-around;
+}
+.input{
+    display: flex;
+    justify-content: flex-start;
+}
+#pesquisa{
+    background-color: #F8FAE5;
+    border-radius: 18px;
+    width: 50%;
+    height: 100%;
+    border: none;
+    transition: width 0.7s ease;
+}
+#pesquisa:hover{
+    width: 100%;
+    transition: width 0.7s ease;
+}
+button{
+    background-color: #43766C;
+    color: white;
+    border: none;
+    padding: 13px;
+    padding-inline: 30px;
+    border-radius: 29px;
+    transition: background-color 0.5s ease;
+}
+button:hover{
+    background-color: #202337;
+    border: 1px #43766C solid;
+    transition: background-color 0.5s ease;
+    
+}
+main{
+    padding-inline: 7%;
+    padding-block: 10vh;
+}
+h1{
+    color: white;
+    font-size: xx-large;
+}
+p{
+    margin-top: 10%;
+    color: white;
+    font-size: larger;
+}
+.section1{
+    display: flex;
+}
+#img{
+    width: auto;
+    height: 50vh;
+}
+.linha{
+    margin-top: 7vh;
+    border: 2px solid #F8FAE5;
+    margin-bottom: 7vh;
+}
+.section2{
+    display: flex;
+    flex-direction: column;
+    
+}
+.cards{
+    margin-top: 7vh;
+    height: 400px;
+    background-color: #43766C;
+    border-radius: 20px;
+    display: flex;
+}
+.card{
+    border-radius: 20px;
+    width: 33%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.5s ease, background-color 0.3s ease;
+}
+.card:hover{
+    border-radius: 20px;
+    transform: translateY(-50px);
+    transition: transform 0.6s ease;
+    
+}
+.verde:hover{
+    background-color: rgb(0, 83, 0);
+}
+.amarelo:hover{
+    background-color: rgb(74, 74, 0);
+}
+.azul:hover{
+    background-color: rgb(0, 0, 57);
+
+}
+footer{
+    display: flex;
+    padding-inline: 10%;
+    padding-block: 10vh;
+    background-color: #0A1412;
+    justify-content: space-between;
+}
+
