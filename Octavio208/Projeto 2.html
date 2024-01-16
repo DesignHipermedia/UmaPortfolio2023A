@@ -1,0 +1,718 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Projeto2</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  </head>
+  <body>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        body.dark-mode {
+            background-color: #333;
+            color: #fff;
+        }
+
+        #avatar-container {
+            position: relative;
+            top: 20px;
+            left: 35px;
+            width: 100px;
+            height: 100px;
+            overflow: hidden;
+            border-radius: 50%;
+            border: 2px solid #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        #avatar {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        #button-container {
+            position: relative;
+            top: -20px;
+            right: -650px;
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-button {
+            padding: 10px 15px;
+            background-color: #fff;
+            color: #000;
+            border: 1px solid #524e4e9d;
+            border-radius: 50px;
+            cursor: pointer;
+            margin-right: 5px;
+        }
+
+        #title-container {
+            position: relative;
+            top: -20px;
+            left: 35px;
+            width: 100%;
+        }
+
+        #title {
+            font-size: 25px;
+            font-weight: bold;
+            color: #333;
+            line-height: 1.2;
+        }
+
+        #subtitle-container {
+            position: relative;
+            top: -50px;
+            left: 35px;
+            width: 100%;
+            margin-top: 45px;
+        }
+
+        #subtitle {
+            font-size: 13px;
+            color: #666;
+            line-height: 1.2;
+        }
+
+        #custom-button-container {
+            position: relative;
+            top: -45px;
+            left: 35px;
+        }
+
+        #custom-button {
+            padding: 10px 15px;
+            background-color: #000000d5;
+            color: #fff;
+            border: 2px solid #fff;
+            border-radius: 50px;
+            cursor: pointer;
+        }
+
+        #circular-button-container {
+            position: relative;
+            top: -90px;
+            left: 24%;
+        }
+
+        #circular-button {
+            width: 43px;
+            height: 43px;
+            background-color: #2729ad;
+            color: #fff;
+            border: 2px solid #fff;
+            border-radius: 50%;
+            cursor: pointer;
+            position: relative;
+        }
+
+        #light-dark-buttons-container {
+            position: relative;
+            top: -125px;
+            right: -790px;
+            display: flex;
+        }
+
+        #light-mode-button,
+        #dark-mode-button {
+            width: 40px;
+            height: 40px;
+            background-color: #fff;
+            color: #000;
+            border: 1px solid #524e4e9d;
+            border-radius: 50%;
+            cursor: pointer;
+            margin-right: 5px;
+        }
+
+        #welcome-text-container {
+            position: relative;
+            top: 100px;
+            right: -42%;
+            transform: translateY(-50%);
+            text-align: left;
+            max-width: 450px;
+            line-height: 1.6;
+            color: #000000;
+            font-size: 20px;
+        }
+
+        #download-resume {
+            margin-top: 15px;
+            text-decoration: underline;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        #download-button {
+            width: 30px;
+            height: 30px;
+            background-color: #2729ad;
+            color: #fff;
+            border: 2px solid #fff;
+            border-radius: 50%;
+            cursor: pointer;
+            margin-left: 10px;
+        }
+
+        #separator-line {
+            position: relative;
+            top: 90%;
+            left: 10px;
+            width: calc(100% - 20px);
+            height: 1px;
+            background-color: #ccc;
+        }
+
+        #work-title-container {
+            position: relative;
+            top: 10%;
+            left: 3%;
+            width: 100%;
+        }
+
+        #work-title-container h2 {
+            font-size: 28px;
+            font-weight: bold;
+            color: #333;
+            line-height: 3;
+        }
+
+
+    </style>
+</head>
+
+<body>
+
+    <div id="avatar-container">
+        <img id="avatar" src="https://igd-wp-uploads-pluginaws.s3.amazonaws.com/wp-content/uploads/2016/05/30105213/Qual-e%CC%81-o-Perfil-do-Empreendedor.jpg" alt="Avatar">
+    </div>
+
+    <div id="button-container">
+        <button class="nav-button">About</button>
+        <button class="nav-button">Work</button>
+        <button class="nav-button">Solutions</button>
+    </div>
+
+    <div id="title-container">
+        <p id="title"><strong>I'm DH, and I turn ideas into digital<br>experiences that people love.</strong></p>
+    </div>
+
+    <div id="subtitle-container">
+        <p id="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br> sed do eiusmod tempor incididunt ut labore et.</p>
+    </div>
+
+    <div id="custom-button-container">
+        <button id="custom-button">Start a project</button>
+        <button id="circular-button">
+            <div id="arrow">⇗</div>
+        </button>
+    </div>
+
+    <div id="light-dark-buttons-container">
+        <button id="light-mode-button" onclick="setLightMode()">☀</button>
+        <button id="dark-mode-button" onclick="setDarkMode()">☾</button>
+    </div>
+
+    <div id="welcome-text-container">
+        <p>Welcome, make yourself at home. I am a multidisciplinary web designer, designing and building beautiful digital products, for companies around the world.<br><br> I believe that design should be both functional and aesthetically pleasing, and I am dedicated to delivering exceptional user experiences through thoughtful design and meticulous attention to detail.</p>
+
+        <p id="download-resume">
+            <span>Download resume</span>
+            <button id="download-button">&#8594;</button>
+        </p>
+    </div>
+
+    <div id="separator-line"></div>
+
+    <div id="work-title-container">
+        <h2>The work I do</h2>
+    </div>
+
+    <div id="work-cards-container">
+        <div class="work-card">
+            <img src="https://neilpatel.com/wp-content/uploads/2019/03/sites-de-busca-1.jpeg" alt="Work Image 1">
+            <div class="card-content">
+                <h3>UIDeli.com</h3>
+                <p>Design + Development 2023 <br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br>
+                    sed do eiusmod tempor incididunt ut labore et.</p>
+            </div>
+        </div>
+        <div class="work-card">
+            <img src="https://br-blog.files.wordpress.com/2018/12/qs_screenshot1.jpg" alt="Work Image 2">
+            <div class="card-content">
+                <h2>Koto Studio</h2>
+                <p>Development 2023 <br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br>
+                    sed do eiusmod tempor incididunt ut labore et.</p>
+            </div>
+        </div>
+        <div class="work-card">
+            <img src="https://www.hostinger.com.br/tutoriais/wp-content/uploads/sites/12/2018/11/Como-Criar-um-Site.png" alt="Work Image 3">
+            <div class="card-content">
+                <h3>Switch Black</h3>
+                <p>Design 2023 <br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br>
+                    sed do eiusmod tempor incididunt ut labore et.</p>
+            </div>
+        </div>
+        <div class="work-card">
+            <img src="https://digitalpixel.com.br/wp-content/uploads/2015/04/Capa-post-1.png" alt="Work Image 4">
+            <div class="card-content">
+                <h3>ReMarket</h3>
+                <p>Development 2023 <br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br>
+                    sed do eiusmod tempor incididunt ut labore et.</p>
+            </div>
+        </div>
+        <div class="work-card">
+            <img src="https://www.swagencia.com.br/wp-content/uploads/2023/07/criacao-de-sites.jpg" alt="Work Image 5">
+            <div class="card-content">
+                <h3>Another One</h3>
+                <p>Development 2023<br><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br>
+                    sed do eiusmod tempor incididunt ut labore et.</p>
+            </div>
+        </div>
+        <div class="work-card">
+            <img src="https://www.baitasite.com.br/wp-content/uploads/2020/12/baitasite-criacao-de-sites-notebook.webp" alt="Work Image 6">
+            <div class="card-content">
+                <h3>Bleder Renders</h3>
+                <p>Design + Development 2023 <br><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br>
+                    sed do eiusmod tempor incididunt ut labore et.</p>
+            </div>
+        </div>
+        <div class="body2">
+            <div class="helpful-page">
+                <h1 class="page-title">I can help you with</h1>
+                <div class="tasks">
+                    <div class="task">
+                        <span class="task-number">01</span>
+                        <hr class="task-line">
+                        <p class="task-title">Design</p>
+                        <p class="task-description">Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit, sed do eiusmod tempor
+                            incididunt ut labore et.</p>
+                        <p class="task-description">Websites</p>
+                        <p class="task-description">Mobile apps</p>
+                        <p class="task-description">Web apps</p>
+                        <p class="task-description">Design systems</p>
+                        <p class="task-description">Branding</p>
+                    </div>
+                    <div class="task">
+                        <span class="task-number">02</span>
+                        <hr class="task-line">
+                        <p class="task-title">Branding</p>
+                        <p class="task-description">Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit, sed do eiusmod tempor
+                            incididunt ut labore et.</p>
+                        <p class="task-description">Websites</p>
+                        <p class="task-description">Mobile apps</p>
+                        <p class="task-description">Web apps</p>
+                    </div>
+                    <div class="task">
+                        <span class="task-number">03</span>
+                        <hr class="task-line">
+                        <p class="task-title">Full Package</p>
+                        <p class="task-description">Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit, sed do eiusmod tempor
+                            incididunt ut labore et</p>
+                        <p class="task-description">Design + Development</p>
+                    </div>
+        
+                </div>
+                <div class="package-info">
+                    <h2>Get the Full Package, Design + Development with requests & <br>revisions. No expensive hourly billing. Flat monthly rate. <br>Pause anytime.</h2>
+                    <p class="price">$2999 /month</p>
+                    <p class="package-description">Ideal for websites, web apps, and brand design projects, custom code solutions, blogs and <br>app dashboard design.</p>
+                </div>
+                <div class="profile-section">
+                    <img src="https://igd-wp-uploads-pluginaws.s3.amazonaws.com/wp-content/uploads/2016/05/30105213/Qual-e%CC%81-o-Perfil-do-Empreendedor.jpg" alt="Profile Picture" class="profile-picture">
+                    <button class="rounded-button">Start a project</button>
+                    <button class="rounded-button blue-button">&#10148;</button>
+                    <p class="call-sentence">Don't know if it fits you or not? Let's have a call.</p>
+                </div>
+                <footer class="social-media-footer">
+                    <h2 class="footer-title">Social Media</h2>
+                    <hr class="footer-line">
+                    <ul class="social-links">
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">LinkedIn</a></li>
+                        <li><a href="#">GitHub</a></li>
+                        <li><a href="#">Dribbble</a></li>
+                        
+                    </ul>
+                </footer>
+            </div>
+        </div>
+    
+    </div>
+
+    <style>
+        #work-cards-container {
+            display: flex;
+            flex-direction: column;
+            margin-top: 10px;
+        }
+
+        .work-card {
+            margin-bottom: 60px;
+            display: flex;
+            align-items: center;
+        }
+
+        .work-card img {
+            width: 300px; 
+            height: auto;
+            border-radius: 0px; 
+
+        }
+
+        .card-content {
+            padding: 50px;
+            flex: 1;
+        }
+
+        .card-content h3 {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+        .card-content p {
+            font-size: 15px;
+            color: #666;
+            line-height: 1;
+        }
+
+    </style>
+
+    <script>
+        function setLightMode() {
+            document.body.classList.remove("dark-mode");
+        }
+
+        function setDarkMode() {
+            document.body.classList.add("dark-mode");
+        }
+    </script>
+    <style>
+        .page-container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            text-align: left;
+          }
+          
+          .small-title {
+            font-size: 20px;
+            margin: 0;
+          }
+          
+          .big-title {
+            font-size: 50px;
+            margin-top: 10px;
+          }
+          
+          .remarket-image {
+            max-width: 100%;
+            height: auto;
+            margin-top: 20px;
+          }
+          
+          .page-line {
+            border: 0;
+            height: 1px;
+            background-color: #333;
+            margin-top: 20px;
+          }
+          .visit-website {
+                margin-top: 30px;
+                text-decoration: underline;
+                font-weight: bold;
+                font-size: 14px;
+                
+          }
+          
+          .blue-button {
+                width: 45px;
+                height: 45px;
+                background-color: #2729ad;
+                color: #fff;
+                border: 2px solid #fff;
+                margin-right: 0;
+                position: relative;
+                left: 15%;
+                top: 10px;
+                
+
+          }
+          .about-title {
+            font-size: 45px;
+            margin-top: 20px;
+            text-align: left;
+          }
+          
+          .about-paragraph {
+            text-align: left;
+            margin-top: 10px;
+          }
+          .testimonials-title {
+            font-size: 30px;
+            margin-top: 20px;
+            text-align: left;
+          }
+          
+          .testimonial-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 20px;
+          }
+          
+          .testimonial {
+            max-width: 45%;
+            margin-bottom: 20px;
+            text-align: left;
+          }
+          
+          .testimonial-profile {
+            width: 40px;
+            height: 40px;
+            border-radius: 25px;
+            
+    
+          }
+          
+          .testimonial-text {
+            text-align: left;
+            margin-left: 10px;
+          }
+          
+          .anonymous {
+            font-style: italic;
+            font-weight: bold;
+            margin-top: 5px;
+            font-size: 10px;
+            text-align: right;
+          }
+          .body2 {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            min-height: 100vh;
+            background-color: rgb(40, 39, 39);
+            width: 100%;
+            height: 100%;
+        }
+
+        .helpful-page {
+            
+            padding: 20px;
+            color: white;
+        }
+
+        .page-title {
+            font-size: 36px;
+            margin: 0;
+        }
+
+        .tasks {
+            display: flex;
+            justify-content: flex-start; 
+        }
+
+        .task {
+            margin: 20px;
+            padding: 40px;
+            background-color: #333;
+            border-radius: 15px;
+            text-align: left; 
+            max-width: 400px; 
+            background-color: transparent;
+        }
+
+        .task-title {
+            font-weight: bold;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .task-description {
+            color: #ddd;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        .package-info {
+            margin-top: 20px;
+            text-align: left; 
+            color: white;
+        }
+
+        .package-info h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .price {
+            font-size: 36px; 
+            font-weight: bold;
+        }
+        .package-description {
+            font-size: 14px; 
+        }
+        .profile-picture {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        .rounded-button {
+            border-radius: 20px;
+            padding: 10px 20px;
+            cursor: pointer;
+            margin-right: -100px;
+            border: solid transparent;
+        }
+
+
+        .call-sentence {
+            margin-top: 10px;
+            font-size: 12px;
+            color: rgb(119, 119, 119);
+        }
+        .social-media-footer {
+            margin-top: 20px;
+        }
+
+        .footer-title {
+            font-size: 14px;
+            color: #454545;
+        }
+
+        .social-links {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .social-links li {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        .social-links a {
+            text-decoration: none;
+            color: white;
+            font-size: 12px;
+        }
+        .footer-line {
+            border: 0;
+            height: 1px;
+            background-color: #454545;
+            margin-top: 5px; 
+        }
+        .task-number {
+            display: inline-block;
+            font-size: 12px;
+            color:  #454545;
+            text-align: center;
+            margin-right: 10px;
+        }
+
+
+        .task-line {
+            border: 0;
+            height: 1px;
+            background-color: #454545;
+            margin-bottom: 5px;
+        }
+    </style>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    
+        <div class="page-container">
+            <h1 class="small-title">ReMarket</h1>
+            <h2 class="big-title">Helping ReMarket give their users the best online experience.</h2>
+            <img src="https://digitalpixel.com.br/wp-content/uploads/2015/04/Capa-post-1.png" alt="ReMarket Image" class="remarket-image">
+            <hr class="page-line">
+            <p class="visit-website">Visit website</p>
+            <button class="rounded-button blue-button">&#10148;</button>
+                </div>
+                <div style="float: right; text-align: left; width: 60%;">
+                  <h2 class="about-title">About ReMarket</h2>
+                  <p class="about-paragraph">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                      incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                      nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                      Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                      fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                      culpa qui officia deserunt mollit anim id est laborum.
+                  </p>
+              
+              <div style="text-align: left;">
+                <h2 class="about-title">The Project</h2>
+                <p class="about-paragraph">
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                    voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                </p>
+            </div>
+            <div style="text-align: left;">
+              <h2 class="testimonials-title">Testimonials</h2>
+              <div class="testimonial-container">
+                  <div class="testimonial">
+                    <div class="anonymous">anonimo1</div>
+                      <img src="https://avatars.githubusercontent.com/u/152331352?s=64&v=4" alt="user1" class="testimonial-profile">
+                      <p class="testimonial-text">
+                          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
+                      </p>
+                      
+                  </div>
+                  <div class="testimonial">
+                    <div class="anonymous">anonimo2</div>
+                      <img src="https://avatars.githubusercontent.com/u/144500920?s=64&v=4" alt="user2" class="testimonial-profile">
+                      <p class="testimonial-text">
+                        Duis aute irure dolor in dolor area
+                        reprehenderit in voluptate velit esse
+                        cillum dolore eu fugiat nulla dolor
+                        pariatur
+                      </p>
+                      
+                  </div>
+                  <div class="testimonial">
+                    <div class="anonymous">anonimo3</div>
+                      <img src="https://avatars.githubusercontent.com/u/146039244?s=64&v=4" alt="user3" class="testimonial-profile">
+                      <p class="testimonial-text">
+                        Ut enim ad minim veniam, quis
+                        nostrud exercitation ullamco vadis
+                        quo laboris nisi deco ut aliquip ex
+                        ea commodo consequat.
+                      </p>
+                      
+                  </div>
+                  <div class="testimonial">
+                    <div class="anonymous">anonimo4</div>
+                      <img src="https://avatars.githubusercontent.com/u/133815002?s=64&v=4" alt="user4" class="testimonial-profile">
+                      <p class="testimonial-text">
+                        Duis aute irure dolor in
+                        reprehenderit in voluptate velit esse
+                        cillum dolore eu fugiat nulla
+                        pariatur.
+                      </p>
+                  </div>
+        
+        </div>
+
+</body>
+
+</html>
