@@ -133,4 +133,57 @@ footer{
     background-color: #0A1412;
     justify-content: space-between;
 }
-
+@media (max-width: 450px){
+    body{
+        margin: 0;
+    }
+    .part-nav{
+        width: 70%;
+    }
+    .input{
+        display: none;
+    }
+    button{
+        padding-inline: 7px;
+        font-size: 10px;
+    }
+    #r-b{
+        display: none;
+    }
+    #uma{
+        width:40%;
+        height: auto;
+    }
+    .section1{
+        flex-direction: column;
+    }
+    #img{
+        width: auto;
+        height: 20vh;
+    }
+    #pesquisa:hover{
+        width: 90%;
+        
+    }
+    h1{
+        font-size: 20px;
+    }
+    p{
+        font-size: 18px;
+    }
+    footer{
+        padding-block: 5%;
+    }
+    footer p{
+        font-size: 12px;
+    }
+    .cards{
+        flex-direction: column;
+        height: 80vh;
+    }
+    .card{
+        width: 100%;
+        padding: 5px;
+    }
+    
+}
