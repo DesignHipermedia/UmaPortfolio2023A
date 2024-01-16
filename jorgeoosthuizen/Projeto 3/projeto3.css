@@ -171,11 +171,6 @@ h5{
     opacity: 0.5;
   }
 
-.navbar{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-}
 
   .my_button{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -397,9 +392,6 @@ h5{
 }
 
 .not{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
   width:100%;
   height: 100%;
 }
@@ -414,7 +406,7 @@ h5{
 }
 
 .card {
-    width: 90%;
+    width: 45%;
 }
 
 
@@ -526,11 +518,6 @@ nav{
   flex-wrap: wrap;
 }
 
-.fix{
-  display: flex;
-  flex-direction: column;
-}
-
 .procurar{
     display: flex;
     flex-direction: column;
@@ -541,6 +528,14 @@ nav{
 .imagem{
   width:550px;
   justify-self: center;
+}
+
+.dois{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50%;
 }
 
 }
