@@ -1,0 +1,337 @@
+
+ /* A estrutura começa de cima p/ baixo, mas sua
+ forma é ordenada, para aumentar a sua eficiente  */
+
+* {
+  box-sizing: border-box;
+}
+body {
+  font-size: 14px;
+}
+.header {
+  width: 360px;
+  height: 480px;
+  background: rgb(0, 0, 0);
+  opacity: 1;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+  
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.foto_autor{
+  max-width:100%;
+  width: 61px;
+  height: 61px;
+  /* height: auto; */
+  background: url("../img/foto_Johm_smith.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 24px;
+  left: 25px;
+  /* border-radius: 50%; */  /* foto foi cortado*/
+  overflow: hidden;
+}
+.nome_autor {
+  width: 59px;
+  color: rgb(255, 255, 255);
+  position: absolute;
+  top: 50px;
+  left: 103px;
+  font-family: Jaldi;
+  font-weight: Regular;
+  font-size: 8px;
+  opacity: 1;
+  text-align: left;
+}
+.simbolo_copyright {
+  width: 6px;
+  color: rgb(255, 255, 255);
+  position: absolute;
+  top: 50px;
+  left: 96px;
+  font-family: Jaldi;
+  font-weight: Regular;
+  font-size: 8px;
+  opacity: 1;
+  text-align: left;
+}
+.bt_borda_work_solutions {
+  width: 136px;
+  height: 22px;
+  background: rgb(255, 255, 255);
+  opacity: 1;
+  position: absolute;
+  top: 44px;
+  left: 209px;
+  border: 0.3px solid rgba(0,0,0,1);
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  overflow: hidden;
+}
+.bt_borda_about {
+  width: 49px;
+  height: 22px;
+  background: rgb(255, 255, 255);
+  opacity: 1;
+  position: absolute;
+  top: 44px;
+  left: 209px;
+  border: 0.3px solid rgb(255, 255, 255);
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  overflow: hidden;
+}
+.bt_letra_about{
+  width: 17px;
+  color: rgb(4, 4, 4);
+  position: absolute;
+  top: 49px;
+  left: 227px;
+  font-family: Jaldi;
+  font-weight: Regular;
+  font-size: 7px;
+  opacity: 0.6;
+  text-align: left;
+}
+.bt_letra_work{
+  width: 15px;
+  color: rgb(0, 0, 0);
+  position: absolute;
+  top: 49px;
+  left: 272px;
+  font-family: Jaldi;
+  font-weight: Regular;
+  font-size: 7px;
+  opacity: 1;
+  text-align: left;
+}
+.bt_letra_solutions{
+  width: 25px;
+  color: rgb(0, 0, 0);
+  position: absolute;
+  top: 49px;
+  left: 308px;
+  font-family: Jaldi;
+  font-weight: Regular;
+  font-size: 7px;
+  opacity: 1;
+  text-align: left;
+}
+.texto_opiniao_pessoal_autor {
+  width: 218px;
+  color: rgb(255, 255, 255);
+  position: absolute;
+  top: 103px;
+  left: 27px;
+  font-family: Jaldi;
+  font-weight: Regular;
+  font-size: 16px;
+  opacity: 1;
+  text-align: left;
+}
+.texto_esquerda_c {
+  width: 136px;
+  color: rgb(255, 255, 255);
+  position: absolute;
+  top: 152px;
+  left: 30px;
+  font-family: Voces;
+  font-weight: Regular;
+  font-size: 4px;
+  opacity: 1;
+  text-align: justified;
+}
+.bt_saltar_site_noite {
+  width: 20px;
+  height: 20px;
+  background: url("../img/redondo_noite.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 184px;
+  left: 302px;
+  overflow: hidden;
+}
+.redondo_escuro {
+  width: 20px;
+  height: 20px;
+  background: rgb(255, 255, 255);
+  opacity: 1;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  border-radius: 50%;
+}
+.img_lua {
+  width: 6px;
+  height: 6px;
+  background: url("../img/img_lua.png");
+  opacity: 1;
+  position: absolute;
+  top: 7px;
+  left: 7px;
+  border: 0.3px solid rgb(255, 255, 255);
+}
+.cor_fundo_branco {
+  color: #fff;
+}
+.texto_direita_a {
+  width: 220px;
+  color: rgb(255, 255, 255);
+  position: absolute;
+  top: 241px;
+  left: 130px;
+  font-family: Merge One;
+  font-weight: Regular;
+  font-size: 10px;
+  opacity: 1;
+  text-align: left;
+}
+.texto_direita_b {
+  width: 221px;
+  color: rgb(255, 255, 255);
+  position: absolute;
+  top: 308px;
+  left: 129px;
+  font-family: Merge One;
+  font-weight: Regular;
+  font-size: 10px;
+  opacity: 1;
+  text-align: left;
+}
+.redondo_branco {
+  width: 20px;
+  height: 20px;
+  background: url("../img/redondo_sol.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 184px;
+  left: 326px;
+  overflow: hidden;
+}
+
+.bt_posicao_redondo_preto {
+  width: 49px;
+  height: 20px;
+  opacity: 1;
+  position: absolute;
+  top: 174px;
+  left: 33px;
+  
+}
+.bt_longo_borda_preto {
+  width: 49px;
+  height: 20px;
+  background: rgb(255, 255, 255);
+  opacity: 1;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  border-top-left-radius: 13px;
+  border-top-right-radius: 13px;
+  border-bottom-left-radius: 13px;
+  border-bottom-right-radius: 13px;
+  overflow: hidden;
+}
+.bt_texto_start {
+  width: 30px;
+  color: rgb(0, 0, 0);
+  position: absolute;
+  top: 7px;
+  left: 10px;
+  font-family: Voces;
+  font-weight: Regular;
+  font-size: 4px;
+  opacity: 1;
+  text-align: left;
+}
+.bt_azul_posicao {
+  width: 20px;
+  height: 20px;
+  opacity: 1;
+  position: absolute;
+  top: 174px;
+  left: 88px;
+  overflow: hidden;
+}
+.bt_redondo_azul_a {
+  width: 20px;
+  height: 20px;
+  background: rgba(77,89,192,1);
+  opacity: 1;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  border-radius: 50%;
+}
+
+.seta_para_direita_a {
+  width: 14px;
+  height: 13px;
+  background: url("../img/seta_para_direita.png");
+  opacity: 1;
+  position: absolute;
+  top: 3px;
+  left: 2px;
+  border: 1.0px solid rgba(77,89,192,1);
+}
+.bt_download_resume {
+  width: 20px;
+  height: 20px;
+  opacity: 1;
+  position: absolute;
+  top: 386px;
+  left: 200px;
+  overflow: hidden;
+}
+.bt_redondo_azul_b {
+  width: 20px;
+  height: 20px;
+  background: rgba(77,89,192,1);
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border-radius: 50%;
+}
+.seta_para_direita_b{
+  width: 15px;
+  height: 15px;
+  background: url("../img/seta_para_direita.png");
+  opacity: 1;
+  position: absolute;
+  top: 3px;
+  left: 4px;
+  }
+.link_download {
+  width: 86px;
+  color: rgb(255, 255, 255);
+  position: absolute;
+  top: 391px;
+  left: 130px;
+  font-family: Merge One;
+  font-weight: Regular;
+  font-size: 8px;
+  opacity: 1;
+  text-align: left;
+}
+
+

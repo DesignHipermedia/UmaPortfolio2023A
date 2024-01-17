@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página com Grid e Animação - UMa.pt</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <style>
+        body {
+            padding-top: 20px;
+        }
+
+        .autor {
+            text-align: left;
+            margin-bottom: 3%;
+        }
+
+        .foto_autor {
+            width: 61px;
+            height: 61px;
+            background: url("./img/foto_Johm_smith.png");
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+            opacity: 1;
+            display: inline-block;
+        }
+
+        .nome_autor {
+            margin-left: 10px;
+            color: rgba(0, 0, 0, 1);
+            font-family: Jaldi;
+            font-weight: Regular;
+            font-size: 8px;
+            opacity: 1;
+            text-align: left;
+            display: block;
+        }
+      
+        .logotipo_uma {
+            max-width: 40px;
+            margin-top: 10px; 
+            display: block;
+            margin-left: 20px;
+        }
+
+        .card {
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .card:hover {
+            transform: scale(1.1);
+        }
+        @media only screen and (max-width: 800px) {
+                /* .texto_direita_a, .texto_direita_b, .texto_esquerda_c {
+                font-size: 14px; 
+            } */
+        }
+    
+        .bt_redondo_preto {
+            width: 50px;
+            height: 27px;
+            left: 10px;
+            top: 135px;
+            position: relative;
+            background: #ffffff9e;
+            border-radius: 9999px;
+            border: 0.40px #000000 solid;
+        }
+        .bt_texto_x {
+            left: 20px;
+            top: 108px;
+            color: #000000;
+            position: relative;
+            font-size: 13px;
+            font-family: Mako;
+            font-weight: 400;
+            text-transform: lowercase;
+            line-height: 20px;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <div class="grupo_de_retangulo">
+        <div class="bt_redondo_preto"></div>
+        <a class="bt_texto_x" href="./index.html">Voltar</a>
+    </div>
+
+    <div class="autor">
+        <div class="foto_autor"></div>
+        <span class="nome_autor">John Smith ®</span>
+    </div>
+
+    <div class="logotipo_uma">
+        <img alt="UMA" src="https://www.uma.pt/wp-content/themes/uma/images/logo2_cor.png">
+    </div>
+
+    <div class="row">
+        <div class="col-md-4 animated fadeInLeft">
+            <div class="card">
+                <img src="./img/utilizador-1.jpg" class="card-img-top" alt="foto 1">
+                <div class="card-body">
+                    <h5 class="card-title">Oi meu nome é Amara Linda, (Madeirense)</h5>
+                    <p class="card-text">Sou programadora de Javascript</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 animated fadeInUp">
+            <div class="card">
+                <img src="./img/utilizador-2.jpg" class="card-img-top" alt="foto 2">
+                <div class="card-body">
+                    <h5 class="card-title">Olá meu nome é Marco Olim, (Madeirense)</h5>
+                    <p class="card-text">Sou professor universitário</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 animated fadeInRight">
+            <div class="card">
+                <img src="./img/utilizador-3.jpg" class="card-img-top" alt="foto 3">
+                <div class="card-body">
+                    <h5 class="card-title">Olá meu nome é Luísa Melim, (Madeirense)</h5>
+                    <p class="card-text">Sou programadora de fremework</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12 animated fadeIn">
+            <div class="card">
+                <img src="./img/UMa_frente_porta.jpeg" class="card-img-top" alt="foto 4">
+                <div class="card-body">
+                    <h5 class="card-title">Universidade da Madeira</h5>
+                    <p class="card-text">Escola superior de Tecnologia e Gestão</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+</body>
+</html>
+
+

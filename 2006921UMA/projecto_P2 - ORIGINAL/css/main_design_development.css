@@ -1,0 +1,603 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-size: 14px;
+}
+
+
+.header {
+  width: 360px;
+  height: 480px;
+  background: rgb(16, 16, 57);
+  opacity: 1;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+  
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.link_voltar {
+  width: 15px;
+  color: rgb(255, 255, 255);
+  position: absolute;
+  top: 16px;
+  left: 310px;
+  font-family: Mako;
+  font-weight: Regular;
+  font-size: 13px;
+  opacity: 1;
+  text-align: left;
+}
+.titulo_help {
+  width: 158px;
+  color: rgba(255,255,255,1);
+  position: absolute;
+  top: 38px;
+  left: 22px;
+  font-family: Mako;
+  font-weight: Regular;
+  font-size: 15px;
+  opacity: 1;
+  text-align: left;
+}
+
+.linha_texto_01 {
+  width: 98px;
+  height: 20px;
+  opacity: 1;
+  position: absolute;
+  top: 77px;
+  left: 22px;
+  overflow: hidden;
+}
+.cor_letra {
+  color: #fff;
+}
+.texto_01 {
+  width: 5px;
+  color: rgba(145,145,145,1);
+  position: relative;
+  top: 0px;
+  left: 0px;
+  font-family: Mako;
+  font-weight: Regular;
+  font-size: 4px;
+  opacity: 1;
+  text-align: left;
+}
+.linha_separador_01 {
+  top: 93px;
+  left: 126px;
+  text-align: left;
+  position: relative;
+  width: 105px;
+  height: 0px;
+  transform: rotate(180deg);
+  transform-origin: 0 0;
+  border: 0.01px rgba(145,145,145,1)solid;
+
+}
+.linha_texto_02 {
+  width: 98px;
+  height: 20px;
+  opacity: 1;
+  position: absolute;
+  top: 77px;
+  left: 134px;
+  overflow: hidden;
+}
+.texto_02 {
+  width: 5px;
+  color: rgba(145,145,145,1);
+  position: relative;
+  top: 0px;
+  left: 0px;
+  font-family: Mako;
+  font-weight: Regular;
+  font-size: 4px;
+  opacity: 1;
+  text-align: left;
+}
+.linha_separador_02 {
+  top: 93px;
+  left: 238px;
+  text-align: left;
+  position: relative;
+  width: 105px;
+  height: 0px;
+  transform: rotate(180deg);
+  transform-origin: 0 0;
+  border: 0.01px rgba(145,145,145,1)solid;
+
+}
+
+.linha_texto_03 {
+  width: 98px;
+  height: 20px;
+  opacity: 1;
+  position: absolute;
+  top: 77px;
+  left: 245px;
+  overflow: hidden;
+}
+
+.texto_03 {
+  width: 5px;
+  color: rgba(145,145,145,1);
+  position: relative;
+  top: 0px;
+  left: 0px;
+  font-family: Mako;
+  font-weight: Regular;
+  font-size: 4px;
+  opacity: 1;
+  text-align: left;
+}
+.linha_separador_03 {
+  top: 93px;
+  left: 350px;
+  text-align: left;
+  position: relative;
+  width: 105px;
+  height: 0px;
+  transform: rotate(180deg);
+  transform-origin: 0 0;
+  border: 0.01px rgba(145,145,145,1)solid;
+
+}
+
+.subtitulo_design {
+  width: 42px;
+  color: rgba(255,255,255,1);
+  position: absolute;
+  top: 107px;
+  left: 19px;
+  font-family: Mako;
+  font-weight: Regular;
+  font-size: 12px;
+  opacity: 1;
+  text-align: left;
+}
+.subtitulo_deselopment {
+  width: 81px;
+  color: rgba(255,255,255,1);
+  position: absolute;
+  top: 107px;
+  left: 134px;
+  font-family: Mako;
+  font-weight: Regular;
+  font-size: 12px;
+  opacity: 1;
+  text-align: left;
+}
+.subtitulo_full_package {
+  width: 79px;
+  color: rgba(255,255,255,1);
+  position: absolute;
+  top: 107px;
+  left: 245px;
+  font-family: Mako;
+  font-weight: Regular;
+  font-size: 12px;
+  opacity: 1;
+  text-align: left;
+}
+
+.grupo_posicao_design {
+  width: 52px;
+  height: 60px;
+  opacity: 1;
+  position: absolute;
+  top: 169px;
+  left: 20px;
+  overflow: hidden;
+}
+.subtitulo_design_websites{
+  width: 39px;
+  color: rgba(255,255,255,1);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  font-family: Voces;
+  font-weight: Regular;
+  font-size: 6px;
+  opacity: 1;
+  text-align: justified;
+}
+.subtitulo_design_mobile_apps {
+  width: 39px;
+  color: rgba(255,255,255,1);
+  position: absolute;
+  top: 12px;
+  left: 0px;
+  font-family: Voces;
+  font-weight: Regular;
+  font-size: 6px;
+  opacity: 1;
+  text-align: justified;
+}
+.subtitulo_design_web_apps {
+  width: 39px;
+  color: rgba(255,255,255,1);
+  position: absolute;
+  top: 25px;
+  left: 0px;
+  font-family: Voces;
+  font-weight: Regular;
+  font-size: 6px;
+  opacity: 1;
+  text-align: justified;
+}
+.subtitulo_design_design_systems {
+  width: 52px;
+  color: rgba(255,255,255,1);
+  position: absolute;
+  top: 37px;
+  left: 0px;
+  font-family: Voces;
+  font-weight: Regular;
+  font-size: 6px;
+  opacity: 1;
+  text-align: justified;
+}
+.subtitulo_design_brandig {
+  width: 39px;
+  color: rgba(255,255,255,1);
+  position: absolute;
+  top: 50px;
+  left: 0px;
+  font-family: Voces;
+  font-weight: Regular;
+  font-size: 6px;
+  opacity: 1;
+  text-align: justified;
+}
+
+.grupo_posicao_development {
+  width: 39px;
+  height: 32px;
+  opacity: 1;
+  position: absolute;
+  top: 169px;
+  left: 132px;
+  overflow: hidden;
+}
+.subtitulo_development_websites {
+  width: 39px;
+  color: rgba(255,255,255,1);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  font-family: Voces;
+  font-weight: Regular;
+  font-size: 6px;
+  opacity: 1;
+  text-align: justified;
+}
+.subtitulo_development_mobile_apps {
+  width: 39px;
+  color: rgba(255,255,255,1);
+  position: absolute;
+  top: 12px;
+  left: 0px;
+  font-family: Voces;
+  font-weight: Regular;
+  font-size: 6px;
+  opacity: 1;
+  text-align: justified;
+}
+.subtitulo_development_brandig {
+  width: 39px;
+  color: rgba(255,255,255,1);
+  position: absolute;
+  top: 25px;
+  left: 0px;
+  font-family: Voces;
+  font-weight: Regular;
+  font-size: 6px;
+  opacity: 1;
+  text-align: justified;
+}
+
+.subtitulo_full_package_design_development {
+  width: 65px;
+  color: rgba(255,255,255,1);
+  position: absolute;
+  top: 169px;
+  left: 245px;
+  font-family: Voces;
+  font-weight: Regular;
+  font-size: 6px;
+  opacity: 1;
+  text-align: justified;
+}
+
+.texto_design {
+  width: 100px;
+  color: rgba(255,255,255,1);
+  position: absolute;
+  top: 137px;
+  left: 20px;
+  font-family: Voces;
+  font-weight: Regular;
+  font-size: 5px;
+  opacity: 1;
+  text-align: justified;
+}
+
+.texto_development {
+  width: 100px;
+  color: rgba(255,255,255,1);
+  position: absolute;
+  top: 137px;
+  left: 134px;
+  font-family: Voces;
+  font-weight: Regular;
+  font-size: 5px;
+  opacity: 1;
+  text-align: justified;
+}
+.texto_full_package {
+  width: 100px;
+  color: rgba(255,255,255,1);
+  position: absolute;
+  top: 139px;
+  left: 245px;
+  font-family: Voces;
+  font-weight: Regular;
+  font-size: 5px;
+  opacity: 1;
+  text-align: justified;
+}
+
+.texto_titulo_price {
+  width: 278px;
+  color: rgba(255,255,255,1);
+  position: absolute;
+  top: 251px;
+  left: 48px;
+  font-family: Mako;
+  font-weight: Regular;
+  font-size: 8px;
+  opacity: 1;
+  text-align: left;
+}
+
+.total_preco {
+  width: 40px;
+  color: rgba(255,255,255,1);
+  position: absolute;
+  top: 303px;
+  left: 49px;
+  font-family: Mako;
+  font-weight: Regular;
+  font-size: 12px;
+  opacity: 1;
+  text-align: left;
+}
+
+.mes_preco {
+  width: 19px;
+  color: rgba(255,255,255,1);
+  position: absolute;
+  top: 309px;
+  left: 83px;
+  font-family: Voces;
+  font-weight: Regular;
+  font-size: 5px;
+  opacity: 1;
+  text-align: justified;
+}
+
+.texto_preco_solutions {
+  width: 222px;
+  color: rgba(255,255,255,1);
+  position: absolute;
+  top: 320px;
+  left: 48px;
+  font-family: Voces;
+  font-weight: Regular;
+  font-size: 5px;
+  opacity: 1;
+  text-align: justified;
+}
+
+.foto_autor {
+  max-width:100%;
+  width: 20px;
+  height: 20px;
+  background: url("../img/foto_Johm_smith.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 353px;
+  left: 21px;
+  /* border-radius: 50%; */  /* foto foi cortado*/
+  overflow: hidden;
+}
+
+.bt_posicao_start_a_project {
+  width: 49px;
+  height: 21px;
+  opacity: 1;
+  position: absolute;
+  top: 353px;
+  left: 49px;
+  overflow: hidden;
+}
+.bt_borda_start_a_project {
+  width: 49px;
+  height: 20px;
+  background: rgba(255,255,255,1);
+  opacity: 1;
+  position: absolute;
+  top: px;
+  left: 0px;
+  border: 0.2px solid rgba(255,255,255,1);
+  border-top-left-radius: 13px;
+  border-top-right-radius: 13px;
+  border-bottom-left-radius: 13px;
+  border-bottom-right-radius: 13px;
+  overflow: hidden;
+}
+.texto_start_a_project {
+  width: 30px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 7px;
+  left: 10px;
+  font-family: Voces;
+  font-weight: Regular;
+  font-size: 4px;
+  opacity: 1;
+  text-align: left;
+}
+.bt_posicao_redondo_azul_e_seta {
+  width: 20px;
+  height: 20px;
+  opacity: 1;
+  position: absolute;
+  top: 353px;
+  left: 100px;
+  overflow: hidden;
+}
+.bt_redondo_azul {
+  width: 20px;
+  height: 20px;
+  background: rgba(77,89,192,1);
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border-radius: 50%;
+}
+
+.seta_para_direita {
+  width: 14px;
+  height: 13px;
+  background: url("../img/seta_para_direita.png");
+  opacity: 1;
+  position: absolute;
+  top: 3px;
+  left: 2px;
+  border: 1.0px solid rgba(77,89,192,1);
+}
+
+.texto_call {
+  width: 113px;
+  color: rgba(255,255,255,1);
+  position: absolute;
+  top: 390px;
+  left: 49px;
+  font-size: 5px;
+  opacity: 1;
+  text-align: justified;
+}
+
+.posicao_texto_social_media {
+  width: 278px;
+  color: rgba(255,255,255,1);
+  position: absolute;
+  top: 251px;
+  left: 48px;
+  font-family: Mako;
+  font-weight: Regular;
+  font-size: 8px;
+  opacity: 1;
+  text-align: left;
+}
+
+.linha_separador {
+  top: 430px;
+  left: 330px;
+  text-align: left;
+  position: relative;
+  width: 310px;
+  height: 0px;
+  transform: rotate(180deg);
+  transform-origin: 0 0;
+  border: 0.01px rgba(145,145,145,1)solid;
+
+}
+.posicao_texto_social_media {
+  width: 315px;
+  height: 20px;
+  opacity: 1;
+  position: absolute;
+  top: 422px;
+  left: 21px;
+  overflow: hidden;
+}
+
+.texto_social_media {
+  width: 30px;
+  color: rgba(145,145,145,1);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  font-family: Mako;
+  font-weight: Regular;
+  font-size: 4px;
+  opacity: 1;
+  text-align: left;
+}
+
+.link_twitter {
+  width: 20px;
+  color: rgba(255,255,255,1);
+  position: absolute;
+  top: 446px;
+  left: 49px;
+  font-family: Voces;
+  font-weight: Regular;
+  font-size: 5px;
+  opacity: 1;
+  text-align: justified;
+}
+.link_Linkedin {
+  width: 22px;
+  color: rgba(255,255,255,1);
+  position: absolute;
+  top: 446px;
+  left: 76px;
+  font-family: Voces;
+  font-weight: Regular;
+  font-size: 5px;
+  opacity: 1;
+  text-align: justified;
+}
+.link_github {
+  width: 20px;
+  color: rgba(255,255,255,1);
+  position: absolute;
+  top: 446px;
+  left: 106px;
+  font-family: Voces;
+  font-weight: Regular;
+  font-size: 5px;
+  opacity: 1;
+  text-align: justified;
+}
+.link_drible {
+  width: 22px;
+  color: rgba(255,255,255,1);
+  position: absolute;
+  top: 446px;
+  left: 133px;
+  font-family: Voces;
+  font-weight: Regular;
+  font-size: 5px;
+  opacity: 1;
+  text-align: justified;
+}
+
+

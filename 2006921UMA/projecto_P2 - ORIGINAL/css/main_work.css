@@ -1,0 +1,504 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-size: 14px;
+}
+.header {
+  width: 362px;
+  height: 910px;
+  background: rgba(255,255,255,1);
+  opacity: 1;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+  
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.bt_borda_all {
+  width: 31px;
+  height: 20px;
+  background: rgba(0,0,0,1);
+  opacity: 1;
+  position: absolute;
+  top: 19px;
+  left: 163px;
+  border: 0.2px solid rgba(0,0,0,1);
+  border-top-left-radius: 13px;
+  border-top-right-radius: 13px;
+  border-bottom-left-radius: 13px;
+  border-bottom-right-radius: 13px;
+  overflow: hidden;
+}
+/* close - voltar para index */
+.text_all {
+  width: 6px;
+  color: rgba(255,255,255,1);
+  position: absolute;
+  top: 26px;
+  left: 174px;
+  font-family: Voces;
+  font-weight: Regular;
+  font-size: 4px;
+  opacity: 1;
+  text-align: left;
+}
+.bt_posicao_design_link {
+  width: 39px;
+  height: 20px;
+  opacity: 1;
+  position: absolute;
+  top: 19px;
+  left: 201px;
+  overflow: hidden;
+}
+.bt_borda_design {
+  width: 39px;
+  height: 20px;
+  background: rgba(255,255,255,1);
+  opacity: 1;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  border: 0.2px solid rgba(0,0,0,1);
+  border-top-left-radius: 13px;
+  border-top-right-radius: 13px;
+  border-bottom-left-radius: 13px;
+  border-bottom-right-radius: 13px;
+  overflow: hidden;
+}
+.texto_design {
+  width: 15px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 27px;
+  left: 215px;
+  font-family: Voces;
+  font-weight: Regular;
+  font-size: 4px;
+  opacity: 1;
+  text-align: left;
+}
+.bt_borda_development {
+  width: 49px;
+  height: 20px;
+  background: rgba(255,255,255,1);
+  opacity: 1;
+  position: absolute;
+  top: 19px;
+  left: 245px;
+  border: 0.2px solid rgba(0,0,0,1);
+  border-top-left-radius: 13px;
+  border-top-right-radius: 13px;
+  border-bottom-left-radius: 13px;
+  border-bottom-right-radius: 13px;
+  overflow: hidden;
+}
+.text_development {
+  width: 28px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 27px;
+  left: 258px;
+  font-family: Voces;
+  font-weight: Regular;
+  font-size: 4px;
+  opacity: 1;
+  text-align: left;
+}
+.grupo_img_work_i_do {
+  color: #712f2f;
+}
+.quadro_img_uideli_com {
+  width: 160px;
+  height: 120px;
+  background: url("../img/uideli_com.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 56px;
+  left: 15px;
+  overflow: hidden;
+}
+.quadro_img_koto_Studio {
+  width: 160px;
+  height: 106px;
+  background: url("../img/koto_Studio.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 195px;
+  left: 15px;
+  overflow: hidden;
+}
+.quadro_img_another_one {
+  width: 160px;
+  height: 119px;
+  background: url("../img/another_one.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 601px;
+  left: 15px;
+  overflow: hidden;
+}
+.quadro_img_remarket{
+  width: 160px;
+  height: 122px;
+  background: url("../img/remarket.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 469px;
+  left: 15px;
+  overflow: hidden;
+}
+.quadro_imh_bleder_renders {
+  width: 160px;
+  height: 119px;
+  background: url("../img/bleder_renders.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 738px;
+  left: 15px;
+  overflow: hidden;
+}
+.grupo_img_switch_lack {
+  width: 160px;
+  height: 120px;
+  background: url("../img/switch_lack.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 322px;
+  left: 15px;
+  overflow: hidden;
+}
+.switch_lack_esquerda {
+  width: 35px;
+  height: 26px;
+  background: url("../img/switch_lack.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 99px;
+  left: 22px;
+  overflow: hidden;
+}
+.switch_lack_centro {
+  width: 35px;
+  height: 26px;
+  background: url("../img/switch_lack_centro.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 99px;
+  left: 63px;
+  overflow: hidden;
+}
+.switch_lack_direita {
+  width: 35px;
+  height: 26px;
+  background: url("../img/switch_lack_direita.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 100px;
+  left: 101px;
+  overflow: hidden;
+}
+.texto_titulo {
+  width: 98px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 27px;
+  left: 19px;
+  font-family: Voces;
+  font-weight: Regular;
+  font-size: 13px;
+  opacity: 1;
+  text-align: justified;
+}
+.titulo_uideli_com {
+  width: 65px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 81px;
+  left: 200px;
+  font-family: Voces;
+  font-weight: Regular;
+  font-size: 13px;
+  opacity: 1;
+  text-align: justified;
+}
+.Subtitulo_uideli_com {
+  width: 79px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 98px;
+  left: 200px;
+  font-family: Voces;
+  font-weight: Regular;
+  font-size: 6px;
+  opacity: 1;
+  text-align: justified;
+}
+.texto_uideli_com {
+  width: 139px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 109px;
+  left: 200px;
+  font-family: Verdana;
+  font-weight: Regular;
+  font-size: 5px;
+  opacity: 1;
+  text-align: justified;
+}
+.titulo_koto_studio {
+  width: 70px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 225px;
+  left: 200px;
+  font-family: Voces;
+  font-weight: Regular;
+  font-size: 13px;
+  opacity: 1;
+  text-align: justified;
+}
+
+.Subtitulo_data_koto_studio {
+  width: 53px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 241px;
+  left: 200px;
+  font-family: Voces;
+  font-weight: Regular;
+  font-size: 6px;
+  opacity: 1;
+  text-align: justified;
+}
+.texto_koto_studio {
+  width: 139px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 253px;
+  left: 200px;
+  font-family: Voces;
+  font-weight: Regular;
+  font-size: 5px;
+  opacity: 1;
+  text-align: justified;
+}
+
+.titulo_switch_black {
+  width: 77px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 357px;
+  left: 200px;
+  font-family: Voces;
+  font-weight: Regular;
+  font-size: 13px;
+  opacity: 1;
+  text-align: justified;
+}
+
+.Subtitulo_data_switch_black {
+  width: 35px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 373px;
+  left: 200px;
+  font-family: Voces;
+  font-weight: Regular;
+  font-size: 6px;
+  opacity: 1;
+  text-align: justified;
+}
+.texto_switch_black {
+  width: 139px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 388px;
+  left: 200px;
+  font-family: Voces;
+  font-weight: Regular;
+  font-size: 5px;
+  opacity: 1;
+  text-align: justified;
+}
+
+.titulo_remarket {
+  width: 59px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 514px;
+  left: 200px;
+  font-family: Voces;
+  font-weight: Regular;
+  font-size: 13px;
+  opacity: 1;
+  text-align: justified;
+}
+.Subtitulo_data_remarket {
+  width: 53px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 530px;
+  left: 200px;
+  font-family: Voces;
+  font-weight: Regular;
+  font-size: 6px;
+  opacity: 1;
+  text-align: justified;
+}
+.texto_remarket {
+  width: 139px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 546px;
+  left: 200px;
+  font-family: Voces;
+  font-weight: Regular;
+  font-size: 5px;
+  opacity: 1;
+  text-align: justified;
+}
+
+.titulo_another_one {
+  width: 77px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 637px;
+  left: 200px;
+  font-family: Voces;
+  font-weight: Regular;
+  font-size: 13px;
+  opacity: 1;
+  text-align: justified;
+}
+.Subtitulo_data_another_one {
+  width: 53px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 653px;
+  left: 200px;
+  font-family: Voces;
+  font-weight: Regular;
+  font-size: 6px;
+  opacity: 1;
+  text-align: justified;
+}
+.texto_another_one {
+  width: 139px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 668px;
+  left: 200px;
+  font-family: Voces;
+  font-weight: Regular;
+  font-size: 5px;
+  opacity: 1;
+  text-align: justified;
+}
+
+.titulo_bleder_renders {
+  width: 91px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 775px;
+  left: 200px;
+  font-family: Voces;
+  font-weight: Regular;
+  font-size: 13px;
+  opacity: 1;
+  text-align: justified;
+}
+.Subtitulo_data_bleder_renders {
+  width: 79px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 791px;
+  left: 200px;
+  font-family: Voces;
+  font-weight: Regular;
+  font-size: 6px;
+  opacity: 1;
+  text-align: justified;
+}
+.texto_bleder_renders{
+  width: 139px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 805px;
+  left: 200px;
+  font-family: Voces;
+  font-weight: Regular;
+  font-size: 5px;
+  opacity: 1;
+  text-align: justified;
+}
+.bt_posicao_load_more {
+  width: 39px;
+  height: 20px;
+  opacity: 1;
+  position: absolute;
+  top: 882px;
+  left: 117px;
+  overflow: hidden;
+}
+.bt_borda_load_more {
+  width: 39px;
+  height: 20px;
+  background: rgba(255,255,255,1);
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border: 0.2px solid rgba(0,0,0,1);
+  border-top-left-radius: 13px;
+  border-top-right-radius: 13px;
+  border-bottom-left-radius: 13px;
+  border-bottom-right-radius: 13px;
+  overflow: hidden;
+}
+.bt_texto_load_more {
+  width: 22px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 8px;
+  left: 11px;
+  font-family: Voces;
+  font-weight: Regular;
+  font-size: 4px;
+  opacity: 1;
+  text-align: left;
+}
+

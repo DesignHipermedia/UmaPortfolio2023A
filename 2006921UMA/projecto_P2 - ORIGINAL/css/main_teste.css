@@ -1,0 +1,115 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 14px;
+}
+
+.header {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.foto-autor {
+  width: 61px;
+  height: 61px;
+  background: url("../img/foto_Johm_smith.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  border-radius: 50%;
+}
+
+.info-container {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.nome-autor {
+  font-family: Jaldi;
+  font-size: 16px;
+}
+
+.simbolo-copyright {
+  font-family: Jaldi;
+  font-size: 16px;
+  margin-left: 5px;
+}
+
+.botoes-container {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-gap: 10px;
+  margin-top: 20px;
+}
+
+.bt-borda {
+  width: 100%;
+  height: 22px;
+  background: rgba(255, 255, 255, 1);
+  border: 0.3px solid rgba(0, 0, 0, 1);
+  border-radius: 15px;
+}
+
+.bt-letra {
+  font-family: Jaldi;
+  font-size: 12px;
+  opacity: 0.6;
+}
+
+.texto-container {
+  margin-top: 20px;
+}
+
+.bt-saltar-site-noite {
+  width: 20px;
+  height: 20px;
+  background: url("../img/redondo_noite.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  margin-top: 10px;
+}
+
+.texto-direita-a,
+.texto-direita-b {
+  font-family: Merge One;
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+.botoes-container:last-child {
+  margin-top: 20px;
+}
+
+.bt-posicao-redondo-preto,
+.bt-azul-posicao,
+.bt-download-resume {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.bt-longo-borda-preto,
+.bt-redondo-azul {
+  width: 20px;
+  height: 20px;
+}
+
+.seta-para-direita {
+  width: 14px;
+  height: 13px;
+  background: url("../img/seta_para_direita.png");
+  margin-left: 5px;
+}
+
+.link-download {
+  font-family: Merge One;
+  font-size: 14px;
+  margin-left: 10px;
+}

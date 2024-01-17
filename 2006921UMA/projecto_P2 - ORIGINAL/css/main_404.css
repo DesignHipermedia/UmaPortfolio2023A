@@ -1,0 +1,125 @@
+* {
+    box-sizing: border-box;
+}
+.header {
+    width: 360px;
+    height: 340px;
+    background: rgb(225, 119, 158);
+    opacity: 1;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+    
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+    .texto_direita_a, .texto_direita_b, .texto_esquerda_c {
+          font-size: 14px; 
+      }
+  }
+  
+.grupo_de_retangulo {
+    width: 360px;
+    height: 54px;
+    position: relative;
+}
+
+.retangulo {
+    width: 360px;
+    height: 54px;
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    background: #0A0A1D
+}
+
+.bt_redondo_preto {
+    width: 27px;
+    height: 27px;
+    left: 325px;
+    top: 15px;
+    position: absolute;
+    background: #ffffff;
+    border-radius: 9999px;
+    border: 0.40px #514e4e solid;
+}
+
+ /* close - voltar */
+.bt_texto_x {
+    left: 335px;
+    top: 16px;
+    position: absolute;
+    font-size: 13px;
+    font-family: Mako;
+    font-weight: 400;
+    text-transform: lowercase;
+    line-height: 20px;
+    letter-spacing: 1.30px;
+    word-wrap: break-word;
+    cursor: pointer;
+
+}
+
+.texto_aviso {
+    top: 80px;
+    left: 10px;
+    text-align: left;
+    position: relative;
+    color: black;
+    font-size: 16px;
+    font-family: Mako;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 20px;
+    letter-spacing: 1.20px;
+    word-wrap: break-word;
+}
+.texto_sinal_erro {
+    top: 100px;
+    left: 0px;
+    text-align: left;
+    position: relative;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-family: Mako;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 20px;
+    letter-spacing: 0.40px;
+    word-wrap: break-word;
+}
+.texto_titulo {
+    top: 195px;
+    left: 0px;
+    text-align: left;
+    position: relative;
+    color: black;
+    font-size: 12px;
+    font-family: Mako;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 20px;
+    letter-spacing: 1.20px;
+    word-wrap: break-word;
+}
+
+.linha_separador {
+    top: 198px;
+    left: 340px;
+    text-align: left;
+    position: relative;
+    width: 340px;
+    height: 0px;
+    transform: rotate(180deg);
+    transform-origin: 0 0;
+    border: 0.1px black solid;
+
+}
+
+
